@@ -60,7 +60,7 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // Load quality model description
-d3.json("/data/polarsys_qm_simple.json", function(error, qm) {
+d3.json("/PolarsysMaturity/data/polarsys_qm_simple.json", function(error, qm) {
   if (error) return console.warn(error);
 
   root = qm;
