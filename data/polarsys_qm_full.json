@@ -1,0 +1,436 @@
+  {
+    "name": "Project Quality",
+    "children": [
+      {
+        "name": "Community",
+        "children": [
+          {
+            "name": "Activity",
+            "children": [
+              {
+                "name": "Developers posts",
+                "mnemo": "COM_DEV_VOL_1M",
+                "value": "xxx"
+              },
+              {
+                "name": "User posts",
+                "mnemo": "COM_USR_VOL_1M",
+                "value": "xxx"
+              },
+              {
+                "name": "SCM commits",
+                "mnemo": "SCM_COMMITS_1M",
+                "value": "xxx"
+              },
+              {
+                "name": "Files committed",
+                "mnemo": "SCM_COMMITTED_FILES_1M",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Diversity",
+            "children": [
+              {
+                "name": "Developers authors",
+                "mnemo": "COM_DEV_AUTH_1M",
+                "value": "xxx"
+              },
+              {
+                "name": "User authors",
+                "value": "xxx"
+              },
+              {
+                "name": "SCM committers",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Responsiveness",
+            "children": [
+              {
+                "name": "Developers response time",
+                "value": "xxx"
+              },
+              {
+                "name": "User response time",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Support",
+            "children": [
+              {
+                "name": "Developers response ratio",
+                "value": "xxx"
+              },
+              {
+                "name": "Developers subjects",
+                "value": "xxx"
+              },
+              {
+                "name": "User response ratio",
+                "value": "xxx"
+              },
+              {
+                "name": "User subjects",
+                "value": "xxx"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Process",
+        "children": [
+          {
+            "name": "CCM Management",
+            "children": [
+              {
+                "name": "Project has a product name in bugzilla",
+                "value": "xxx"
+              },
+              {
+                "name": "SCM existence",
+                "value": "xxx"
+              },
+              {
+                "name": "SCM committers",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Communication Management",
+            "children": [
+              {
+                "name": "Project has a description",
+                "value": "xxx"
+              },
+              {
+                "name": "Developer list existence",
+                "value": "xxx"
+              },
+              {
+                "name": "Online documentation existence",
+                "value": "xxx"
+              },
+              {
+                "name": "Project has a download url",
+                "value": "xxx"
+              },
+              {
+                "name": "Project has a forums url",
+                "value": "xxx"
+              },
+              {
+                "name": "Project has a getting started url",
+                "value": "xxx"
+              },
+              {
+                "name": "User list existence",
+                "value": "xxx"
+              },
+              {
+                "name": "Project has a website url",
+                "value": "xxx"
+              },
+              {
+                "name": "Project has a wiki url",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Intellectual Property Management",
+            "children": [
+              {
+                "name": "License identification",
+                "value": "xxx"
+              },
+              {
+                "name": "IP log",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Planning Management",
+            "children": [
+              {
+                "name": "Project is on time for milestone",
+                "value": "xxx"
+              },
+              {
+                "name": "Number of milestones",
+                "value": "xxx"
+              },
+              {
+                "name": "Milestone success rate",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Test Management",
+            "children": [
+              {
+                "name": "Test coverage",
+                "value": "xxx"
+              },
+              {
+                "name": "Number of tests",
+                "value": "xxx"
+              },
+              {
+                "name": "Test success rate",
+                "value": "xxx"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Product",
+        "children": [
+          {
+            "name": "Analysability",
+            "children": [
+              {
+                "name": "Analysability Index",
+                "mnemo": "",
+                "description": "",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Number of attributes",
+                    "mnemo": "ATTRS",
+                    "description": "Total number of attributes defined in the class. ",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Number of methods",
+                    "mnemo": "METHS",
+                    "description": "Total number of methods defined in the class. ",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Depth of Inheritance Tree",
+                    "mnemo": "MDIT",
+                    "description": "Maximum depth of inheritance tree in the artefact. ",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Comment Rate",
+                    "mnemo": "COMR",
+                    "description": "Percentage of comment lines compared to source lines of code. ",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Control flow complexity",
+                    "mnemo": "CPX_CF",
+                    "description": "",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Data flow complexity",
+                    "mnemo": "CPX_DF",
+                    "description": "",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Non Conformities Index for Analysability",
+                "mnemo": "",
+                "description": "Number of non conformities to Analysability rules found in the artefact. ",
+                "value": "xxx"
+              },
+              {
+                "name": "Adherence to Analysability Rules",
+                "mnemo": "ROKR",
+                "description": "Ratio of conform analysability practices on the number of checked analysability practices. ",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Changeability",
+            "children": [
+              {
+                "name": "Changeability Index",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Number of public attributes",
+                    "mnemo": "ATTRS",
+                    "description": "Total number of attributes defined in the class. ",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Number of public methods",
+                    "mnemo": "METHS",
+                    "description": "Total number of methods defined in the class. ",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Control flow complexity",
+                    "mnemo": "CPX_CF",
+                    "description": "",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Data flow complexity",
+                    "mnemo": "CPX_DF",
+                    "description": "",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Function code cloning",
+                    "mnemo": "FU_CLON",
+                    "description": "",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Non Conformities Index for Changeability",
+                "value": "xxx"
+              },
+              {
+                "name": "Adherence to Changeability Rules",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Reliability",
+            "children": [
+              {
+                "name": "Reliability Index",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Number of public attributes",
+                    "mnemo": "ATTRS",
+                    "description": "Total number of attributes defined in the class. ",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Number of public methods",
+                    "mnemo": "METHS",
+                    "description": "Total number of methods defined in the class. ",
+                    "value": "xxx"
+                  },
+                  {
+
+                    "name": "File stability",
+                    "mnemo": "SCM_STABILITY_1M",
+                    "description": "Sum of the Cyclomatic Complexities of the functions and methods defined in the class.",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Control flow complexity",
+                    "mnemo": "CPX_CF",
+                    "description": "",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Data flow complexity",
+                    "mnemo": "CPX_DF",
+                    "description": "",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Change Request Tracking",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Median time to fix bug",
+                    "mnemo": "CRS_FIX_MEDIAN_1M",
+                    "description": "",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Number of open bugs",
+                    "mnemo": "CRS_BUGS_OPEN",
+                    "description": "",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Defect density",
+                    "mnemo": "CRS_BUGS_DENSITY_1M",
+                    "description": "Overall total number of bugs on product divided by 1000's of lines (KLOC). ",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Non Conformities Index for Reliability",
+                "value": "xxx"
+              },
+              {
+                "name": "Adherence to Reliability Rules",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Reusability",
+            "children": [
+              {
+                "name": "Reusability Index",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Number of public attributes",
+                    "mnemo": "ATTRS",
+                    "description": "Total number of attributes defined in the class. ",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Number of public methods",
+                    "mnemo": "METHS",
+                    "description": "Total number of methods defined in the class. ",
+                    "value": "xxx"
+                  },
+                  {
+
+                    "name": "Weighted Methods per Class",
+                    "mnemo": "WMC",
+                    "description": "Sum of the Cyclomatic Complexities of the functions and methods defined in the class.",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Class Javadoc",
+                    "mnemo": "CL_JAVADOC",
+                    "description": "Number of comment lines in file minus the number of comment lines in file's functions.",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Comment rate",
+                    "mnemo": "COMR",
+                    "description": "",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Non Conformities Index for Reusability",
+                "value": "xxx"
+              },
+              {
+                "name": "Adherence to Reusability Rules",
+                "value": "xxx"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

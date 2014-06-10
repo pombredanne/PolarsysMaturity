@@ -1,0 +1,72 @@
+  {
+    "name": "Project Quality",
+    "children": [
+      {
+        "name": "Community",
+        "children": [
+          {
+            "name": "Activity",
+            "value": "Community" 
+          },
+          {
+            "name": "Diversity",
+            "value": "Community"
+          },
+          {
+            "name": "Responsiveness",
+            "value": "Community"
+          },
+          {
+            "name": "Support",
+            "value": "Community"
+          }
+        ]
+      },
+      {
+        "name": "Process",
+        "children": [
+          {
+            "name": "CCM Management",
+            "value": "Process"
+          },
+          {
+            "name": "Communication Management",
+            "value": "Process"
+          },
+          {
+            "name": "Intellectual Property Management",
+            "value": "Process"
+          },
+          {
+            "name": "Planning Management",
+            "value": "Process"
+          },
+          {
+            "name": "Test Management",
+            "value": "Process"
+          }
+        ]
+      },
+      {
+        "name": "Product",
+        "children": [
+          {
+            "name": "Analysability",
+            "value": "Product"
+          },
+          {
+            "name": "Changeability",
+            "value": "Product"
+          },
+          {
+            "name": "Reliability",
+            "value": "Product"
+          },
+          {
+            "name": "Reusability",
+            "value": "Product"
+          }
+        ]
+      }
+    ]
+  }
