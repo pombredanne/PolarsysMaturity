@@ -1,0 +1,232 @@
+  {
+    "name": "Project Quality",
+    "children": [
+      {
+        "name": "Community",
+        "children": [
+          {
+            "name": "Activity",
+            "children": [
+              {
+                "name": "Developers posts",
+                "value": "xxx"
+              },
+              {
+                "name": "User posts",
+                "value": "xxx"
+              },
+              {
+                "name": "SCM commits",
+                "value": "xxx"
+              },
+              {
+                "name": "Files committed",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Diversity",
+            "children": [
+              {
+                "name": "Developers authors",
+                "value": "xxx"
+              },
+              {
+                "name": "User authors",
+                "value": "xxx"
+              },
+              {
+                "name": "SCM committers",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Responsiveness",
+            "children": [
+              {
+                "name": "Developers response time",
+                "value": "xxx"
+              },
+              {
+                "name": "User response time",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Support",
+            "children": [
+              {
+                "name": "Developers response ratio",
+                "value": "xxx"
+              },
+              {
+                "name": "Developers subjects",
+                "value": "xxx"
+              },
+              {
+                "name": "User response ratio",
+                "value": "xxx"
+              },
+              {
+                "name": "User subjects",
+                "value": "xxx"
+              }
+            ]
+          },
+	  {
+            "name": "Installed base",
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "name": "Process",
+        "children": [
+          {
+            "name": "CCM Management",
+            "children": [
+              {
+                "name": "Project has a product name in bugzilla",
+                "value": "xxx"
+              },
+              {
+                "name": "SCM existence",
+                "value": "xxx"
+              },
+              {
+                "name": "SCM committers",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Intellectual Property Management",
+            "children": [
+              {
+                "name": "License identification",
+                "value": "xxx"
+              },
+              {
+                "name": "IP log",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Planning Management",
+            "children": [
+              {
+                "name": "Project is on time for milestone",
+                "value": "xxx"
+              },
+              {
+                "name": "Number of milestones",
+                "value": "xxx"
+              },
+              {
+                "name": "Milestone success rate",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Test Management",
+            "children": [
+              {
+                "name": "Test coverage",
+                "value": "xxx"
+              },
+              {
+                "name": "Number of tests",
+                "value": "xxx"
+              },
+              {
+                "name": "Test success rate",
+                "value": "xxx"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Product",
+        "children": [
+          {
+            "name": "Analysability",
+            "children": [
+              {
+                "name": "Analysability Index",
+                "value": "xxx"
+              },
+              {
+                "name": "Non Conformities Index for Analysability",
+                "value": "xxx"
+              },
+              {
+                "name": "Adherence to Analysability Rules",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Changeability",
+            "children": [
+              {
+                "name": "Changeability Index",
+                "value": "xxx"
+              },
+              {
+                "name": "Non Conformities Index for Changeability",
+                "value": "xxx"
+              },
+              {
+                "name": "Adherence to Changeability Rules",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Reliability",
+            "children": [
+              {
+                "name": "Reliability Index",
+                "value": "xxx"
+              },
+              {
+                "name": "Defects Tracking",
+                "value": "xxx"
+              },
+              {
+                "name": "Non Conformities Index for Reliability",
+                "value": "xxx"
+              },
+              {
+                "name": "Adherence to Reliability Rules",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Reusability",
+            "children": [
+              {
+                "name": "Reusability Index",
+                "value": "xxx"
+              },
+              {
+                "name": "Non Conformities Index for Reusability",
+                "value": "xxx"
+              },
+              {
+                "name": "Adherence to Reusability Rules",
+                "value": "xxx"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
