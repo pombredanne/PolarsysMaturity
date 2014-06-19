@@ -6,19 +6,23 @@
         "children": [
           {
             "name": "Activity",
-            "value": "Community" 
+            "value": "3" 
           },
           {
             "name": "Diversity",
-            "value": "Community"
+            "value": "3"
           },
           {
             "name": "Responsiveness",
-            "value": "Community"
+            "value": "3"
           },
           {
             "name": "Support",
-            "value": "Community"
+            "value": "3"
+          },
+          {
+            "name": "Installed base",
+            "value": "3"
           }
         ]
       },
@@ -27,23 +31,19 @@
         "children": [
           {
             "name": "CCM Management",
-            "value": "Process"
-          },
-          {
-            "name": "Communication Management",
-            "value": "Process"
+            "value": "3"
           },
           {
             "name": "Intellectual Property Management",
-            "value": "Process"
+            "value": "3"
           },
           {
             "name": "Planning Management",
-            "value": "Process"
+            "value": "3"
           },
           {
             "name": "Test Management",
-            "value": "Process"
+            "value": "3"
           }
         ]
       },
@@ -52,19 +52,19 @@
         "children": [
           {
             "name": "Analysability",
-            "value": "Product"
+            "value": "3"
           },
           {
             "name": "Changeability",
-            "value": "Product"
+            "value": "3"
           },
           {
             "name": "Reliability",
-            "value": "Product"
+            "value": "3"
           },
           {
             "name": "Reusability",
-            "value": "Product"
+            "value": "3"
           }
         ]
       }
