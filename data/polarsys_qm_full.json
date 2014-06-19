@@ -1,20 +1,26 @@
   {
     "name": "Project Quality",
+    "mnemo": "QM_QUALITY",
+    "active": "true",
     "children": [
       {
         "name": "Community",
+        "mnemo": "QM_COMMUNITY",
+        "active": "true",
         "children": [
           {
             "name": "Activity",
+            "mnemo": "QM_ACTIVITY",
+            "active": "true",
             "children": [
               {
                 "name": "Developers posts",
-                "mnemo": "COM_DEV_VOL_1M",
+                "mnemo": "MLS_DEV_VOL_1M",
                 "value": "xxx"
               },
               {
                 "name": "User posts",
-                "mnemo": "COM_USR_VOL_1M",
+                "mnemo": "MLS_USR_VOL_1M",
                 "value": "xxx"
               },
               {
@@ -31,52 +37,66 @@
           },
           {
             "name": "Diversity",
+            "mnemo": "QM_DIVERSITY",
+            "active": "true",
             "children": [
               {
                 "name": "Developers authors",
-                "mnemo": "COM_DEV_AUTH_1M",
+                "mnemo": "MLS_DEV_AUTH_1M",
                 "value": "xxx"
               },
               {
                 "name": "User authors",
+                "mnemo": "MLS_USR_AUTH_1M",
                 "value": "xxx"
               },
               {
                 "name": "SCM committers",
+                "mnemo": "SCM_COMMITTERS_1M",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Responsiveness",
+            "mnemo": "QM_RESPONSIVENESS",
+            "active": "true",
             "children": [
               {
                 "name": "Developers response time",
+                "mnemo": "MLS_DEV_RESP_TIME_MED_1M",
                 "value": "xxx"
               },
               {
                 "name": "User response time",
+                "mnemo": "MLS_USR_RESP_TIME_MED_1M",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Support",
+            "mnemo": "QM_SUPPORT",
+            "active": "true",
             "children": [
               {
                 "name": "Developers response ratio",
+                "mnemo": "MLS_DEV_RESP_RATIO_1M",
                 "value": "xxx"
               },
               {
                 "name": "Developers subjects",
+                "mnemo": "MLS_DEV_SUBJ_1M",
                 "value": "xxx"
               },
               {
                 "name": "User response ratio",
+                "mnemo": "MLS_USR_RESP_RATIO_1M",
                 "value": "xxx"
               },
               {
                 "name": "User subjects",
+                "mnemo": "MLS_USR_SUBJ_1M",
                 "value": "xxx"
               }
             ]
@@ -85,67 +105,37 @@
       },
       {
         "name": "Process",
+        "mnemo": "QM_PROCESS",
+        "active": "true",
         "children": [
           {
             "name": "CCM Management",
+            "active": "false",
             "children": [
               {
-                "name": "Project has a product name in bugzilla",
+                "name": "SCM information access",
+                "mnemo": "COM_SCM_INFO",
                 "value": "xxx"
               },
               {
-                "name": "SCM existence",
+                "name": "SCM commits",
+                "mnemo": "SCM_COMMITS_1M",
                 "value": "xxx"
               },
               {
                 "name": "SCM committers",
+                "mnemo": "SCM_COMMITTERS_1M",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Communication Management",
-            "children": [
-              {
-                "name": "Project has a description",
-                "value": "xxx"
-              },
-              {
-                "name": "Developer list existence",
-                "value": "xxx"
-              },
-              {
-                "name": "Online documentation existence",
-                "value": "xxx"
-              },
-              {
-                "name": "Project has a download url",
-                "value": "xxx"
-              },
-              {
-                "name": "Project has a forums url",
-                "value": "xxx"
-              },
-              {
-                "name": "Project has a getting started url",
-                "value": "xxx"
-              },
-              {
-                "name": "User list existence",
-                "value": "xxx"
-              },
-              {
-                "name": "Project has a website url",
-                "value": "xxx"
-              },
-              {
-                "name": "Project has a wiki url",
-                "value": "xxx"
-              }
-            ]
+            "active": "false"
           },
           {
             "name": "Intellectual Property Management",
+            "active": "false",
             "children": [
               {
                 "name": "License identification",
@@ -159,6 +149,7 @@
           },
           {
             "name": "Planning Management",
+            "active": "false",
             "children": [
               {
                 "name": "Project is on time for milestone",
@@ -176,6 +167,7 @@
           },
           {
             "name": "Test Management",
+            "active": "false",
             "children": [
               {
                 "name": "Test coverage",
@@ -195,16 +187,26 @@
       },
       {
         "name": "Product",
-        "children": [
+        "mnemo": "QM_PRODUCT",
+        "active": "false",
+            "children": [
           {
             "name": "Analysability",
+            "active": "true",
             "children": [
               {
                 "name": "Analysability Index",
                 "mnemo": "",
                 "description": "",
                 "value": "xxx",
+                "active": "true",
                 "children": [
+                  {
+                    "name": "Source Lines of Code",
+                    "mnemo": "SLOC",
+                    "description": "Total number of source lines of code. ",
+                    "value": "xxx"
+                  },
                   {
                     "name": "Number of attributes",
                     "mnemo": "ATTRS",
@@ -245,13 +247,13 @@
               },
               {
                 "name": "Non Conformities Index for Analysability",
-                "mnemo": "",
+                "mnemo": "NCC_ANA_IDX",
                 "description": "Number of non conformities to Analysability rules found in the artefact. ",
                 "value": "xxx"
               },
               {
                 "name": "Adherence to Analysability Rules",
-                "mnemo": "ROKR",
+                "mnemo": "ROKR_ANA",
                 "description": "Ratio of conform analysability practices on the number of checked analysability practices. ",
                 "value": "xxx"
               }
@@ -259,24 +261,21 @@
           },
           {
             "name": "Changeability",
+            "active": "true",
             "children": [
               {
                 "name": "Changeability Index",
+                "mnemo": "",
                 "value": "xxx",
-                "children": [
+                "active": "true",
+            "children": [
+
                   {
-                    "name": "Number of public attributes",
-                    "mnemo": "ATTRS",
-                    "description": "Total number of attributes defined in the class. ",
+                    "name": "Public API",
+                    "mnemo": "PUBLIC_API",
+                    "description": "Total number of public classes, interfaces, methods, constructors, annotations and attributes. ",
                     "value": "xxx"
-                  },
-                  {
-                    "name": "Number of public methods",
-                    "mnemo": "METHS",
-                    "description": "Total number of methods defined in the class. ",
-                    "value": "xxx"
-                  },
-                  {
+                  },                  {
                     "name": "Control flow complexity",
                     "mnemo": "CPX_CF",
                     "description": "",
@@ -298,38 +297,37 @@
               },
               {
                 "name": "Non Conformities Index for Changeability",
+                "mnemo": "NCC_CHA_IDX",
                 "value": "xxx"
               },
               {
                 "name": "Adherence to Changeability Rules",
+                "mnemo": "ROKR_CHA",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Reliability",
+            "active": "true",
             "children": [
               {
                 "name": "Reliability Index",
+                "mnemo": "",
                 "value": "xxx",
-                "children": [
+                "active": "true",
+            "children": [
                   {
-                    "name": "Number of public attributes",
-                    "mnemo": "ATTRS",
-                    "description": "Total number of attributes defined in the class. ",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Number of public methods",
-                    "mnemo": "METHS",
-                    "description": "Total number of methods defined in the class. ",
+                    "name": "Public API",
+                    "mnemo": "PUBLIC_API",
+                    "description": "Total number of public classes, interfaces, methods, constructors, annotations and attributes. ",
                     "value": "xxx"
                   },
                   {
 
                     "name": "File stability",
                     "mnemo": "SCM_STABILITY_1M",
-                    "description": "Sum of the Cyclomatic Complexities of the functions and methods defined in the class.",
+                    "description": ".",
                     "value": "xxx"
                   },
                   {
@@ -347,69 +345,58 @@
                 ]
               },
               {
-                "name": "Change Request Tracking",
-                "value": "xxx",
-                "children": [
-                  {
-                    "name": "Median time to fix bug",
-                    "mnemo": "CRS_FIX_MEDIAN_1M",
-                    "description": "",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Number of open bugs",
-                    "mnemo": "CRS_BUGS_OPEN",
-                    "description": "",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Defect density",
-                    "mnemo": "CRS_BUGS_DENSITY_1M",
-                    "description": "Overall total number of bugs on product divided by 1000's of lines (KLOC). ",
-                    "value": "xxx"
-                  }
-                ]
+                "name": "Median time to fix bug",
+                "mnemo": "ITS_FIX_MED_1M",
+                "description": "",
+                "value": "xxx"
+              },
+              {
+                "name": "Number of open bugs",
+                "mnemo": "ITS_BUGS_OPEN",
+                "description": "",
+                "value": "xxx"
+              },
+              {
+                "name": "Defect density",
+                "mnemo": "ITS_BUGS_DENSITY",
+                "description": "Overall total number of bugs on product divided by 1000's of lines (KLOC). ",
+                "value": "xxx"
               },
               {
                 "name": "Non Conformities Index for Reliability",
+                "mnemo": "NCC_REL_IDX",
                 "value": "xxx"
               },
               {
                 "name": "Adherence to Reliability Rules",
+                "mnemo": "ROKR_REL",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Reusability",
+            "mnemo": "QM_REUSABILITY",
+            "active": "true",
             "children": [
               {
                 "name": "Reusability Index",
+                "mnemo": "REU_IDX",
                 "value": "xxx",
+                "active": "true",
                 "children": [
+                  
                   {
-                    "name": "Number of public attributes",
-                    "mnemo": "ATTRS",
-                    "description": "Total number of attributes defined in the class. ",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Number of public methods",
-                    "mnemo": "METHS",
-                    "description": "Total number of methods defined in the class. ",
+                    "name": "Public API",
+                    "mnemo": "PUBLIC_API",
+                    "description": "Total number of public classes, interfaces, methods, constructors, annotations and attributes. ",
                     "value": "xxx"
                   },
                   {
 
-                    "name": "Weighted Methods per Class",
-                    "mnemo": "WMC",
+                    "name": "Complexity",
+                    "mnemo": "complexity",
                     "description": "Sum of the Cyclomatic Complexities of the functions and methods defined in the class.",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Class Javadoc",
-                    "mnemo": "CL_JAVADOC",
-                    "description": "Number of comment lines in file minus the number of comment lines in file's functions.",
                     "value": "xxx"
                   },
                   {
@@ -422,10 +409,12 @@
               },
               {
                 "name": "Non Conformities Index for Reusability",
+                "mnemo": "NCC_REU_IDX",
                 "value": "xxx"
               },
               {
                 "name": "Adherence to Reusability Rules",
+                "mnemo": "ROKR_REU",
                 "value": "xxx"
               }
             ]
