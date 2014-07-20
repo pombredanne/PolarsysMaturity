@@ -1,70 +1,83 @@
   {
     "name": "Project Quality",
+    "mnemo": "QM_QUALITY",
+    "active": "true",
     "children": [
       {
         "name": "Community",
+        "mnemo": "QM_COMMUNITY",
+        "active": "true",
         "children": [
           {
             "name": "Activity",
-            "value": "3" 
+            "mnemo": "QM_ACTIVITY",
+            "active": "true"
           },
           {
             "name": "Diversity",
-            "value": "3"
+            "mnemo": "QM_DIVERSITY",
+            "active": "true"
           },
           {
             "name": "Responsiveness",
-            "value": "3"
+            "mnemo": "QM_RESPONSIVENESS",
+            "active": "true"
           },
           {
             "name": "Support",
-            "value": "3"
-          },
-          {
-            "name": "Installed base",
-            "value": "3"
+            "mnemo": "QM_SUPPORT",
+            "active": "true"
           }
         ]
       },
       {
         "name": "Process",
+        "mnemo": "QM_PROCESS",
+        "active": "true",
         "children": [
           {
-            "name": "CCM Management",
-            "value": "3"
+            "name": "Configuration Management",
+            "active": "false"
+          },
+          {
+            "name": "Change Management",
+            "active": "false"
           },
           {
             "name": "Intellectual Property Management",
-            "value": "3"
+            "active": "false"
           },
           {
             "name": "Planning Management",
-            "value": "3"
+            "active": "false"
           },
           {
             "name": "Test Management",
-            "value": "3"
+            "active": "false"
           }
         ]
       },
       {
         "name": "Product",
-        "children": [
+        "mnemo": "QM_PRODUCT",
+        "active": "false",
+            "children": [
           {
             "name": "Analysability",
-            "value": "3"
+            "active": "true"
           },
           {
             "name": "Changeability",
-            "value": "3"
+            "active": "true"
           },
           {
             "name": "Reliability",
-            "value": "3"
+            "active": "true"
           },
           {
             "name": "Reusability",
-            "value": "3"
+            "mnemo": "QM_REUSABILITY",
+            "active": "true"
           }
         ]
       }

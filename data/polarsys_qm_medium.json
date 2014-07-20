@@ -1,150 +1,199 @@
   {
     "name": "Project Quality",
+    "mnemo": "QM_QUALITY",
+    "active": "true",
     "children": [
       {
         "name": "Community",
+        "mnemo": "QM_COMMUNITY",
+        "active": "true",
         "children": [
           {
             "name": "Activity",
+            "mnemo": "QM_ACTIVITY",
+            "active": "true",
             "children": [
               {
-                "name": "Developers posts",
+                "name": "Developer ML posts",
+                "mnemo": "MLS_DEV_VOL_1M",
                 "value": "xxx"
               },
               {
-                "name": "User posts",
+                "name": "User ML posts",
+                "mnemo": "MLS_USR_VOL_1M",
                 "value": "xxx"
               },
               {
                 "name": "SCM commits",
+                "mnemo": "SCM_COMMITS_1M",
                 "value": "xxx"
               },
               {
                 "name": "Files committed",
+                "mnemo": "SCM_COMMITTED_FILES_1M",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Diversity",
+            "mnemo": "QM_DIVERSITY",
+            "active": "true",
             "children": [
               {
-                "name": "Developers authors",
+                "name": "Developer ML authors",
+                "mnemo": "MLS_DEV_AUTH_1M",
                 "value": "xxx"
               },
               {
-                "name": "User authors",
+                "name": "User ML authors",
+                "mnemo": "MLS_USR_AUTH_1M",
                 "value": "xxx"
               },
               {
                 "name": "SCM committers",
+                "mnemo": "SCM_COMMITTERS_1M",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Responsiveness",
+            "mnemo": "QM_RESPONSIVENESS",
+            "active": "true",
             "children": [
               {
-                "name": "Developers response time",
+                "name": "Developer ML response time",
+                "mnemo": "MLS_DEV_RESP_TIME_MED_1M",
                 "value": "xxx"
               },
               {
-                "name": "User response time",
+                "name": "User ML response time",
+                "mnemo": "MLS_USR_RESP_TIME_MED_1M",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Support",
+            "mnemo": "QM_SUPPORT",
+            "active": "true",
             "children": [
               {
-                "name": "Developers response ratio",
+                "name": "Developer ML response ratio",
+                "mnemo": "MLS_DEV_RESP_RATIO_1M",
                 "value": "xxx"
               },
               {
-                "name": "Developers subjects",
+                "name": "Developer ML subjects",
+                "mnemo": "MLS_DEV_SUBJ_1M",
                 "value": "xxx"
               },
               {
-                "name": "User response ratio",
+                "name": "User ML response ratio",
+                "mnemo": "MLS_USR_RESP_RATIO_1M",
                 "value": "xxx"
               },
               {
-                "name": "User subjects",
+                "name": "User ML subjects",
+                "mnemo": "MLS_USR_SUBJ_1M",
                 "value": "xxx"
               }
             ]
-          },
-	  {
-            "name": "Installed base",
-            "value": "3"
           }
         ]
       },
       {
         "name": "Process",
+        "mnemo": "QM_PROCESS",
+        "active": "true",
         "children": [
           {
-            "name": "CCM Management",
+            "name": "Configuration Management",
+            "active": "false",
             "children": [
               {
-                "name": "Project has a product name in bugzilla",
+                "name": "SCM information access",
+                "mnemo": "COM_SCM_INFO",
                 "value": "xxx"
               },
               {
-                "name": "SCM existence",
+                "name": "SCM usage",
+                "mnemo": "SCM_USAGE_1M",
+                "value": "xxx"
+              }
+            ]
+          },
+          {
+            "name": "Change Management",
+            "active": "false",
+            "children": [
+              {
+                "name": "ITS information access",
+                "mnemo": "COM_ITS_INFO",
                 "value": "xxx"
               },
               {
-                "name": "SCM committers",
+                "name": "ITS usage",
+                "mnemo": "ITS_USAGE_1M",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Intellectual Property Management",
+            "active": "false",
             "children": [
               {
                 "name": "License identification",
+                "mnemo": "LIC_IDENT",
                 "value": "xxx"
               },
               {
                 "name": "IP log",
+                "mnemo": "IP_LOG",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Planning Management",
+            "active": "false",
             "children": [
               {
-                "name": "Project is on time for milestone",
+                "name": "On time for next milestone",
+                "mnemo": "PLAN_NEXT_MILESTONE",
                 "value": "xxx"
               },
               {
                 "name": "Number of milestones",
+                "mnemo": "PLAN_MILESTONES_VOL",
                 "value": "xxx"
               },
               {
                 "name": "Milestone success rate",
+                "mnemo": "PLAN_MILESTONES_SUCCESS",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Test Management",
+            "active": "false",
             "children": [
               {
                 "name": "Test coverage",
+                "mnemo": "TEST_COV",
                 "value": "xxx"
               },
               {
                 "name": "Number of tests",
+                "mnemo": "TST_VOL",
                 "value": "xxx"
               },
               {
                 "name": "Test success rate",
+                "mnemo": "TST_SUCCESS",
                 "value": "xxx"
               }
             ]
@@ -153,75 +202,109 @@
       },
       {
         "name": "Product",
-        "children": [
+        "mnemo": "QM_PRODUCT",
+        "active": "false",
+            "children": [
           {
             "name": "Analysability",
+            "active": "true",
             "children": [
               {
-                "name": "Analysability Index",
-                "value": "xxx"
+                "name": "Code Analysability Index",
+                "mnemo": "",
+                "description": "",
+                "value": "xxx",
+                "active": "true"
               },
               {
                 "name": "Non Conformities Index for Analysability",
+                "mnemo": "NCC_ANA_IDX",
+                "description": "Number of non conformities to Analysability rules found in the artefact. ",
                 "value": "xxx"
               },
               {
                 "name": "Adherence to Analysability Rules",
+                "mnemo": "ROKR_ANA",
+                "description": "Ratio of conform analysability practices on the number of checked analysability practices. ",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Changeability",
+            "active": "true",
             "children": [
               {
-                "name": "Changeability Index",
-                "value": "xxx"
+                "name": "Code Changeability Index",
+                "mnemo": "",
+                "value": "xxx",
+                "active": "true"
               },
               {
                 "name": "Non Conformities Index for Changeability",
+                "mnemo": "NCC_CHA_IDX",
                 "value": "xxx"
               },
               {
                 "name": "Adherence to Changeability Rules",
+                "mnemo": "ROKR_CHA",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Reliability",
+            "active": "true",
             "children": [
               {
-                "name": "Reliability Index",
-                "value": "xxx"
+                "name": "Code Reliability Index",
+                "mnemo": "",
+                "value": "xxx",
+                "active": "true"
               },
               {
-                "name": "Defects Tracking",
-                "value": "xxx"
+                "name": "SCM Stability Index",
+                "mnemo": "",
+                "value": "xxx",
+                "active": "true"
+              },
+              {
+                "name": "ITS Reliability Index",
+                "mnemo": "",
+                "value": "xxx",
+                "active": "true"
               },
               {
                 "name": "Non Conformities Index for Reliability",
+                "mnemo": "NCC_REL_IDX",
                 "value": "xxx"
               },
               {
                 "name": "Adherence to Reliability Rules",
+                "mnemo": "ROKR_REL",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Reusability",
+            "mnemo": "QM_REUSABILITY",
+            "active": "true",
             "children": [
               {
-                "name": "Reusability Index",
-                "value": "xxx"
+                "name": "Code Reusability Index",
+                "mnemo": "CODE_REU_IDX",
+                "value": "xxx",
+                "active": "true"
               },
               {
                 "name": "Non Conformities Index for Reusability",
+                "mnemo": "NCC_REU_IDX",
                 "value": "xxx"
               },
               {
                 "name": "Adherence to Reusability Rules",
+                "mnemo": "ROKR_REU",
                 "value": "xxx"
               }
             ]
