@@ -27,6 +27,11 @@
             "name": "Support",
             "mnemo": "QM_SUPPORT",
             "active": "true"
+          },
+          {
+            "name": "Installed base",
+            "mnemo": "QM_INST_BASE",
+            "active": "true"
           }
         ]
       },

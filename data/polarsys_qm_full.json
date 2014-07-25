@@ -7,31 +7,58 @@
         "name": "Community",
         "mnemo": "QM_COMMUNITY",
         "active": "true",
+        "type": "attribute",
         "children": [
           {
             "name": "Activity",
             "mnemo": "QM_ACTIVITY",
             "active": "true",
+            "type": "attribute",
             "children": [
               {
-                "name": "Developer ML posts",
-                "mnemo": "MLS_DEV_VOL_1M",
-                "value": "xxx"
+                "name": "Developer ML activity",
+                "mnemo": "MLS_DEV_ACTIVITY",
+                "type": "concept",
+                "children": [
+                  {
+                    "name": "Developer ML posts",
+                    "mnemo": "MLS_DEV_VOL_1M",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
               },
               {
-                "name": "User ML posts",
-                "mnemo": "MLS_USR_VOL_1M",
-                "value": "xxx"
+                "name": "User ML activity",
+                "mnemo": "MLS_USR_ACTIVITY",
+                "type": "concept",
+                "children": [
+                  {
+                    "name": "Developer ML posts",
+                    "mnemo": "MLS_USR_VOL_1M",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
               },
               {
-                "name": "SCM commits",
+                "name": "SCM activity",
                 "mnemo": "SCM_COMMITS_1M",
-                "value": "xxx"
-              },
-              {
-                "name": "Files committed",
-                "mnemo": "SCM_COMMITTED_FILES_1M",
-                "value": "xxx"
+                "type": "concept",
+                "children": [
+                  {
+                    "name": "SCM commits",
+                    "mnemo": "SCM_COMMITS_1M",
+                    "type": "metric",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "SCM committed files",
+                    "mnemo": "SCM_COMMITTED_FILES_1M",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
               }
             ]
           },
@@ -41,19 +68,43 @@
             "active": "true",
             "children": [
               {
-                "name": "Developer ML authors",
-                "mnemo": "MLS_DEV_AUTH_1M",
-                "value": "xxx"
+                "name": "Developer ML diversity",
+                "mnemo": "MLS_DEV_ACTIVITY",
+                "type": "concept",
+                "children": [
+                  {
+                    "name": "Developer ML authors",
+                    "mnemo": "MLS_DEV_AUTH_1M",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
               },
               {
-                "name": "User ML authors",
-                "mnemo": "MLS_USR_AUTH_1M",
-                "value": "xxx"
+                "name": "User ML diversity",
+                "mnemo": "MLS_USR_DIVERSITY",
+                "type": "concept",
+                "children": [
+                  {
+                    "name": "User ML authors",
+                    "mnemo": "MLS_USR_AUTH_1M",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
               },
               {
-                "name": "SCM committers",
-                "mnemo": "SCM_COMMITTERS_1M",
-                "value": "xxx"
+                "name": "SCM diversity",
+                "mnemo": "SCM_DIVERSITY",
+                "type": "concept",
+                "children": [
+                  {
+                    "name": "SCM Committers",
+                    "mnemo": "SCM_COMMITTERS_1M",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
               }
             ]
           },
@@ -115,11 +166,13 @@
               {
                 "name": "SCM information access",
                 "mnemo": "COM_SCM_INFO",
+                "active": "false",
                 "value": "xxx"
               },
               {
                 "name": "SCM usage",
                 "mnemo": "SCM_USAGE_1M",
+                "active": "false",
                 "value": "xxx"
               }
             ]
@@ -230,7 +283,7 @@
                   },
                   {
                     "name": "OO complexity",
-                    "mnemo": "MDIT",
+                    "mnemo": "CPX_OO",
                     "description": "Maximum depth of inheritance tree in the artefact. ",
                     "value": "xxx"
                   },
