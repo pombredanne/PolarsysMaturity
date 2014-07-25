@@ -1,0 +1,85 @@
+  {
+    "name": "PolarSys Concepts",
+    "mnemo": "POLARSYS_CONCEPTS",
+    "active": "true",
+    "children": [
+      {
+        "name": "Control flow complexity",
+        "mnemo": "CPX_CF",
+        "description": "The computational complexity of the control flow structure in the code functions.",
+        "composition": "VG NEST",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Data flow complexity",
+        "mnemo": "CPX_DF",
+        "description": "The complexity of the data flow structure in the code functions.",
+        "composition": "DOPD DOPT TOPD TOPT",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "OO complexity",
+        "mnemo": "CPX_OO",
+        "description": "The complexity of the object-oriented architecture and structure. Composed of MDIT (maximum depth of inheritance tree).",
+        "composition": "MDIT",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Code documentation",
+        "mnemo": "CODE_DOC",
+        "description": "The amount of documentation in the code: comment rate, javadoc, etc.",
+        "composition": "COMR",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Code size",
+        "mnemo": "CODE_SIZE",
+        "description": "The overall size of the code.",
+        "composition": "SLOC",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Access points",
+        "mnemo": "ALL_DATA",
+        "description": "The amount of attributes and methods on the class, whatever their visibility is.",
+        "composition": "ATTRS METHS",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Public access points",
+        "mnemo": "PUBLIC_DATA",
+        "description": "Total number of public classes, interfaces, methods, constructors, annotations and attributes.",
+        "composition": "ATTRS_PUBLIC METHS_PUBLIC",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "SCM Documentation",
+        "mnemo": "SCM_DOCS",
+        "description": "Is there some documentation about the SCM process, rules and conventions?",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "ITS usage",
+        "mnemo": "ITS_USAGE_1M",
+        "description": "How much the ITS system was used during last month. Composed of ITS_ISSUES_OPEN_1M and ITS_ISSUES_OPENERS_1M.",
+        "composition": "ITS_ISSUES_OPEN_1M ITS_ISSUES_OPENERS_1M",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "SCM usage",
+        "mnemo": "SCM_USAGE_1M",
+        "description": "How much the SCM system was used during last month. Composed of SCM_COMMITS_1M and SCM_COMMITTERS_1M.",
+        "question": "",
+        "active": "true"
+      }
+    ]
+  }

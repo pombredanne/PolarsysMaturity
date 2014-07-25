@@ -1,0 +1,334 @@
+  {
+    "name": "PolarSys Metrics",
+    "mnemo": "POLARSYS_METRICS",
+    "active": "true",
+    "children": [
+      {
+        "name": "Code Metrics",
+        "mnemo": "CODE_METRICS",
+        "question": "",
+        "active": "true",
+        "children": [
+          {
+            "name": "Maximum depth of nesting",
+            "mnemo": "NEST",
+	    "description": "The maximum depth of nesting of the control flow structure found in the function. ",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Comment rate",
+            "mnemo": "COMR",
+	    "description": "The ratio of source lines of code on the the number of comment lines of code.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of attributes",
+            "mnemo": "ATTRS",
+	    "description": "Total number of attributes defined in the class. ",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of methods",
+            "mnemo": "METHS",
+	    "description": "Total number of methods defined in the class.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of public attributes",
+            "mnemo": "ATTRS_PUBLIC",
+	    "description": "Total number of public attributes defined in the class. ",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of public methods",
+            "mnemo": "METHS_PUBLIC",
+	    "description": "Total number of public methods defined in the class.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Depth of Inheritance Tree",
+            "mnemo": "MDIT",
+	    "description": "Maximum depth of inheritance tree in the artefact.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Code cloning",
+            "mnemo": "CODE_CLON",
+	    "description": "The amount of duplicated lines in the code.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Source Lines Of Code",
+            "mnemo": "SLOC",
+	    "description": "",
+            "question": "How many source lines of code are there?",
+            "active": "true"
+          },
+          {
+            "name": "Cyclomatic Complexity",
+            "mnemo": "VG",
+	    "description": "The number of execution paths found in the function.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of distinct operands",
+            "mnemo": "DOPD",
+	    "description": "The number of distinct operands found in the function.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of distinct operators",
+            "mnemo": "DOPT",
+	    "description": "The number of distinct operators found in the function.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Total number of operands",
+            "mnemo": "TOPD",
+	    "description": "The total number of operands found in the function.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Total number of operators",
+            "mnemo": "TOPT",
+	    "description": "The total number of operators found in the function.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Test coverage",
+            "mnemo": "TST_COV",
+	    "description": "The percentage of source lines of code that is exercised by the tests.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of tests",
+            "mnemo": "TST_VOL",
+	    "description": "The total number of test cases for the product.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Test success rate",
+            "mnemo": "TST_SUCCESS",
+	    "description": "The percentage of failed tests during the last execution of the test plan.",
+            "question": "",
+            "active": "true"
+          }
+        ]
+      },
+      {
+        "name": "Communication Metrics",
+        "mnemo": "COM_METRICS",
+        "question": "",
+        "active": "true",
+        "children": [
+          {
+            "name": "Developer ML posts",
+            "mnemo": "MLS_DEV_VOL_1M",
+	    "description": "Total number of posts on the developer mailing list during the last month.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Developer ML authors",
+            "mnemo": "MLS_DEV_AUTH_1M",
+	    "description": "Number of distinct authors (according to their email address) on the developer mailing list during last month.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Developer ML response time",
+            "mnemo": "MLS_DEV_RESP_TIME_MED_1M",
+	    "description": "Median time of first reply to questions in the developer mailing list during last week.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Developer ML response ratio",
+            "mnemo": "MLS_DEV_RESP_RATIO_1M",
+	    "description": "Average number of responses for a question in the developer mailing list during last month.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Developer ML subjects",
+            "mnemo": "MLS_DEV_SUBJ_1M",
+	    "description": "Number of threads in the developer mailing list during last month",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "User ML posts",
+            "mnemo": "MLS_USR_VOL_1M",
+	    "description": "Total number of posts on the user mailing list during the last month.",
+            "question": "Total number of posts on the user mailing list during the last month.",
+            "active": "true"
+          },
+          {
+            "name": "User ML authors",
+            "mnemo": "MLS_USR_AUTH_1M",
+	    "description": "Number of distinct authors (according to their email address) on the developer mailing list during last month.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "User ML response ratio",
+            "mnemo": "MLS_USR_RESP_RATIO_1M",
+	    "description": "Average number of responses for a question in the user mailing list during last month.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "User ML subjects",
+            "mnemo": "MLS_USR_SUBJ_1M",
+	    "description": "Number of threads in the user mailing list during last month",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "User ML response time",
+            "mnemo": "MLS_USR_RESP_TIME_MED_1M",
+	    "description": "Median time of first reply to questions in the user mailing list during last week.",
+            "question": "",
+            "active": "true"
+          }
+        ]
+      },
+      {
+        "name": "Configuration Management Metrics",
+        "mnemo": "SCM_METRICS",
+        "question": "",
+        "active": "true",
+        "children": [
+          {
+            "name": "SCM Commits",
+            "mnemo": "SCM_COMMITS_1M",
+	    "description": "Total number of commits registered on the artefact during the last month.",
+	    "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Files committed",
+            "mnemo": "SCM_COMMITTED_FILES_1M",
+	    "description": "Total number of files found in all commits that happened during the last month.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "SCM committers",
+            "mnemo": "SCM_COMMITTERS_1M",
+	    "description": "Total number of different user logins found in commits during last month.",
+            "question": "",
+            "active": "true"
+          },
+          {
+            "name": "File stability index",
+            "mnemo": "SCM_STABILITY_1M",
+	    "description": "Average number of commits on files during the last month.",
+            "question": "",
+            "active": "true"
+          }
+        ]
+      },
+      {
+        "name": "Issue Tracking System Metrics",
+        "mnemo": "ITS_METRICS",
+        "question": "",
+        "active": "true",
+        "children": [
+          {
+            "name": "Median time to fix bug",
+            "mnemo": "ITS_FIX_MED_1M",
+	    "description": "Median time between the creation of an bug and its closure. Bugs are identified according to the registered type of issue.",
+	    "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of open bugs",
+            "mnemo": "ITS_BUGS_OPEN",
+	    "description": "Number of bugs in an open status at the time of analysis.",
+	    "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of open requests during last month",
+            "mnemo": "ITS_ISSUES_OPEN_1M",
+	    "description": "Number of change requests in an open status during last month.",
+	    "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of distinct request openers during last month",
+            "mnemo": "ITS_ISSUES_OPENERS_1M",
+	    "description": "Number of bugs in an open status during last month.",
+	    "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Defect density",
+            "mnemo": "ITS_BUGS_DENSITY",
+	    "description": "Overall total number of bugs on product divided by 1000's of lines (KLOC).",
+            "question": "",
+            "active": "true"
+          }
+        ]
+      },
+      {
+        "name": "Process Repository Metrics",
+        "mnemo": "PROCESS_METRICS",
+        "question": "",
+        "active": "true",
+        "children": [
+          {
+            "name": "License identification",
+            "mnemo": "LIC_IDENT",
+	    "description": "Is there a list of the different licences used in the product?",
+	    "question": "",
+            "active": "true"
+          },
+          {
+            "name": "IP log",
+            "mnemo": "IP_LOG",
+	    "description": "Total number of commits registered on the artefact during the last month.",
+	    "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Project is on time for next milestone",
+            "mnemo": "PLAN_NEXT_MILESTONE",
+	    "description": "Is the project on time for the next milestone?",
+	    "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Number of milestones",
+            "mnemo": "PLAN_MILESTONES_VOL",
+	    "description": "The number of milestones since the last official release.",
+	    "question": "",
+            "active": "true"
+          },
+          {
+            "name": "Milestone success rate",
+            "mnemo": "PLAN_MILESTONES_SUCCESS",
+	    "description": "What is the percentage of successful milestones over the past 10 milestones?",
+	    "question": "",
+            "active": "true"
+          }
+        ]
+      }
+    ]
+  }
