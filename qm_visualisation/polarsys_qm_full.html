@@ -220,41 +220,74 @@ function update(source) {
 function click(d) {
 
   var i = 0;
-  var type;
+  var mynode;
+  var type = "none";
 
   // find element in our json files (metrics, concepts, attributes of quality).
-  while(i < mymetrics.children.length) {
-    if (d.mnemo == mymetrics.children[i]["mnemo"]) {
-      type="Metric";
-      break;
+  if (typeof d.type == "undefined") {
+    alert("No type defined on node.");
+    type = "undefined";
+  } else {
+//alert("d.type defined: " + d.type);
+    if (d.type == "metric") {
+//alert("in metric");
+      while (i < mymetrics.children.length) {
+        if (d.mnemo == mymetrics.children[i]["mnemo"]) {
+          type = "metric";
+          mynode = d;
+          mynode.description = mymetrics.children[i]["description"]; 
+          mynode.name = mymetrics.children[i]["name"]; 
+          break;
+        }
+        i++;
+      }
+//      if (i >= mymetrics.children.length) { alert
+    } else if (d.type == "concept") {
+//alert("in concept");
+      while (i < myconcepts.children.length) {
+//alert("in concept loop");
+        if (d.mnemo == myconcepts.children[i]["mnemo"]) {
+//alert("in concept loop: found mnemo");
+          type = "concept";
+          mynode = d;
+          mynode.description = myconcepts.children[i]["description"]; 
+          mynode.name = myconcepts.children[i]["name"]; 
+          break;
+        }
+        i++;
+      }
+    } else if (d.type == "attribute") {
+          type = "attribute";
+          mynode = d;
     }
-    i++;
-  }
 
-  // Do that only if we actually found the item.
-  if (i < mymetrics.children.length) {
+    // Do that only if we actually found the item.
+    if (type != "none" && type != "undefined") {
 
-    var mydiv = d3.select("div#details-box");
+//alert("in append.");
 
-    mydiv.text("");
+      var mydiv = d3.select("div#details-box");
 
-    var ptitle = mydiv.append("p");
-    ptitle.classed("title", true);
-    ptitle.text("Description of the attribute"); 
+      mydiv.text("");
 
-    var pname = mydiv.append('p');
-    pname.classed("details", true);
-    pname.text("Name: " + d.name);
-
-    var pmnemo = mydiv.append('p');
-    pmnemo.classed("details", true);
-    pmnemo.text("Mnemo: " + d.mnemo);
-
-    var desc = mymetrics.children[i]["description"]; 
-
-    var pdesc = mydiv.append('p');
-    pdesc.classed("details", true);
-    pdesc.text("Description: " + desc);
+      var ptitle = mydiv.append("p");
+      ptitle.classed("title", true);
+      ptitle.text("Description of the " + type); 
+  
+      var pname = mydiv.append('p');
+      pname.classed("details", true);
+      pname.text("Name: " + mynode.name);
+  
+      var pmnemo = mydiv.append('p');
+      pmnemo.classed("details", true);
+      pmnemo.text("Mnemo: " + mynode.mnemo);
+    
+      var pdesc = mydiv.append('p');
+      pdesc.classed("details", true);
+      pdesc.text("Description: " + mynode.description);
+    } else if (type == "none") {
+      alert("Could not find node in " + d.type + " definition files.");
+    }
   }
 
   if (d.children) {
@@ -265,8 +298,6 @@ function click(d) {
     d._children = null;
   }
   update(d);
-
-  //.innerHTML("test a");
 }
 
 </script>

@@ -80,6 +80,118 @@
         "description": "How much the SCM system was used during last month. Composed of SCM_COMMITS_1M and SCM_COMMITTERS_1M.",
         "question": "",
         "active": "true"
+      },
+      {
+        "name": "Code analysability index",
+        "mnemo": "CODE_ANA_IDX",
+        "description": "A weighted index of code characteristics that impact analysability.",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Non conformities index for analysability",
+        "mnemo": "NCC_ANA_IDX",
+        "description": "Number of non conformities to analysability rules found in the artefact.",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Adherence to analysability rules",
+        "mnemo": "ROKR_ANA",
+        "description": "Ratio of conform analysability practices on the number of checked analysability practices. ",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Code changeability index",
+        "mnemo": "CODE_CHA_IDX",
+        "description": "A weighted index of code characteristics that impact changeability.",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Non conformities index for changeability",
+        "mnemo": "NCC_CHA_IDX",
+        "description": "Number of non conformities to changeability rules found in the artefact.",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Adherence to changeability rules",
+        "mnemo": "ROKR_CHA",
+        "description": "Ratio of conform changeability practices on the number of checked analysability practices. ",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Code reliability index",
+        "mnemo": "CODE_REL_IDX",
+        "description": "A weighted index of code characteristics that impact reliability.",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Non conformities index for reliability",
+        "mnemo": "NCC_REL_IDX",
+        "description": "Number of non conformities to reliability rules found in the artefact.",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Adherence to reliability rules",
+        "mnemo": "ROKR_REL",
+        "description": "Ratio of conform reliability practices on the number of checked analysability practices. ",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Code reusability index",
+        "mnemo": "CODE_REU_IDX",
+        "description": "A weighted index of code characteristics that impact reusability.",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Non conformities index for reusability",
+        "mnemo": "NCC_REU_IDX",
+        "description": "Number of non conformities to reusability rules found in the artefact.",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Adherence to reusability rules",
+        "mnemo": "ROKR_REU",
+        "description": "Ratio of conform reliability practices on the number of checked reusability practices. ",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "ITS Reliability Index",
+        "mnemo": "ITS_REL_IDX",
+        "description": "The reliability assessment of the project regarding registered bugs.",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Test coverage",
+        "mnemo": "TST_COV",
+        "description": "What percentage of the product has tests?",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Number of tests",
+        "mnemo": "TST_VOL",
+        "description": "How much the SCM system was used during last month. Composed of SCM_COMMITS_1M and SCM_COMMITTERS_1M.",
+        "question": "",
+        "active": "true"
+      },
+      {
+        "name": "Test success rate",
+        "mnemo": "TST_SUCCESS",
+        "description": "How much the SCM system was used during last month. Composed of SCM_COMMITS_1M and SCM_COMMITTERS_1M.",
+        "question": "",
+        "active": "true"
       }
     ]
   }
