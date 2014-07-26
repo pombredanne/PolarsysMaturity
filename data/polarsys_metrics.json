@@ -14,119 +14,208 @@
             "mnemo": "NEST",
 	    "description": "The maximum depth of nesting of the control flow structure found in the function. ",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Number of files",
+            "mnemo": "FILES",
+	    "description": "The number of code files (e.g. .java for Java) in code hierarchy. Often used to build indexes.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Comment rate",
             "mnemo": "COMR",
 	    "description": "The ratio of source lines of code on the the number of comment lines of code.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Number of attributes",
             "mnemo": "ATTRS",
 	    "description": "Total number of attributes defined in the class. ",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Number of methods",
             "mnemo": "METHS",
 	    "description": "Total number of methods defined in the class.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Number of public attributes",
             "mnemo": "ATTRS_PUBLIC",
 	    "description": "Total number of public attributes defined in the class. ",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Number of public methods",
             "mnemo": "METHS_PUBLIC",
 	    "description": "Total number of public methods defined in the class.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Depth of Inheritance Tree",
             "mnemo": "MDIT",
 	    "description": "Maximum depth of inheritance tree in the artefact.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Code cloning",
             "mnemo": "CODE_CLON",
 	    "description": "The amount of duplicated lines in the code.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Source Lines Of Code",
             "mnemo": "SLOC",
 	    "description": "",
             "question": "How many source lines of code are there?",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Cyclomatic Complexity",
             "mnemo": "VG",
 	    "description": "The number of execution paths found in the function.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Number of distinct operands",
             "mnemo": "DOPD",
 	    "description": "The number of distinct operands found in the function.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Number of distinct operators",
             "mnemo": "DOPT",
 	    "description": "The number of distinct operators found in the function.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Total number of operands",
             "mnemo": "TOPD",
 	    "description": "The total number of operands found in the function.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Total number of operators",
             "mnemo": "TOPT",
 	    "description": "The total number of operators found in the function.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Number of non-conformities for changeability",
+            "mnemo": "NCC_CHA",
+	    "description": "The number of violations to rules that impact changeability in the artefact.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Number of rules for changeability",
+            "mnemo": "RULES_CHA",
+	    "description": "The total number of rules checked for changeability.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Number of non-conformities for analysability",
+            "mnemo": "NCC_ANA",
+	    "description": "The number of violations to rules that impact analysability in the artefact.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Number of rules for analysability",
+            "mnemo": "RULES_ANA",
+	    "description": "The total number of rules checked for analysability.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Number of non-conformities for reliability",
+            "mnemo": "NCC_REL",
+	    "description": "The number of violations to rules that impact reliability in the artefact.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Number of rules for reliability",
+            "mnemo": "RULES_REL",
+	    "description": "The total number of rules checked for reliability.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Number of non-conformities for reusability",
+            "mnemo": "NCC_REU",
+	    "description": "The number of violations to rules that impact reusability in the artefact.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Number of rules for reusability",
+            "mnemo": "RULES_REU",
+	    "description": "The total number of rules checked for reusability.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Test coverage",
             "mnemo": "TST_COV",
 	    "description": "The percentage of source lines of code that is exercised by the tests.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Number of tests",
             "mnemo": "TST_VOL",
 	    "description": "The total number of test cases for the product.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           },
           {
             "name": "Test success rate",
-            "mnemo": "TST_SUCCESS",
+            "mnemo": "TST_SUCCESS_1W",
 	    "description": "The percentage of failed tests during the last execution of the test plan.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "SonarQube"
           }
         ]
       },
@@ -141,70 +230,80 @@
             "mnemo": "MLS_DEV_VOL_1M",
 	    "description": "Total number of posts on the developer mailing list during the last month.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "Developer ML authors",
             "mnemo": "MLS_DEV_AUTH_1M",
 	    "description": "Number of distinct authors (according to their email address) on the developer mailing list during last month.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "Developer ML response time",
             "mnemo": "MLS_DEV_RESP_TIME_MED_1M",
 	    "description": "Median time of first reply to questions in the developer mailing list during last week.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "Developer ML response ratio",
             "mnemo": "MLS_DEV_RESP_RATIO_1M",
 	    "description": "Average number of responses for a question in the developer mailing list during last month.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "Developer ML subjects",
             "mnemo": "MLS_DEV_SUBJ_1M",
 	    "description": "Number of threads in the developer mailing list during last month",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "User ML posts",
             "mnemo": "MLS_USR_VOL_1M",
 	    "description": "Total number of posts on the user mailing list during the last month.",
             "question": "Total number of posts on the user mailing list during the last month.",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "User ML authors",
             "mnemo": "MLS_USR_AUTH_1M",
 	    "description": "Number of distinct authors (according to their email address) on the developer mailing list during last month.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "User ML response ratio",
             "mnemo": "MLS_USR_RESP_RATIO_1M",
 	    "description": "Average number of responses for a question in the user mailing list during last month.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "User ML subjects",
             "mnemo": "MLS_USR_SUBJ_1M",
 	    "description": "Number of threads in the user mailing list during last month",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "User ML response time",
             "mnemo": "MLS_USR_RESP_TIME_MED_1M",
 	    "description": "Median time of first reply to questions in the user mailing list during last week.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           }
         ]
       },
@@ -219,28 +318,32 @@
             "mnemo": "SCM_COMMITS_1M",
 	    "description": "Total number of commits registered on the artefact during the last month.",
 	    "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "Files committed",
             "mnemo": "SCM_COMMITTED_FILES_1M",
 	    "description": "Total number of files found in all commits that happened during the last month.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "SCM committers",
             "mnemo": "SCM_COMMITTERS_1M",
 	    "description": "Total number of different user logins found in commits during last month.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "File stability index",
             "mnemo": "SCM_STABILITY_1M",
 	    "description": "Average number of commits on files during the last month.",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           }
         ]
       },
@@ -255,35 +358,40 @@
             "mnemo": "ITS_FIX_MED_1M",
 	    "description": "Median time between the creation of an bug and its closure. Bugs are identified according to the registered type of issue.",
 	    "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "Number of open bugs",
             "mnemo": "ITS_BUGS_OPEN",
 	    "description": "Number of bugs in an open status at the time of analysis.",
 	    "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "Number of open requests during last month",
             "mnemo": "ITS_ISSUES_OPEN_1M",
 	    "description": "Number of change requests in an open status during last month.",
 	    "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "Number of distinct request openers during last month",
             "mnemo": "ITS_ISSUES_OPENERS_1M",
 	    "description": "Number of bugs in an open status during last month.",
 	    "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           },
           {
             "name": "Defect density",
             "mnemo": "ITS_BUGS_DENSITY",
 	    "description": "Overall total number of bugs on product divided by 1000's of lines (KLOC).",
             "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "Bitergia"
           }
         ]
       },
@@ -298,35 +406,64 @@
             "mnemo": "LIC_IDENT",
 	    "description": "Is there a list of the different licences used in the product?",
 	    "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "CPI"
           },
           {
             "name": "IP log",
             "mnemo": "IP_LOG",
 	    "description": "Total number of commits registered on the artefact during the last month.",
 	    "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "CPI"
           },
           {
             "name": "Project is on time for next milestone",
             "mnemo": "PLAN_NEXT_MILESTONE",
 	    "description": "Is the project on time for the next milestone?",
 	    "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "CPI"
           },
           {
             "name": "Number of milestones",
             "mnemo": "PLAN_MILESTONES_VOL",
 	    "description": "The number of milestones since the last official release.",
 	    "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "CPI"
           },
           {
             "name": "Milestone success rate",
             "mnemo": "PLAN_MILESTONES_SUCCESS",
 	    "description": "What is the percentage of successful milestones over the past 10 milestones?",
 	    "question": "",
-            "active": "true"
+            "active": "true",
+            "datasource": "CPI"
+          },
+          {
+            "name": "SCM information",
+            "mnemo": "PUB_SCM_INFO_CPI",
+	    "description": "The number of documents published for the usage, access, and conventions of the software configuration management system.",
+	    "question": "How easy is it for a new comer to use the software configuration management system?",
+            "active": "true",
+            "datasource": "CPI"
+          },
+          {
+            "name": "ITS information",
+            "mnemo": "PUB_ITS_INFO_CPI",
+	    "description": "The number of documents published for the usage, access, and conventions of the issue tracking system.",
+	    "question": "How easy is it for a new comer to use the issue tracking system?",
+            "active": "true",
+            "datasource": "CPI"
+          },
+          {
+            "name": "ITS updates",
+            "mnemo": "ITS_UPDATES_1M",
+	    "description": "The number of updates to the issue tracking system during last month.",
+	    "question": "How many actions have been performed on the issue tracking system?",
+            "active": "true",
+            "datasource": "CPI"
           }
         ]
       }
