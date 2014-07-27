@@ -1,0 +1,32 @@
+
+
+body {
+    margin: 50px;
+}
+
+h1 {
+    font-size: 24pt;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18pt;
+    color: #4d50ce;
+    margin: 60px 0px 40px 0px;
+}
+
+h3 {
+    font-size: 14pt;
+    color: #4d50ce;
+    margin: 20px 0px 20px 30px;
+}
+
+h4 {
+    font-size: 14pt;
+    margin: 20px 0px 0px 50px;
+}
+
+p {
+    font-size: 12pt;
+    margin: 5px 50px;
+}
