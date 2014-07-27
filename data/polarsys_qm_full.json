@@ -46,7 +46,7 @@
               },
               {
                 "name": "SCM activity",
-                "mnemo": "SCM_COMMITS_1M",
+                "mnemo": "SCM_ACTIVITY",
                 "type": "concept",
                 "children": [
                   {
@@ -210,20 +210,21 @@
         "children": [
           {
             "name": "Configuration Management",
+            "mnemo": "QM_SCM",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
             "active": "false",
             "children": [
               {
                 "name": "SCM access information",
-                "mnemo": "COM_SCM_INFO",
+                "mnemo": "PUB_SCM_INFO",
                 "type": "concept",
                 "active": "false",
                 "value": "xxx",
                 "children": [
                   {
                     "name": "SCM access information",
-                    "mnemo": "COM_SCM_INFO_CPI",
+                    "mnemo": "PUB_SCM_INFO_CPI",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -231,7 +232,7 @@
               },
               {
                 "name": "SCM usage",
-                "mnemo": "SCM_USAGE_1M",
+                "mnemo": "SCM_USAGE",
                 "type": "concept",
                 "active": "true",
                 "value": "xxx",
@@ -254,20 +255,21 @@
           },
           {
             "name": "Change Management",
+            "mnemo": "QM_ITS",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
             "active": "false",
             "children": [
               {
                 "name": "ITS access information",
-                "mnemo": "COM_ITS_INFO",
+                "mnemo": "PUB_ITS_INFO",
                 "type": "concept",
                 "active": "false",
                 "value": "xxx",
                 "children": [
                   {
                     "name": "ITS access information",
-                    "mnemo": "COM_ITS_INFO_CPI",
+                    "mnemo": "PUB_ITS_INFO_CPI",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -300,6 +302,7 @@
             "name": "Intellectual Property Management",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
+            "mnemo": "QM_IP",
             "active": "false",
             "children": [
               {
@@ -336,6 +339,7 @@
             "name": "Planning Management",
             "description": "Is the project behaviour predicable? Are outputs delivered on planned time and quality?",
             "type": "attribute",
+            "mnemo": "QM_PLAN",
             "active": "false",
             "children": [
               {
@@ -378,6 +382,7 @@
             "name": "Test Management",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
+            "mnemo": "QM_TST",
             "active": "false",
             "children": [
               {
@@ -416,7 +421,7 @@
                 "children": [
                   {
                     "name": "Test success rate",
-                    "mnemo": "TST_SUCCESS_1M",
+                    "mnemo": "TST_SUCCESS_1W",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -435,13 +440,14 @@
         "children": [
           {
             "name": "Analysability",
+            "mnemo": "QM_ANA",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
             "active": "true",
             "children": [
               {
                 "name": "Code Analysability Index",
-                "mnemo": "",
+                "mnemo": "CODE_ANA_IDX",
                 "description": "",
                 "type": "concept",
                 "value": "xxx",
@@ -530,12 +536,13 @@
           {
             "name": "Changeability",
             "description": "The overall maturity quality attribute.",
+            "mnemo": "QM_CHA",
             "type": "attribute",
             "active": "true",
             "children": [
               {
                 "name": "Code Changeability Index",
-                "mnemo": "",
+                "mnemo": "CODE_CHA_IDX",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
@@ -611,13 +618,14 @@
           },
           {
             "name": "Reliability",
+            "mnemo": "CODE_REL_IDX",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
             "active": "true",
             "children": [
               {
                 "name": "Code Reliability Index",
-                "mnemo": "",
+                "mnemo": "CODE_REL_IDX",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
@@ -644,7 +652,7 @@
               },
               {
                 "name": "SCM Stability Index",
-                "mnemo": "",
+                "mnemo": "SCM_STABILITY_IDX",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
@@ -729,7 +737,7 @@
           },
           {
             "name": "Reusability",
-            "mnemo": "QM_REUSABILITY",
+            "mnemo": "QM_REU",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
             "active": "true",

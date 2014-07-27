@@ -10,6 +10,11 @@
 <meta charset="utf-8">
 <style>
 
+body {
+  background-image: url("background.png");
+  background-repeat: repeat-y;
+}
+
 .node {
   cursor: pointer;
   margin: 0px;
@@ -23,20 +28,27 @@
 
 .node text {
   font: 10px sans-serif;
+  background-color: #ffffff;
 }
 
 .link {
   fill: none;
-  stroke: #ccc;
+  stroke: #717171;/* #ccc; */
   stroke-width: 1.5px;
 }
 
 div#details-box {
+  width: 600px;
   margin: 10px 40px 20px 40px;
   border-style: solid;
   border-width: 1px;
   border-color: steelblue;
   padding: 20px;
+  float: right;
+  clear: right;
+  position: fixed;
+  top: 30px;
+  right: 5px;
 }
 
 p.title {
@@ -61,7 +73,7 @@ p.details {
 <script>
 
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
-    width = 1200 - margin.right - margin.left,
+    width = 1024 - margin.right - margin.left,
     height = 1024 - margin.top - margin.bottom;
     
 var i = 0,
@@ -117,9 +129,7 @@ d3.json("/PolarsysMaturity/data/polarsys_qm_full.json", function(error, qm) {
       d._children = d.children;
       for(i=0;i<d._children.length;i++) {
         d._children[i].children.forEach(collapse);
-//        d._children[i].children = null;
       }
-//      d.children = null;
     }
   }
 
@@ -131,12 +141,14 @@ d3.json("/PolarsysMaturity/data/polarsys_qm_full.json", function(error, qm) {
 
 function update(source) {
 
+  var tabs = [120, 200, 200, 100];
+
   // Compute the new tree layout.
   var nodes = tree.nodes(root).reverse(),
       links = tree.links(nodes);
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 180; });
+  nodes.forEach(function(d, i) { d.y = d.depth * 180; });
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
@@ -228,44 +240,23 @@ function click(d) {
     alert("No type defined on node.");
     type = "undefined";
   } else {
-//alert("d.type defined: " + d.type);
+
     if (d.type == "metric") {
-//alert("in metric");
-      while (i < mymetrics.children.length) {
-        if (d.mnemo == mymetrics.children[i]["mnemo"]) {
-          type = "metric";
-          mynode = d;
-          mynode.description = mymetrics.children[i]["description"]; 
-          mynode.name = mymetrics.children[i]["name"]; 
-          break;
-        }
-        i++;
-      }
-//      if (i >= mymetrics.children.length) { alert
-    } else if (d.type == "concept") {
-//alert("in concept");
-      while (i < myconcepts.children.length) {
-//alert("in concept loop");
-        if (d.mnemo == myconcepts.children[i]["mnemo"]) {
-//alert("in concept loop: found mnemo");
-          type = "concept";
-          mynode = d;
-          mynode.description = myconcepts.children[i]["description"]; 
-          mynode.name = myconcepts.children[i]["name"]; 
-          break;
-        }
-        i++;
-      }
-    } else if (d.type == "attribute") {
-          type = "attribute";
-          mynode = d;
-    }
 
-    // Do that only if we actually found the item.
-    if (type != "none" && type != "undefined") {
+      for (repo = 0 ; repo < mymetrics.children.length ; repo++) { 
+        //alert("in metric repo " + repo + " is " + mymetrics.children[repo].name);
+        //alert("in metric repo " + mymetrics.children[repo].children.length);
+        while (i < mymetrics.children[repo].children.length) {
+          //alert("testing mnemo " + mymetrics.children[repo].children[i]["mnemo"] + " against " + d.mnemo);
+          if (d.mnemo == mymetrics.children[repo].children[i]["mnemo"]) {
+            //alert("gotcha! found " + mymetrics.children[repo].children[i]["mnemo"]);
+            type = "metric";
+            mynode = d;
+            mynode.description = mymetrics.children[repo].children[i]["description"]; 
+            mynode.name = mymetrics.children[repo].children[i]["name"]; 
+            mynode.datasource = mymetrics.children[repo].children[i]["datasource"]; 
 
-//alert("in append.");
-
+//--------------------------
       var mydiv = d3.select("div#details-box");
 
       mydiv.text("");
@@ -285,19 +276,96 @@ function click(d) {
       var pdesc = mydiv.append('p');
       pdesc.classed("details", true);
       pdesc.text("Description: " + mynode.description);
+    
+      var psource = mydiv.append('p');
+      psource.classed("details", true);
+      psource.text("Data source: " + mynode.datasource);
+//--------------------------
+
+            break;
+          }
+          i++;
+        }
+        i = 0;
+      }
+    } else if (d.type == "concept") {
+      while (i < myconcepts.children.length) {
+        if (d.mnemo == myconcepts.children[i]["mnemo"]) {
+          type = "concept";
+          mynode = d;
+          mynode.description = myconcepts.children[i]["description"]; 
+          mynode.name = myconcepts.children[i]["name"]; 
+
+//--------------------------
+      var mydiv = d3.select("div#details-box");
+
+      mydiv.text("");
+
+      var ptitle = mydiv.append("p");
+      ptitle.classed("title", true);
+      ptitle.text("Description of the " + type); 
+  
+      var pname = mydiv.append('p');
+      pname.classed("details", true);
+      pname.text("Name: " + mynode.name);
+  
+      var pmnemo = mydiv.append('p');
+      pmnemo.classed("details", true);
+      pmnemo.text("Mnemo: " + mynode.mnemo);
+    
+      var pdesc = mydiv.append('p');
+      pdesc.classed("details", true);
+      pdesc.text("Description: " + mynode.description);
+//--------------------------
+
+          break;
+        }
+        i++;
+      }
+    } else if (d.type == "attribute") {
+          type = "attribute";
+          mynode = d;
+
+//--------------------------
+      var mydiv = d3.select("div#details-box");
+
+      mydiv.text("");
+
+      var ptitle = mydiv.append("p");
+      ptitle.classed("title", true);
+      ptitle.text("Description of the " + type); 
+  
+      var pname = mydiv.append('p');
+      pname.classed("details", true);
+      pname.text("Name: " + mynode.name);
+  
+      var pmnemo = mydiv.append('p');
+      pmnemo.classed("details", true);
+      pmnemo.text("Mnemo: " + mynode.mnemo);
+    
+      var pdesc = mydiv.append('p');
+      pdesc.classed("details", true);
+      pdesc.text("Description: " + mynode.description);
+//--------------------------
+
+    }
+
+    // Do that only if we actually found the item.
+    if (type != "none" && type != "undefined") {
+
     } else if (type == "none") {
-      alert("Could not find node in " + d.type + " definition files.");
+      alert("Could not find node " + d.mnemo + " in " + d.type + " definition files.");
     }
   }
 
-  if (d.children) {
-    d._children = d.children;
-    d.children = null;
-  } else {
-    d.children = d._children;
-    d._children = null;
-  }
-  update(d);
+//  if (d.children) {
+//    d._children = d.children;
+//    d.children = null;
+//  } else {
+//    d.children = d._children;
+//    d._children = null;
+//  }
+//  update(d);
 }
 
 </script>
