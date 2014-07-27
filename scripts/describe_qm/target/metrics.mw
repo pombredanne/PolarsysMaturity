@@ -1,0 +1,199 @@
+= Repository: Code Metrics =
+
+
+== Derived metrics ==
+
+
+== Base metrics ==
+
+* Maximum depth of nesting (NEST)
+:Description: The maximum depth of nesting of the control flow structure found in the function. 
+
+* Number of files (FILES)
+:Description: The number of code files (e.g. .java for Java) in code hierarchy. Often used to build indexes.
+
+* Comment rate (COMR)
+:Description: The ratio of source lines of code on the the number of comment lines of code.
+
+* Number of attributes (ATTRS)
+:Description: Total number of attributes defined in the class. 
+
+* Number of methods (METHS)
+:Description: Total number of methods defined in the class.
+
+* Number of public attributes (ATTRS_PUBLIC)
+:Description: Total number of public attributes defined in the class. 
+
+* Number of public methods (METHS_PUBLIC)
+:Description: Total number of public methods defined in the class.
+
+* Depth of Inheritance Tree (MDIT)
+:Description: Maximum depth of inheritance tree in the artefact.
+
+* Code cloning (CODE_CLON)
+:Description: The amount of duplicated lines in the code.
+
+* Source Lines Of Code (SLOC)
+:Description: 
+
+* Cyclomatic Complexity (VG)
+:Description: The number of execution paths found in the function.
+
+* Number of distinct operands (DOPD)
+:Description: The number of distinct operands found in the function.
+
+* Number of distinct operators (DOPT)
+:Description: The number of distinct operators found in the function.
+
+* Total number of operands (TOPD)
+:Description: The total number of operands found in the function.
+
+* Total number of operators (TOPT)
+:Description: The total number of operators found in the function.
+
+* Number of non-conformities for changeability (NCC_CHA)
+:Description: The number of violations to rules that impact changeability in the artefact.
+
+* Number of rules for changeability (RULES_CHA)
+:Description: The total number of rules checked for changeability.
+
+* Number of non-conformities for analysability (NCC_ANA)
+:Description: The number of violations to rules that impact analysability in the artefact.
+
+* Number of rules for analysability (RULES_ANA)
+:Description: The total number of rules checked for analysability.
+
+* Number of non-conformities for reliability (NCC_REL)
+:Description: The number of violations to rules that impact reliability in the artefact.
+
+* Number of rules for reliability (RULES_REL)
+:Description: The total number of rules checked for reliability.
+
+* Number of non-conformities for reusability (NCC_REU)
+:Description: The number of violations to rules that impact reusability in the artefact.
+
+* Number of rules for reusability (RULES_REU)
+:Description: The total number of rules checked for reusability.
+
+* Test coverage (TST_COV)
+:Description: The percentage of source lines of code that is exercised by the tests.
+
+* Number of tests (TST_VOL)
+:Description: The total number of test cases for the product.
+
+* Test success rate (TST_SUCCESS_1W)
+:Description: The percentage of failed tests during the last execution of the test plan.
+
+= Repository: Communication Metrics =
+
+
+== Derived metrics ==
+
+
+== Base metrics ==
+
+* Developer ML posts (MLS_DEV_VOL_1M)
+:Description: Total number of posts on the developer mailing list during the last month.
+
+* Developer ML authors (MLS_DEV_AUTH_1M)
+:Description: Number of distinct authors (according to their email address) on the developer mailing list during last month.
+
+* Developer ML response time (MLS_DEV_RESP_TIME_MED_1M)
+:Description: Median time of first reply to questions in the developer mailing list during last week.
+
+* Developer ML response ratio (MLS_DEV_RESP_RATIO_1M)
+:Description: Average number of responses for a question in the developer mailing list during last month.
+
+* Developer ML subjects (MLS_DEV_SUBJ_1M)
+:Description: Number of threads in the developer mailing list during last month
+
+* User ML posts (MLS_USR_VOL_1M)
+:Description: Total number of posts on the user mailing list during the last month.
+
+* User ML authors (MLS_USR_AUTH_1M)
+:Description: Number of distinct authors (according to their email address) on the developer mailing list during last month.
+
+* User ML response ratio (MLS_USR_RESP_RATIO_1M)
+:Description: Average number of responses for a question in the user mailing list during last month.
+
+* User ML subjects (MLS_USR_SUBJ_1M)
+:Description: Number of threads in the user mailing list during last month
+
+* User ML response time (MLS_USR_RESP_TIME_MED_1M)
+:Description: Median time of first reply to questions in the user mailing list during last week.
+
+= Repository: Configuration Management Metrics =
+
+
+== Derived metrics ==
+
+
+== Base metrics ==
+
+* SCM Commits (SCM_COMMITS_1M)
+:Description: Total number of commits registered on the artefact during the last month.
+
+* Files committed (SCM_COMMITTED_FILES_1M)
+:Description: Total number of files found in all commits that happened during the last month.
+
+* SCM committers (SCM_COMMITTERS_1M)
+:Description: Total number of different user logins found in commits during last month.
+
+* File stability index (SCM_STABILITY_1M)
+:Description: Average number of commits on files during the last month.
+
+= Repository: Issue Tracking System Metrics =
+
+
+== Derived metrics ==
+
+
+== Base metrics ==
+
+* Median time to fix bug (ITS_FIX_MED_1M)
+:Description: Median time between the creation of an bug and its closure. Bugs are identified according to the registered type of issue.
+
+* Number of open bugs (ITS_BUGS_OPEN)
+:Description: Number of bugs in an open status at the time of analysis.
+
+* Number of open requests during last month (ITS_ISSUES_OPEN_1M)
+:Description: Number of change requests in an open status during last month.
+
+* Number of distinct request openers during last month (ITS_ISSUES_OPENERS_1M)
+:Description: Number of bugs in an open status during last month.
+
+* Defect density (ITS_BUGS_DENSITY)
+:Description: Overall total number of bugs on product divided by 1000's of lines (KLOC).
+
+= Repository: Process Repository Metrics =
+
+
+== Derived metrics ==
+
+
+== Base metrics ==
+
+* License identification (LIC_IDENT)
+:Description: Is there a list of the different licences used in the product?
+
+* IP log (IP_LOG)
+:Description: Total number of commits registered on the artefact during the last month.
+
+* Project is on time for next milestone (PLAN_NEXT_MILESTONE)
+:Description: Is the project on time for the next milestone?
+
+* Number of milestones (PLAN_MILESTONES_VOL)
+:Description: The number of milestones since the last official release.
+
+* Milestone success rate (PLAN_MILESTONES_SUCCESS)
+:Description: What is the percentage of successful milestones over the past 10 milestones?
+
+* SCM information (PUB_SCM_INFO_CPI)
+:Description: The number of documents published for the usage, access, and conventions of the software configuration management system.
+
+* ITS information (PUB_ITS_INFO_CPI)
+:Description: The number of documents published for the usage, access, and conventions of the issue tracking system.
+
+* ITS updates (ITS_UPDATES_1M)
+:Description: The number of updates to the issue tracking system during last month.
+
