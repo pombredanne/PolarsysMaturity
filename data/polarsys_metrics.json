@@ -6,7 +6,6 @@
       {
         "name": "Code Metrics",
         "mnemo": "CODE_METRICS",
-        "question": "",
         "active": "true",
         "children": [
           {
@@ -74,18 +73,18 @@
             "datasource": "SonarQube"
           },
           {
-            "name": "Code cloning",
-            "mnemo": "CODE_CLON",
-	    "description": "The amount of duplicated lines in the code.",
-            "question": "",
-            "active": "true",
-            "datasource": "SonarQube"
-          },
-          {
             "name": "Source Lines Of Code",
             "mnemo": "SLOC",
 	    "description": "",
             "question": "How many source lines of code are there?",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Function cloning",
+            "mnemo": "FU_CLONE",
+	    "description": "The amount of duplicated lines in the code.",
+            "question": "",
             "active": "true",
             "datasource": "SonarQube"
           },
@@ -138,9 +137,32 @@
             "datasource": "SonarQube"
           },
           {
+            "name": "Number of violated rules for changeability",
+            "mnemo": "RKO_CHA",
+	    "description": "The number of changeability rules that have at least one violation on the artefact.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
             "name": "Number of rules for changeability",
             "mnemo": "RULES_CHA",
 	    "description": "The total number of rules checked for changeability.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Non conformities index for changeability",
+            "mnemo": "NCC_CHA_IDX",
+	    "description": "The total number of violations to rules that impact changeability in the artefact, divided by the number of files.",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Adherence to changeability rules",
+            "mnemo": "ROKR_CHA",
+	    "description": "Ratio of conform changeability practices on the number of checked changeability practices.",
             "question": "",
             "active": "true",
             "datasource": "SonarQube"
@@ -154,9 +176,32 @@
             "datasource": "SonarQube"
           },
           {
+            "name": "Number of violated rules for analysability",
+            "mnemo": "RKO_ANA",
+	    "description": "The number of analysability rules that have at least one violation on the artefact.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
             "name": "Number of rules for analysability",
             "mnemo": "RULES_ANA",
 	    "description": "The total number of rules checked for analysability.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Non conformities index for analysability",
+            "mnemo": "NCC_ANA_IDX",
+	    "description": "The total number of violations to rules that impact analysability in the artefact, divided by the number of files.",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Adherence to analysability rules",
+            "mnemo": "ROKR_ANA",
+	    "description": "Ratio of conform analysability practices on the number of checked analysability practices.",
             "question": "",
             "active": "true",
             "datasource": "SonarQube"
@@ -170,9 +215,32 @@
             "datasource": "SonarQube"
           },
           {
+            "name": "Number of violated rules for reliability",
+            "mnemo": "RKO_REL",
+	    "description": "The number of reliability rules that have at least one violation on the artefact.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
             "name": "Number of rules for reliability",
             "mnemo": "RULES_REL",
 	    "description": "The total number of rules checked for reliability.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Non conformities index for reliability",
+            "mnemo": "NCC_REL_IDX",
+	    "description": "The total number of violations to rules that impact reliability in the artefact, divided by the number of files.",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Adherence to reliability rules",
+            "mnemo": "ROKR_REL",
+	    "description": "Ratio of conform reliability practices on the number of checked reliability practices.",
             "question": "",
             "active": "true",
             "datasource": "SonarQube"
@@ -186,6 +254,14 @@
             "datasource": "SonarQube"
           },
           {
+            "name": "Number of violated rules for reusability",
+            "mnemo": "RKO_REU",
+	    "description": "The number of reusability rules that have at least one violation on the artefact.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
             "name": "Number of rules for reusability",
             "mnemo": "RULES_REU",
 	    "description": "The total number of rules checked for reusability.",
@@ -194,16 +270,31 @@
             "datasource": "SonarQube"
           },
           {
-            "name": "Test coverage",
-            "mnemo": "TST_COV",
+            "name": "Non conformities index for reusability",
+            "mnemo": "NCC_REU_IDX",
+	    "description": "The total number of violations to rules that impact reusability in the artefact, divided by the number of files.",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Adherence to reusability rules",
+            "mnemo": "ROKR_REU",
+	    "description": "Ratio of conform reusability practices on the number of checked reusability practices.",
+            "question": "",
+            "active": "true",
+            "datasource": "SonarQube"
+          },
+          {
+            "name": "Percentage of lines of code covered by tests",
+            "mnemo": "TST_COV_LINES",
 	    "description": "The percentage of source lines of code that is exercised by the tests.",
             "question": "",
             "active": "true",
             "datasource": "SonarQube"
           },
           {
-            "name": "Number of tests",
-            "mnemo": "TST_VOL",
+            "name": "Number of tests relative to the code size",
+            "mnemo": "TST_VOL_RATIO",
 	    "description": "The total number of test cases for the product.",
             "question": "",
             "active": "true",
@@ -222,7 +313,6 @@
       {
         "name": "Communication Metrics",
         "mnemo": "COM_METRICS",
-        "question": "",
         "active": "true",
         "children": [
           {
@@ -310,7 +400,6 @@
       {
         "name": "Configuration Management Metrics",
         "mnemo": "SCM_METRICS",
-        "question": "",
         "active": "true",
         "children": [
           {
@@ -350,7 +439,6 @@
       {
         "name": "Issue Tracking System Metrics",
         "mnemo": "ITS_METRICS",
-        "question": "",
         "active": "true",
         "children": [
           {
@@ -386,6 +474,22 @@
             "datasource": "Bitergia"
           },
           {
+            "name": "ITS updates",
+            "mnemo": "ITS_UPDATES_1M",
+	    "description": "The number of updates to the issue tracking system during last month.",
+	    "question": "How many actions have been performed on the issue tracking system?",
+            "active": "true",
+            "datasource": "CPI"
+          },
+          {
+            "name": "ITS authors",
+            "mnemo": "ITS_AUTH_1M",
+	    "description": "The number of different authors (according to their login) have contributed to the issue tracking system during last month.",
+	    "question": "How many different people performed actions on the issue tracking system during last month?",
+            "active": "true",
+            "datasource": "CPI"
+          },
+          {
             "name": "Defect density",
             "mnemo": "ITS_BUGS_DENSITY",
 	    "description": "Overall total number of bugs on product divided by 1000's of lines (KLOC).",
@@ -398,7 +502,6 @@
       {
         "name": "Process Repository Metrics",
         "mnemo": "PROCESS_METRICS",
-        "question": "",
         "active": "true",
         "children": [
           {
@@ -410,8 +513,8 @@
             "datasource": "CPI"
           },
           {
-            "name": "IP log",
-            "mnemo": "IP_LOG",
+            "name": "IP log code coverage",
+            "mnemo": "IP_LOG_COV",
 	    "description": "Total number of commits registered on the artefact during the last month.",
 	    "question": "",
             "active": "true",
@@ -454,14 +557,6 @@
             "mnemo": "PUB_ITS_INFO_CPI",
 	    "description": "The number of documents published for the usage, access, and conventions of the issue tracking system.",
 	    "question": "How easy is it for a new comer to use the issue tracking system?",
-            "active": "true",
-            "datasource": "CPI"
-          },
-          {
-            "name": "ITS updates",
-            "mnemo": "ITS_UPDATES_1M",
-	    "description": "The number of updates to the issue tracking system during last month.",
-	    "question": "How many actions have been performed on the issue tracking system?",
             "active": "true",
             "datasource": "CPI"
           }
