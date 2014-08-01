@@ -31,6 +31,7 @@ my ($qm, $concepts, $metrics);
 
 my $debug = 0;
 my %flat_metrics;
+my %flat_concepts;
 
 
 ## Functions
@@ -96,6 +97,20 @@ sub check_metric($) {
 	print "[ERR] metric $mnemo has a composition node.\n";
     }
     
+    my $metric_usage;
+    foreach my $concept ( @{$concepts->{"children"}} ) {
+	my @tmp_metrics = split( " ",  $concept->{"composition"} );
+	foreach my $tmp_metric ( @tmp_metrics ) {
+	    if ( $tmp_metric eq $mnemo ) {
+		$metric_usage++; 
+	    }
+	}
+    }
+    if ( $metric_usage > 0 ) {
+	print "Metric is used $metric_usage times in concepts.\n";
+    } else {
+	print "[WARN] metric is never used in concepts.\n";
+    }
     return 1;
 } 
 
@@ -153,11 +168,10 @@ sub check_qm($) {
     print "Checking type.\n" if ($debug);
     if ( exists $tree->{"type"} ) {
 	if ( $tree->{"type"} ne "attribute" ) {
-            print " [KO]\n";
-	    print "Not an attribute.\n" if ($debug);
+            print " [OK: Not an attribute].\n";
 	    return;
 	} else {
-	    print " [OKxs]\n";
+	    print " [OK]\n";
 	}
     } else {
 	print "[ERR] No type on " . $tree->{"mnemo"} . ".\n";
@@ -196,6 +210,10 @@ $metrics = decode_json( $json_metrics );
 
 # Extract leafes -- used later on to easily find metrics.
 &find_leaves( $metrics );
+
+foreach my $concept ( @{$concepts->{"children"}} ) {
+    $flat_concepts{$concept->{"name"}} = $concept;
+}
 
 print Dumper( %flat_metrics ) if ($debug);
 

@@ -1,11 +1,5 @@
 = Repository: Code Metrics =
 
-
-== Derived metrics ==
-
-
-== Base metrics ==
-
 * Maximum depth of nesting (NEST)
 :Description: The maximum depth of nesting of the control flow structure found in the function. 
 
@@ -54,43 +48,73 @@
 * Number of non-conformities for changeability (NCC_CHA)
 :Description: The number of violations to rules that impact changeability in the artefact.
 
+* Number of violated rules for changeability (RKO_CHA)
+:Description: The number of changeability rules that have at least one violation on the artefact.
+
 * Number of rules for changeability (RULES_CHA)
 :Description: The total number of rules checked for changeability.
+
+* Non conformities index for changeability (NCC_CHA_IDX)
+:Description: The total number of violations to rules that impact changeability in the artefact, divided by the number of files.
+
+* Adherence to changeability rules (ROKR_CHA)
+:Description: Ratio of conform changeability practices on the number of checked changeability practices.
 
 * Number of non-conformities for analysability (NCC_ANA)
 :Description: The number of violations to rules that impact analysability in the artefact.
 
+* Number of violated rules for analysability (RKO_ANA)
+:Description: The number of analysability rules that have at least one violation on the artefact.
+
 * Number of rules for analysability (RULES_ANA)
 :Description: The total number of rules checked for analysability.
+
+* Non conformities index for analysability (NCC_ANA_IDX)
+:Description: The total number of violations to rules that impact analysability in the artefact, divided by the number of files.
+
+* Adherence to analysability rules (ROKR_ANA)
+:Description: Ratio of conform analysability practices on the number of checked analysability practices.
 
 * Number of non-conformities for reliability (NCC_REL)
 :Description: The number of violations to rules that impact reliability in the artefact.
 
+* Number of violated rules for reliability (RKO_REL)
+:Description: The number of reliability rules that have at least one violation on the artefact.
+
 * Number of rules for reliability (RULES_REL)
 :Description: The total number of rules checked for reliability.
+
+* Non conformities index for reliability (NCC_REL_IDX)
+:Description: The total number of violations to rules that impact reliability in the artefact, divided by the number of files.
+
+* Adherence to reliability rules (ROKR_REL)
+:Description: Ratio of conform reliability practices on the number of checked reliability practices.
 
 * Number of non-conformities for reusability (NCC_REU)
 :Description: The number of violations to rules that impact reusability in the artefact.
 
+* Number of violated rules for reusability (RKO_REU)
+:Description: The number of reusability rules that have at least one violation on the artefact.
+
 * Number of rules for reusability (RULES_REU)
 :Description: The total number of rules checked for reusability.
 
-* Test coverage (TST_COV)
+* Non conformities index for reusability (NCC_REU_IDX)
+:Description: The total number of violations to rules that impact reusability in the artefact, divided by the number of files.
+
+* Adherence to reusability rules (ROKR_REU)
+:Description: Ratio of conform reusability practices on the number of checked reusability practices.
+
+* Percentage of lines of code covered by tests (TST_COV_LINES)
 :Description: The percentage of source lines of code that is exercised by the tests.
 
-* Number of tests (TST_VOL)
+* Number of tests relative to the code size (TST_VOL_RATIO)
 :Description: The total number of test cases for the product.
 
 * Test success rate (TST_SUCCESS_1W)
 :Description: The percentage of failed tests during the last execution of the test plan.
 
 = Repository: Communication Metrics =
-
-
-== Derived metrics ==
-
-
-== Base metrics ==
 
 * Developer ML posts (MLS_DEV_VOL_1M)
 :Description: Total number of posts on the developer mailing list during the last month.
@@ -124,12 +148,6 @@
 
 = Repository: Configuration Management Metrics =
 
-
-== Derived metrics ==
-
-
-== Base metrics ==
-
 * SCM Commits (SCM_COMMITS_1M)
 :Description: Total number of commits registered on the artefact during the last month.
 
@@ -144,12 +162,6 @@
 
 = Repository: Issue Tracking System Metrics =
 
-
-== Derived metrics ==
-
-
-== Base metrics ==
-
 * Median time to fix bug (ITS_FIX_MED_1M)
 :Description: Median time between the creation of an bug and its closure. Bugs are identified according to the registered type of issue.
 
@@ -162,21 +174,21 @@
 * Number of distinct request openers during last month (ITS_ISSUES_OPENERS_1M)
 :Description: Number of bugs in an open status during last month.
 
+* ITS updates (ITS_UPDATES_1M)
+:Description: The number of updates to the issue tracking system during last month.
+
+* ITS authors (ITS_AUTH_1M)
+:Description: The number of different authors (according to their login) have contributed to the issue tracking system during last month.
+
 * Defect density (ITS_BUGS_DENSITY)
 :Description: Overall total number of bugs on product divided by 1000's of lines (KLOC).
 
 = Repository: Process Repository Metrics =
 
-
-== Derived metrics ==
-
-
-== Base metrics ==
-
 * License identification (LIC_IDENT)
 :Description: Is there a list of the different licences used in the product?
 
-* IP log (IP_LOG)
+* IP log code coverage (IP_LOG_COV)
 :Description: Total number of commits registered on the artefact during the last month.
 
 * Project is on time for next milestone (PLAN_NEXT_MILESTONE)
@@ -193,7 +205,4 @@
 
 * ITS information (PUB_ITS_INFO_CPI)
 :Description: The number of documents published for the usage, access, and conventions of the issue tracking system.
-
-* ITS updates (ITS_UPDATES_1M)
-:Description: The number of updates to the issue tracking system during last month.
 

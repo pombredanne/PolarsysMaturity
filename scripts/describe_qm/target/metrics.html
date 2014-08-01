@@ -2,8 +2,6 @@
 <link rel="stylesheet" type="text/css" href="styles.css"/>
 <h1>List of metrics for the PolarSys Maturity Assessment quality model</h1>
 <h2>Repository Code Metrics</h2>
-<h3>Composed metrics</h3>
-<h3>Base metrics</h3>
 <h4>Maximum depth of nesting (NEST)</h4>
 <p class="desc">Description: The maximum depth of nesting of the control flow structure found in the function. </p>
 <h4>Number of files (FILES)</h4>
@@ -36,29 +34,51 @@
 <p class="desc">Description: The total number of operators found in the function.</p>
 <h4>Number of non-conformities for changeability (NCC_CHA)</h4>
 <p class="desc">Description: The number of violations to rules that impact changeability in the artefact.</p>
+<h4>Number of violated rules for changeability (RKO_CHA)</h4>
+<p class="desc">Description: The number of changeability rules that have at least one violation on the artefact.</p>
 <h4>Number of rules for changeability (RULES_CHA)</h4>
 <p class="desc">Description: The total number of rules checked for changeability.</p>
+<h4>Non conformities index for changeability (NCC_CHA_IDX)</h4>
+<p class="desc">Description: The total number of violations to rules that impact changeability in the artefact, divided by the number of files.</p>
+<h4>Adherence to changeability rules (ROKR_CHA)</h4>
+<p class="desc">Description: Ratio of conform changeability practices on the number of checked changeability practices.</p>
 <h4>Number of non-conformities for analysability (NCC_ANA)</h4>
 <p class="desc">Description: The number of violations to rules that impact analysability in the artefact.</p>
+<h4>Number of violated rules for analysability (RKO_ANA)</h4>
+<p class="desc">Description: The number of analysability rules that have at least one violation on the artefact.</p>
 <h4>Number of rules for analysability (RULES_ANA)</h4>
 <p class="desc">Description: The total number of rules checked for analysability.</p>
+<h4>Non conformities index for analysability (NCC_ANA_IDX)</h4>
+<p class="desc">Description: The total number of violations to rules that impact analysability in the artefact, divided by the number of files.</p>
+<h4>Adherence to analysability rules (ROKR_ANA)</h4>
+<p class="desc">Description: Ratio of conform analysability practices on the number of checked analysability practices.</p>
 <h4>Number of non-conformities for reliability (NCC_REL)</h4>
 <p class="desc">Description: The number of violations to rules that impact reliability in the artefact.</p>
+<h4>Number of violated rules for reliability (RKO_REL)</h4>
+<p class="desc">Description: The number of reliability rules that have at least one violation on the artefact.</p>
 <h4>Number of rules for reliability (RULES_REL)</h4>
 <p class="desc">Description: The total number of rules checked for reliability.</p>
+<h4>Non conformities index for reliability (NCC_REL_IDX)</h4>
+<p class="desc">Description: The total number of violations to rules that impact reliability in the artefact, divided by the number of files.</p>
+<h4>Adherence to reliability rules (ROKR_REL)</h4>
+<p class="desc">Description: Ratio of conform reliability practices on the number of checked reliability practices.</p>
 <h4>Number of non-conformities for reusability (NCC_REU)</h4>
 <p class="desc">Description: The number of violations to rules that impact reusability in the artefact.</p>
+<h4>Number of violated rules for reusability (RKO_REU)</h4>
+<p class="desc">Description: The number of reusability rules that have at least one violation on the artefact.</p>
 <h4>Number of rules for reusability (RULES_REU)</h4>
 <p class="desc">Description: The total number of rules checked for reusability.</p>
-<h4>Test coverage (TST_COV)</h4>
+<h4>Non conformities index for reusability (NCC_REU_IDX)</h4>
+<p class="desc">Description: The total number of violations to rules that impact reusability in the artefact, divided by the number of files.</p>
+<h4>Adherence to reusability rules (ROKR_REU)</h4>
+<p class="desc">Description: Ratio of conform reusability practices on the number of checked reusability practices.</p>
+<h4>Percentage of lines of code covered by tests (TST_COV_LINES)</h4>
 <p class="desc">Description: The percentage of source lines of code that is exercised by the tests.</p>
-<h4>Number of tests (TST_VOL)</h4>
+<h4>Number of tests relative to the code size (TST_VOL_RATIO)</h4>
 <p class="desc">Description: The total number of test cases for the product.</p>
 <h4>Test success rate (TST_SUCCESS_1W)</h4>
 <p class="desc">Description: The percentage of failed tests during the last execution of the test plan.</p>
 <h2>Repository Communication Metrics</h2>
-<h3>Composed metrics</h3>
-<h3>Base metrics</h3>
 <h4>Developer ML posts (MLS_DEV_VOL_1M)</h4>
 <p class="desc">Description: Total number of posts on the developer mailing list during the last month.</p>
 <h4>Developer ML authors (MLS_DEV_AUTH_1M)</h4>
@@ -80,8 +100,6 @@
 <h4>User ML response time (MLS_USR_RESP_TIME_MED_1M)</h4>
 <p class="desc">Description: Median time of first reply to questions in the user mailing list during last week.</p>
 <h2>Repository Configuration Management Metrics</h2>
-<h3>Composed metrics</h3>
-<h3>Base metrics</h3>
 <h4>SCM Commits (SCM_COMMITS_1M)</h4>
 <p class="desc">Description: Total number of commits registered on the artefact during the last month.</p>
 <h4>Files committed (SCM_COMMITTED_FILES_1M)</h4>
@@ -91,8 +109,6 @@
 <h4>File stability index (SCM_STABILITY_1M)</h4>
 <p class="desc">Description: Average number of commits on files during the last month.</p>
 <h2>Repository Issue Tracking System Metrics</h2>
-<h3>Composed metrics</h3>
-<h3>Base metrics</h3>
 <h4>Median time to fix bug (ITS_FIX_MED_1M)</h4>
 <p class="desc">Description: Median time between the creation of an bug and its closure. Bugs are identified according to the registered type of issue.</p>
 <h4>Number of open bugs (ITS_BUGS_OPEN)</h4>
@@ -101,14 +117,16 @@
 <p class="desc">Description: Number of change requests in an open status during last month.</p>
 <h4>Number of distinct request openers during last month (ITS_ISSUES_OPENERS_1M)</h4>
 <p class="desc">Description: Number of bugs in an open status during last month.</p>
+<h4>ITS updates (ITS_UPDATES_1M)</h4>
+<p class="desc">Description: The number of updates to the issue tracking system during last month.</p>
+<h4>ITS authors (ITS_AUTH_1M)</h4>
+<p class="desc">Description: The number of different authors (according to their login) have contributed to the issue tracking system during last month.</p>
 <h4>Defect density (ITS_BUGS_DENSITY)</h4>
 <p class="desc">Description: Overall total number of bugs on product divided by 1000's of lines (KLOC).</p>
 <h2>Repository Process Repository Metrics</h2>
-<h3>Composed metrics</h3>
-<h3>Base metrics</h3>
 <h4>License identification (LIC_IDENT)</h4>
 <p class="desc">Description: Is there a list of the different licences used in the product?</p>
-<h4>IP log (IP_LOG)</h4>
+<h4>IP log code coverage (IP_LOG_COV)</h4>
 <p class="desc">Description: Total number of commits registered on the artefact during the last month.</p>
 <h4>Project is on time for next milestone (PLAN_NEXT_MILESTONE)</h4>
 <p class="desc">Description: Is the project on time for the next milestone?</p>
@@ -120,6 +138,4 @@
 <p class="desc">Description: The number of documents published for the usage, access, and conventions of the software configuration management system.</p>
 <h4>ITS information (PUB_ITS_INFO_CPI)</h4>
 <p class="desc">Description: The number of documents published for the usage, access, and conventions of the issue tracking system.</p>
-<h4>ITS updates (ITS_UPDATES_1M)</h4>
-<p class="desc">Description: The number of updates to the issue tracking system during last month.</p>
 </body></html>
