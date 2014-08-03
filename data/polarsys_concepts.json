@@ -110,7 +110,7 @@
       {
         "name": "SCM Stability Index",
         "mnemo": "SCM_STABILITY_IDX",
-        "description": "How much the files were stable according to the SCM system.",
+        "description": "How much the files are stable according to the SCM system. \nA file which has been heavily modified recently lacks experience, tests and feedback. ",
         "composition": "SCM_COMMITS_1M FILES",
         "active": "true"
       },
@@ -121,17 +121,10 @@
         "active": "true"
       },
       {
-        "name": "Non conformities index for analysability",
-        "mnemo": "RULES_ANA_IDX",
-        "description": "Number of non conformities to analysability rules found in the artefact, divided by the number of files.",
-        "composition": "NCC_ANA_IDX",
-        "active": "true"
-      },
-      {
-        "name": "Analysability practices acquired",
-        "mnemo": "RULES_ANA_OK",
-        "description": "Ratio of conform (non-violated) analysability practices on the number of checked analysability practices. ",
-        "composition": "ROKR_ANA",
+        "name": "Analysability practices",
+        "mnemo": "PRACTICES_ANA",
+        "description": "What practices (rules checked) related to analysability are violated, and how often?",
+        "composition": "NCC_ANA_IDX ROKR_ANA",
         "active": "true"
       },
       {
@@ -141,17 +134,10 @@
         "active": "true"
       },
       {
-        "name": "Non conformities index for changeability",
-        "mnemo": "RULES_CHA_IDX",
-        "description": "Number of non conformities to changeability rules found in the artefact, divided by the number of files.",
-        "composition": "NCC_CHA_IDX",
-        "active": "true"
-      },
-      {
-        "name": "Changeability practices acquired",
-        "mnemo": "RULES_CHA_OK",
-        "description": "Ratio of conform changeability practices on the number of checked analysability practices. ",
-        "composition": "ROKR_CHA",
+        "name": "Changeability practices",
+        "mnemo": "PRACTICES_CHA",
+        "description": "What practices (rules checked) related to changeability are violated, and how often?",
+        "composition": "NCC_CHA_IDX ROKR_CHA",
         "active": "true"
       },
       {
@@ -161,17 +147,10 @@
         "active": "true"
       },
       {
-        "name": "Non conformities index for reliability",
-        "mnemo": "RULES_REL_IDX",
-        "description": "Number of non conformities to reliability rules found in the artefact, divided by the number of files.",
-        "composition": "NCC_REL_IDX",
-        "active": "true"
-      },
-      {
-        "name": "Reliability practices acquired",
-        "mnemo": "RULES_REL_OK",
-        "description": "Ratio of conform reliability practices on the number of checked analysability practices. ",
-        "composition": "ROKR_REL",
+        "name": "Reliability practices",
+        "mnemo": "PRACTICES_REL",
+        "description": "What practices (rules checked) related to reliability are violated, and how often?",
+        "composition": "NCC_REL_IDX ROKR_REL",
         "active": "true"
       },
       {
@@ -182,17 +161,10 @@
         "active": "true"
       },
       {
-        "name": "Non conformities index for reusability",
-        "mnemo": "RULES_REU_IDX",
-        "description": "Number of non conformities to reusability rules found in the artefact, divided by the number of files.",
-        "composition": "NCC_REU_IDX",
-        "active": "true"
-      },
-      {
-        "name": "Reusability practices acquired",
-        "mnemo": "RULES_REU_OK",
-        "description": "Ratio of conform reliability practices on the number of checked reusability practices. ",
-        "composition": "ROKR_REU",
+        "name": "Reusability practices",
+        "mnemo": "PRACTICES_REU",
+        "description": "What practices (rules checked) related to reusability are violated, and how often?",
+        "composition": "NCC_REU_IDX ROKR_REU",
         "active": "true"
       },
       {

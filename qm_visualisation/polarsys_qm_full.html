@@ -70,8 +70,7 @@ p.details {
 
 <div id="log" style="display: none"></div>
 
-<!-- script src="http://d3js.org/d3.v3.min.js"></script -->
-<script src="/d3.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
 var margin = {top: 20, right: 120, bottom: 20, left: 100},
@@ -139,8 +138,6 @@ d3.json("/PolarsysMaturity/data/polarsys_qm_full.json", function(error, qm) {
   update(root);
 });
 
-//d3.select(self.frameElement).style("height", "800px");
-
 function update(source) {
 
   var tabs = [0, 100, 325, 600, 750, 800];
@@ -191,7 +188,6 @@ function update(source) {
   nodeUpdate.select("text")
       .style("color", function(d) { 
         var isActive = 0;
-//        alert(Object.keys(d));
         if ( d.active == "true" ) {
           return "black";
         } else {
@@ -374,8 +370,8 @@ function click(d) {
     }
   }
 
- alert("key pressed: " + d.shiftKey() );
-  if (d.shiftKey()) {
+// alert("key pressed: " + d.shiftKey() );
+  if (d.shiftKey) {
     alert("Shift key pressed!");
   }
 //    d._children = d.children;
