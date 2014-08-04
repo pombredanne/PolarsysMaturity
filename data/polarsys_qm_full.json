@@ -2,12 +2,13 @@
     "name": "Project Quality",
     "mnemo": "QM_QUALITY",
     "description": "The overall maturity quality attribute.",
+    "type": "attribute",
     "active": "true",
     "children": [
       {
         "name": "Community",
         "mnemo": "QM_COMMUNITY",
-        "description": "Is the community around the project active, diversified, responsive?",
+        "description": "The degree of maturity for the community around the project: is it active, diversified, responsive?",
         "active": "true",
         "type": "attribute",
         "children": [
@@ -122,7 +123,7 @@
             "children": [
               {
                 "name": "Developer ML responsiveness",
-                "mnemo": "MLS_DEV_RESP_TIME",
+                "mnemo": "MLS_DEV_RESPONSIVENESS",
                 "type": "concept",
                 "value": "xxx",
                 "children": [
@@ -136,7 +137,7 @@
               },
               {
                 "name": "User ML responsiveness",
-                "mnemo": "MLS_USR_RESP_TIME",
+                "mnemo": "MLS_USR_RESPONSIVENESS",
                 "type": "concept",
                 "value": "xxx",
                 "children": [
@@ -184,7 +185,7 @@
                 "value": "xxx",
                 "children": [
                   {
-                    "name": "User ML response time",
+                    "name": "User ML response ratio",
                     "mnemo": "MLS_USR_RESP_RATIO_1M",
                     "type": "metric",
                     "value": "xxx"
@@ -192,6 +193,29 @@
                   {
                     "name": "User ML subjects",
                     "mnemo": "MLS_USR_SUBJ_1M",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Installed base",
+            "mnemo": "QM_INSTALL_BASE",
+            "description": ".",
+            "type": "attribute",
+            "active": "true",
+            "children": [
+              {
+                "name": "Installations",
+                "mnemo": "INSTALL",
+                "type": "concept",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Installation survey",
+                    "mnemo": "SURVEY_INSTALL",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -210,6 +234,7 @@
         "children": [
           {
             "name": "Configuration Management",
+            "mnemo": "QM_SCM",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
             "active": "false",
@@ -231,7 +256,7 @@
               },
               {
                 "name": "SCM usage",
-                "mnemo": "SCM_USAGE_1M",
+                "mnemo": "SCM_USAGE",
                 "type": "concept",
                 "active": "true",
                 "value": "xxx",
@@ -254,6 +279,7 @@
           },
           {
             "name": "Change Management",
+            "mnemo": "QM_ITS",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
             "active": "false",
@@ -275,7 +301,7 @@
               },
               {
                 "name": "ITS usage",
-                "mnemo": "ITS_USAGE_1M",
+                "mnemo": "ITS_USAGE",
                 "type": "concept",
                 "active": "true",
                 "value": "xxx",
@@ -288,7 +314,7 @@
                   },
                   {
                     "name": "ITS authors",
-                    "mnemo": "ITS_AUTHORS_1M",
+                    "mnemo": "ITS_AUTH_1M",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -300,6 +326,7 @@
             "name": "Intellectual Property Management",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
+            "mnemo": "QM_IP",
             "active": "false",
             "children": [
               {
@@ -336,17 +363,18 @@
             "name": "Planning Management",
             "description": "Is the project behaviour predicable? Are outputs delivered on planned time and quality?",
             "type": "attribute",
+            "mnemo": "QM_PLAN",
             "active": "false",
             "children": [
               {
-                "name": "On time",
-                "mnemo": "PLAN_ONTIME",
+                "name": "Plan on time",
+                "mnemo": "PLAN_ON_TIME",
                 "type": "concept",
                 "value": "xxx",
                 "children": [
                   {
                     "name": "On time for next milestone",
-                    "mnemo": "PLAN_ONTIME_MILESTONE",
+                    "mnemo": "PLAN_NEXT_MILESTONE",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -378,6 +406,7 @@
             "name": "Test Management",
             "description": "The overall maturity quality attribute.",
             "type": "attribute",
+            "mnemo": "QM_TST",
             "active": "false",
             "children": [
               {
@@ -435,91 +464,98 @@
         "children": [
           {
             "name": "Analysability",
-            "description": "The overall maturity quality attribute.",
+            "mnemo": "QM_ANA",
+            "description": "Degree of effectiveness and efficiency with which it is possible to assess the impact on a product or system of an intended change to one or more of its parts, or to diagnose a product for deficiencies or causes of failures, or to identify parts to be modified.",
             "type": "attribute",
             "active": "true",
             "children": [
               {
-                "name": "Code Analysability Index",
-                "mnemo": "",
-                "description": "",
+                "name": "Code Size",
+                "mnemo": "CODE_SIZE",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
                 "children": [
                   {
-                    "name": "Code size",
-                    "mnemo": "CODE_SIZE",
-                    "type": "concept",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Access points",
-                    "mnemo": "ALL_DATA",
-                    "type": "concept",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "OO complexity",
-                    "mnemo": "CPX_OO",
-                    "type": "concept",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Code Documentation",
-                    "mnemo": "CODE_DOC",
-                    "type": "concept",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Control flow complexity",
-                    "mnemo": "CPX_CF",
-                    "type": "concept",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Data flow complexity",
-                    "mnemo": "CPX_DF",
-                    "type": "concept",
-                    "value": "xxx"
-                  }
-                ]
-              },
-              {
-                "name": "Non Conformities Index for Analysability",
-                "mnemo": "NCC_ANA_IDX",
-                "type": "concept",
-                "value": "xxx",
-                "children": [
-                  {
-                    "name": "Number of non-conformities for analysability",
-                    "mnemo": "NCC_ANA",
-                    "type": "metric",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Number of files",
-                    "mnemo": "FILES",
+                    "name": "Source Lines Of Code",
+                    "mnemo": "SLOC",
                     "type": "metric",
                     "value": "xxx"
                   }
                 ]
               },
               {
-                "name": "Adherence to analysability Rules",
-                "mnemo": "ROKR_ANA",
+                "name": "Access points",
+                "mnemo": "ALL_DATA",
                 "type": "concept",
                 "value": "xxx",
+                "active": "true",
                 "children": [
                   {
-                    "name": "Number of violated rules for analysability",
-                    "mnemo": "RKO_ANA",
+                    "name": "Number of attributes",
+                    "mnemo": "ATTRS",
+                    "type": "concept",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Number of methods",
+                    "mnemo": "METHS",
+                    "type": "concept",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Code complexity",
+                "mnemo": "CPX",
+                "type": "concept",
+                "value": "xxx",
+                "active": "true",
+                "children": [
+                  {
+                    "name": "Cyclomatic complexity",
+                    "mnemo": "VG",
                     "type": "metric",
                     "value": "xxx"
                   },
                   {
-                    "name": "Number of rules for analysability",
-                    "mnemo": "RULES_ANA",
+                    "name": "Depth of Inheritance Tree",
+                    "mnemo": "MDIT",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Code documentation",
+                "mnemo": "CODE_DOC",
+                "type": "concept",
+                "value": "xxx",
+                "active": "true",
+                "children": [
+                  {
+                    "name": "Comment rate",
+                    "mnemo": "COMR",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Analysability practices",
+                "mnemo": "PRACTICES_ANA",
+                "type": "concept",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Non conformities index for analysability",
+                    "mnemo": "NCC_ANA_IDX",
+                    "type": "metric",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Analysability practices acquired",
+                    "mnemo": "ROKR_ANA",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -529,79 +565,83 @@
           },
           {
             "name": "Changeability",
-            "description": "The overall maturity quality attribute.",
+            "description": "Degree to which a product or system can be effectively and efficiently modified without introducing defects or degrading existing product quality (ISO/IEC 25010).",
+            "mnemo": "QM_CHA",
             "type": "attribute",
             "active": "true",
             "children": [
               {
-                "name": "Code Changeability Index",
-                "mnemo": "CODE_CHA_IDX",
+                "name": "Public access points",
+                "mnemo": "PUBLIC_DATA",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
                 "children": [
-
                   {
-                    "name": "Public access points",
-                    "mnemo": "PUBLIC_DATA",
-                    "type": "concept",
-                    "value": "xxx"
-                  },                  {
-                    "name": "Control flow complexity",
-                    "mnemo": "CPX_CF",
-                    "type": "concept",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Data flow complexity",
-                    "mnemo": "CPX_DF",
-                    "type": "concept",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Code cloning",
-                    "mnemo": "FU_CLON",
-                    "description": "",
-                    "type": "concept",
-                    "value": "xxx"
-                  }
-                ]
-              },
-              {
-                "name": "Non Conformities Index for Changeability",
-                "mnemo": "NCC_CHA_IDX",
-                "type": "concept",
-                "value": "xxx",
-                "children": [
-                  {
-                    "name": "Number of non-conformities for changeability",
-                    "mnemo": "NCC_CHA",
+                    "name": "Number of public attributes",
+                    "mnemo": "ATTRS_PUBLIC",
                     "type": "metric",
                     "value": "xxx"
-                  },
+                  }, 
                   {
-                    "name": "Number of files",
-                    "mnemo": "FILES",
+                    "name": "Number of public methods",
+                    "mnemo": "METHS_PUBLIC",
                     "type": "metric",
                     "value": "xxx"
                   }
                 ]
               },
               {
-                "name": "Adherence to Changeability Rules",
-                "mnemo": "ROKR_CHA",
+                "name": "Code complexity index",
+                "mnemo": "CPX",
                 "type": "concept",
                 "value": "xxx",
+                "active": "true",
                 "children": [
                   {
-                    "name": "Number of violated rules for changeability",
-                    "mnemo": "RKO_CHA",
+                    "name": "Cyclomatic complexity",
+                    "mnemo": "VG",
                     "type": "metric",
                     "value": "xxx"
                   },
                   {
-                    "name": "Number of rules for changeability",
-                    "mnemo": "RULES_CHA",
+                    "name": "Depth of Inheritance Tree",
+                    "mnemo": "MDIT",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Code cloning",
+                "mnemo": "CODE_CLONE",
+                "type": "concept",
+                "value": "xxx",
+                "active": "true",
+                "children": [
+                  {
+                    "name": "Function cloning",
+                    "mnemo": "FU_CLONE",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Changeability practices",
+                "mnemo": "PRACTICES_CHA",
+                "type": "concept",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Non conformities index for changeability",
+                    "mnemo": "NCC_CHA_IDX",
+                    "type": "metric",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Changeability practices acquired",
+                    "mnemo": "ROKR_CHA",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -611,46 +651,61 @@
           },
           {
             "name": "Reliability",
-            "description": "The overall maturity quality attribute.",
+            "mnemo": "QM_REL",
+            "description": "Degree to which a system, product or component performs specified functions under specified conditions for a specified period of time (ISO/IEC 25010).",
             "type": "attribute",
             "active": "true",
             "children": [
               {
-                "name": "Code Reliability Index",
-                "mnemo": "",
+                "name": "Public access points",
+                "mnemo": "PUBLIC_DATA",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
                 "children": [
                   {
-                    "name": "Public access points",
-                    "mnemo": "PUBLIC_DATA",
-                    "type": "concept",
+                    "name": "Number of public attributes",
+                    "mnemo": "ATTRS_PUBLIC",
+                    "type": "metric",
                     "value": "xxx"
-                  },
+                  }, 
                   {
-                    "name": "Control flow complexity",
-                    "mnemo": "CPX_CF",
-                    "type": "concept",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Data flow complexity",
-                    "mnemo": "CPX_DF",
-                    "type": "concept",
+                    "name": "Number of public methods",
+                    "mnemo": "METHS_PUBLIC",
+                    "type": "metric",
                     "value": "xxx"
                   }
                 ]
               },
               {
-                "name": "SCM Stability Index",
-                "mnemo": "",
+                "name": "Code complexity index",
+                "mnemo": "CPX",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
                 "children": [
                   {
-
+                    "name": "Cyclomatic complexity",
+                    "mnemo": "VG",
+                    "type": "metric",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Depth of Inheritance Tree",
+                    "mnemo": "MDIT",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "SCM stability",
+                "mnemo": "SCM_STABILITY",
+                "type": "concept",
+                "value": "xxx",
+                "active": "true",
+                "children": [
+                  {
                     "name": "File stability index",
                     "mnemo": "SCM_STABILITY_1M",
                     "type": "metric",
@@ -659,8 +714,8 @@
                 ]
               },
               {
-                "name": "ITS Reliability Index",
-                "mnemo": "ITS_REL_IDX",
+                "name": "ITS reliability",
+                "mnemo": "ITS_REL",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
@@ -686,40 +741,20 @@
                 ]
               },
               {
-                "name": "Non Conformities Index for reliability",
-                "mnemo": "NCC_REL_IDX",
+                "name": "Reliability practices",
+                "mnemo": "PRACTICES_REL",
                 "type": "concept",
                 "value": "xxx",
                 "children": [
                   {
-                    "name": "Number of non-conformities for reliability",
-                    "mnemo": "NCC_REL",
+                    "name": "Non conformities index for reliability",
+                    "mnemo": "NCC_REL_IDX",
                     "type": "metric",
                     "value": "xxx"
                   },
                   {
-                    "name": "Number of files",
-                    "mnemo": "FILES",
-                    "type": "metric",
-                    "value": "xxx"
-                  }
-                ]
-              },
-              {
-                "name": "Adherence to reliability Rules",
-                "mnemo": "ROKR_REL",
-                "type": "concept",
-                "value": "xxx",
-                "children": [
-                  {
-                    "name": "Number of violated rules for reliability",
-                    "mnemo": "RKO_REL",
-                    "type": "metric",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Number of rules for reliability",
-                    "mnemo": "RULES_REL",
+                    "name": "Reliability practices acquired",
+                    "mnemo": "ROKR_REL",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -729,74 +764,77 @@
           },
           {
             "name": "Reusability",
-            "mnemo": "QM_REUSABILITY",
-            "description": "The overall maturity quality attribute.",
+            "mnemo": "QM_REU",
+            "description": "Degree to which an asset can be used in more than one system, or in building other assets (ISO/IEC 25010).",
             "type": "attribute",
             "active": "true",
             "children": [
               {
-                "name": "Code Reusability Index",
-                "mnemo": "CODE_REU_IDX",
+                "name": "Public access points",
+                "mnemo": "PUBLIC_DATA",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
                 "children": [
-                  
                   {
-                    "name": "Public access points",
-                    "mnemo": "PUBLIC_DATA",
-                    "type": "concept",
+                    "name": "Number of public attributes",
+                    "mnemo": "ATTRS_PUBLIC",
+                    "type": "metric",
                     "value": "xxx"
-                  },
+                  }, 
                   {
-                    "name": "Code documentation",
+                    "name": "Number of public methods",
+                    "mnemo": "METHS_PUBLIC",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Test coverage",
+                "mnemo": "TST_COV",
+                "type": "concept",
+                "value": "xxx",
+                "active": "true",
+                "children": [
+                  {
+                    "name": "Percentage of lines of code covered by tests",
+                    "mnemo": "TST_COV_LINES",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              },
+              {
+                "name": "Code documentation",
+                "mnemo": "CODE_DOC",
+                "type": "concept",
+                "value": "xxx",
+                "active": "true",
+                "children": [
+                  {
+                    "name": "Comment rate",
                     "mnemo": "COMR",
-                    "type": "concept",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Test coverage",
-                    "mnemo": "TST_COV",
-                    "type": "concept",
-                    "value": "xxx"
-                  }
-                ]
-              },
-              {
-                "name": "Non Conformities Index for reusability",
-                "mnemo": "NCC_REU_IDX",
-                "type": "concept",
-                "value": "xxx",
-                "children": [
-                  {
-                    "name": "Number of non-conformities for reusability",
-                    "mnemo": "NCC_REU",
-                    "type": "metric",
-                    "value": "xxx"
-                  },
-                  {
-                    "name": "Number of files",
-                    "mnemo": "FILES",
                     "type": "metric",
                     "value": "xxx"
                   }
                 ]
               },
               {
-                "name": "Adherence to reusability Rules",
-                "mnemo": "ROKR_REU",
+                "name": "Reusability practices",
+                "mnemo": "PRACTICES_REU",
                 "type": "concept",
                 "value": "xxx",
                 "children": [
                   {
-                    "name": "Number of violated rules for reusability",
-                    "mnemo": "RKO_REU",
+                    "name": "Non conformities index for reusability",
+                    "mnemo": "NCC_REU_IDX",
                     "type": "metric",
                     "value": "xxx"
                   },
                   {
-                    "name": "Number of rules for reusability",
-                    "mnemo": "RULES_REU",
+                    "name": "Reusability practices acquired",
+                    "mnemo": "ROKR_REU",
                     "type": "metric",
                     "value": "xxx"
                   }
