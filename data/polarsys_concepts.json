@@ -61,11 +61,18 @@
       },
       {
         "name": "Code cloning",
-        "mnemo": "CODE_CLON",
+        "mnemo": "CODE_CLONE",
         "description": "The amount of duplicated lines in the code.",
-        "question": "",
+        "composition": "FU_CLONE",
         "active": "true",
         "datasource": "SonarQube"
+      },
+      {
+        "name": "Licensing",
+        "mnemo": "LIC",
+        "description": "Are licensing issues considered?",
+        "composition": "LIC_IDENT",
+        "active": "true"
       },
       {
         "name": "IP Log",
@@ -78,21 +85,29 @@
         "name": "SCM Documentation",
         "mnemo": "SCM_DOCS",
         "description": "Is there some documentation about the SCM process, rules and conventions?",
-        "active": "true"
+        "composition": "",
+        "active": "false"
       },
       {
         "name": "ITS information access",
         "mnemo": "PUB_ITS_INFO",
         "description": "Measures the availability of information regarding ITS usage, conventions, access.",
-        "composition": "ITS_ISSUES_OPEN_1M ITS_ISSUES_OPENERS_1M",
+        "composition": "",
         "active": "true"
       },
       {
         "name": "ITS usage",
         "mnemo": "ITS_USAGE",
-        "description": "How much the ITS system was used during last month.",
+        "description": "How much the ITS system was used recently.",
         "composition": "ITS_UPDATES_1M ITS_AUTH_1M",
         "active": "true"
+      },
+      {
+        "name": "Installations",
+        "mnemo": "INSTALL",
+        "description": "The level of usage of the product.",
+        "composition": "SURVEY_INSTALL",
+        "active": "false"
       },
       {
         "name": "SCM information access",
@@ -108,16 +123,10 @@
         "active": "true"
       },
       {
-        "name": "SCM Stability Index",
-        "mnemo": "SCM_STABILITY_IDX",
+        "name": "SCM Stability",
+        "mnemo": "SCM_STABILITY",
         "description": "How much the files are stable according to the SCM system. \nA file which has been heavily modified recently lacks experience, tests and feedback. ",
-        "composition": "SCM_COMMITS_1M FILES",
-        "active": "true"
-      },
-      {
-        "name": "Code analysability index",
-        "mnemo": "CODE_ANA_IDX",
-        "description": "A weighted index of code characteristics that impact analysability.",
+        "composition": "SCM_STABILITY_1M",
         "active": "true"
       },
       {
@@ -128,22 +137,10 @@
         "active": "true"
       },
       {
-        "name": "Code changeability index",
-        "mnemo": "CODE_CHA_IDX",
-        "description": "A weighted index of code characteristics that impact changeability.",
-        "active": "true"
-      },
-      {
         "name": "Changeability practices",
         "mnemo": "PRACTICES_CHA",
         "description": "What practices (rules checked) related to changeability are violated, and how often?",
         "composition": "NCC_CHA_IDX ROKR_CHA",
-        "active": "true"
-      },
-      {
-        "name": "Code reliability index",
-        "mnemo": "CODE_REL_IDX",
-        "description": "A weighted index of code characteristics that impact reliability.",
         "active": "true"
       },
       {
@@ -154,13 +151,6 @@
         "active": "true"
       },
       {
-        "name": "Code reusability index",
-        "mnemo": "CODE_REU_IDX",
-        "description": "A weighted index of code characteristics that impact reusability.",
-        "composition": "PUBLIC_DATA COMR TST_COV",
-        "active": "true"
-      },
-      {
         "name": "Reusability practices",
         "mnemo": "PRACTICES_REU",
         "description": "What practices (rules checked) related to reusability are violated, and how often?",
@@ -168,8 +158,8 @@
         "active": "true"
       },
       {
-        "name": "ITS Reliability Index",
-        "mnemo": "ITS_REL_IDX",
+        "name": "ITS Reliability",
+        "mnemo": "ITS_REL",
         "description": "The reliability assessment of the project regarding registered bugs.",
         "composition": "ITS_FIX_MED_1M ITS_BUGS_OPEN ITS_BUGS_DENSITY",
         "active": "true"
@@ -216,7 +206,7 @@
         "mnemo": "SCM_ACTIVITY",
         "description": "Activity on the software configuration management system.",
         "question": "How active is the developer mailing list?",
-        "composition": "SCM_COMMITS_1M",
+        "composition": "SCM_COMMITS_1M SCM_COMMITTED_FILES_1M",
         "active": "true"
       },
       {
@@ -224,7 +214,7 @@
         "mnemo": "MLS_DEV_DIVERSITY",
         "description": "Diversity of users on the developer mailing list.",
         "question": "How many users have contributed to the developer mailing list?",
-        "composition": "MLS_USR_AUTH_1M",
+        "composition": "MLS_DEV_AUTH_1M",
         "active": "true"
       },
       {
@@ -264,7 +254,7 @@
         "mnemo": "MLS_DEV_SUPPORT",
         "description": "The quantity of information gathered by questions on the developer mailing list.",
         "question": "What amount of resources can be gathered from the developer mailing list?",
-        "composition": "MLS_DEV_RESP_RATIO_1M",
+        "composition": "MLS_DEV_RESP_RATIO_1M MLS_DEV_SUBJ_1M",
         "active": "true"
       },
       {
@@ -272,7 +262,21 @@
         "mnemo": "MLS_USR_SUPPORT",
         "description": "The quantity of information gathered by questions on the user mailing list.",
         "question": "What amount of resources can be gathered from the user mailing list?",
-        "composition": "MLS_USR_RESP_RATIO_1M",
+        "composition": "MLS_USR_RESP_RATIO_1M MLS_USR_SUBJ_1M",
+        "active": "true"
+      },
+      {
+        "name": "Plan on time",
+        "mnemo": "PLAN_ON_TIME",
+        "description": "Is the project on time according to its schedule?",
+        "composition": "PLAN_NEXT_MILESTONE",
+        "active": "true"
+      },
+      {
+        "name": "Milestones",
+        "mnemo": "PLAN_MILESTONES",
+        "description": "Is the project having regular milestones, do they prove to be effective?",
+        "composition": "PLAN_MILESTONES_VOL PLAN_MILESTONES_SUCCESS",
         "active": "true"
       }
     ]

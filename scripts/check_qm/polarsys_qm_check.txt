@@ -1,0 +1,211 @@
+# Checking metrics definition file...
+
+# Checking Code Metrics.
+# Checking metric NEST.
+[WARN] metric is never used in concepts.
+# Checking metric FILES.
+[WARN] metric is never used in concepts.
+# Checking metric COMR.
+# Checking metric ATTRS.
+# Checking metric METHS.
+# Checking metric ATTRS_PUBLIC.
+# Checking metric METHS_PUBLIC.
+# Checking metric MDIT.
+# Checking metric SLOC.
+# Checking metric FU_CLONE.
+# Checking metric VG.
+# Checking metric DOPD.
+# Checking metric DOPT.
+# Checking metric TOPD.
+# Checking metric TOPT.
+# Checking metric NCC_CHA.
+[WARN] metric is never used in concepts.
+# Checking metric RKO_CHA.
+[WARN] metric is never used in concepts.
+# Checking metric RULES_CHA.
+[WARN] metric is never used in concepts.
+# Checking metric NCC_CHA_IDX.
+[WARN] metric NCC_CHA_IDX has no question.
+# Checking metric ROKR_CHA.
+# Checking metric NCC_ANA.
+[WARN] metric is never used in concepts.
+# Checking metric RKO_ANA.
+[WARN] metric is never used in concepts.
+# Checking metric RULES_ANA.
+[WARN] metric is never used in concepts.
+# Checking metric NCC_ANA_IDX.
+[WARN] metric NCC_ANA_IDX has no question.
+# Checking metric ROKR_ANA.
+# Checking metric NCC_REL.
+[WARN] metric is never used in concepts.
+# Checking metric RKO_REL.
+[WARN] metric is never used in concepts.
+# Checking metric RULES_REL.
+[WARN] metric is never used in concepts.
+# Checking metric NCC_REL_IDX.
+[WARN] metric NCC_REL_IDX has no question.
+# Checking metric ROKR_REL.
+# Checking metric NCC_REU.
+[WARN] metric is never used in concepts.
+# Checking metric RKO_REU.
+[WARN] metric is never used in concepts.
+# Checking metric RULES_REU.
+[WARN] metric is never used in concepts.
+# Checking metric NCC_REU_IDX.
+[WARN] metric NCC_REU_IDX has no question.
+# Checking metric ROKR_REU.
+# Checking metric TST_COV_LINES.
+# Checking metric TST_VOL_RATIO.
+# Checking metric TST_SUCCESS_1W.
+Number of base metrics: 38.
+
+# Checking Communication Metrics.
+# Checking metric MLS_DEV_VOL_1M.
+# Checking metric MLS_DEV_AUTH_1M.
+# Checking metric MLS_DEV_RESP_TIME_MED_1M.
+# Checking metric MLS_DEV_RESP_RATIO_1M.
+# Checking metric MLS_DEV_SUBJ_1M.
+# Checking metric MLS_USR_VOL_1M.
+# Checking metric MLS_USR_AUTH_1M.
+# Checking metric MLS_USR_RESP_RATIO_1M.
+# Checking metric MLS_USR_SUBJ_1M.
+# Checking metric MLS_USR_RESP_TIME_MED_1M.
+Number of base metrics: 10.
+
+# Checking Configuration Management Metrics.
+# Checking metric SCM_COMMITS_1M.
+# Checking metric SCM_COMMITTED_FILES_1M.
+# Checking metric SCM_COMMITTERS_1M.
+# Checking metric SCM_STABILITY_1M.
+Number of base metrics: 4.
+
+# Checking Issue Tracking System Metrics.
+# Checking metric ITS_FIX_MED_1M.
+# Checking metric ITS_BUGS_OPEN.
+# Checking metric ITS_ISSUES_OPEN_1M.
+[WARN] metric is never used in concepts.
+# Checking metric ITS_ISSUES_OPENERS_1M.
+[WARN] metric is never used in concepts.
+# Checking metric ITS_UPDATES_1M.
+# Checking metric ITS_AUTH_1M.
+# Checking metric ITS_BUGS_DENSITY.
+Number of base metrics: 7.
+
+# Checking Process Repository Metrics.
+# Checking metric LIC_IDENT.
+# Checking metric IP_LOG_COV.
+# Checking metric PLAN_NEXT_MILESTONE.
+# Checking metric PLAN_MILESTONES_VOL.
+# Checking metric PLAN_MILESTONES_SUCCESS.
+# Checking metric PUB_SCM_INFO_CPI.
+[WARN] metric is never used in concepts.
+# Checking metric PUB_ITS_INFO_CPI.
+[WARN] metric is never used in concepts.
+# Checking metric SURVEY_INSTALL.
+Number of base metrics: 8.
+
+# Checking concepts definition file...
+
+# Checking concept CPX.
+# Checking concept CPX_CF.
+# Checking concept CPX_DF.
+# Checking concept CPX_OO.
+# Checking concept CODE_DOC.
+# Checking concept CODE_SIZE.
+# Checking concept ALL_DATA.
+# Checking concept PUBLIC_DATA.
+# Checking concept CODE_CLONE.
+# Checking concept LIC.
+# Checking concept IP_LOG.
+# Checking concept SCM_DOCS.
+# Checking concept PUB_ITS_INFO.
+# Checking concept ITS_USAGE.
+# Checking concept INSTALL.
+# Checking concept PUB_SCM_INFO.
+[ERR] concept PUB_SCM_INFO has no composition.
+# Checking concept SCM_USAGE.
+# Checking concept SCM_STABILITY.
+# Checking concept PRACTICES_ANA.
+# Checking concept PRACTICES_CHA.
+# Checking concept PRACTICES_REL.
+# Checking concept PRACTICES_REU.
+# Checking concept ITS_REL.
+# Checking concept TST_COV.
+# Checking concept TST_VOL.
+# Checking concept TST_SUCCESS.
+# Checking concept MLS_DEV_ACTIVITY.
+# Checking concept MLS_USR_ACTIVITY.
+# Checking concept SCM_ACTIVITY.
+# Checking concept MLS_DEV_DIVERSITY.
+# Checking concept MLS_USR_DIVERSITY.
+# Checking concept SCM_DIVERSITY.
+# Checking concept MLS_DEV_RESPONSIVENESS.
+# Checking concept MLS_USR_RESPONSIVENESS.
+# Checking concept MLS_DEV_SUPPORT.
+# Checking concept MLS_USR_SUPPORT.
+# Checking concept PLAN_ON_TIME.
+# Checking concept PLAN_MILESTONES.
+Number of concepts: 38.
+
+# Checking quality model definition...
+
+# Checking node QM_QUALITY  [OK: is an attribute]
+# Checking node QM_COMMUNITY  [OK: is an attribute]
+# Checking node QM_ACTIVITY  [OK: is an attribute]
+# Checking node MLS_DEV_ACTIVITY  [OK: Not an attribute].
+# Checking node MLS_USR_ACTIVITY  [OK: Not an attribute].
+# Checking node SCM_ACTIVITY  [OK: Not an attribute].
+# Checking node QM_DIVERSITY  [OK: is an attribute]
+# Checking node MLS_DEV_ACTIVITY  [OK: Not an attribute].
+# Checking node MLS_USR_DIVERSITY  [OK: Not an attribute].
+# Checking node SCM_DIVERSITY  [OK: Not an attribute].
+# Checking node QM_RESPONSIVENESS  [OK: is an attribute]
+# Checking node MLS_DEV_RESPONSIVENESS  [OK: Not an attribute].
+# Checking node MLS_USR_RESPONSIVENESS  [OK: Not an attribute].
+# Checking node QM_SUPPORT  [OK: is an attribute]
+# Checking node MLS_DEV_SUPPORT  [OK: Not an attribute].
+# Checking node MLS_USR_SUPPORT  [OK: Not an attribute].
+# Checking node QM_INSTALL_BASE  [OK: is an attribute]
+# Checking node INSTALL  [OK: Not an attribute].
+# Checking node QM_PROCESS  [OK: is an attribute]
+# Checking node QM_SCM  [OK: is an attribute]
+# Checking node PUB_SCM_INFO  [OK: Not an attribute].
+# Checking node SCM_USAGE  [OK: Not an attribute].
+# Checking node QM_ITS  [OK: is an attribute]
+# Checking node PUB_ITS_INFO  [OK: Not an attribute].
+# Checking node ITS_USAGE  [OK: Not an attribute].
+# Checking node QM_IP  [OK: is an attribute]
+# Checking node LIC  [OK: Not an attribute].
+# Checking node IP_LOG  [OK: Not an attribute].
+# Checking node QM_PLAN  [OK: is an attribute]
+# Checking node PLAN_ON_TIME  [OK: Not an attribute].
+# Checking node PLAN_MILESTONES  [OK: Not an attribute].
+# Checking node QM_TST  [OK: is an attribute]
+# Checking node TST_COV  [OK: Not an attribute].
+# Checking node TST_VOL  [OK: Not an attribute].
+# Checking node TST_SUCCESS  [OK: Not an attribute].
+# Checking node QM_PRODUCT  [OK: is an attribute]
+# Checking node QM_ANA  [OK: is an attribute]
+# Checking node CODE_SIZE  [OK: Not an attribute].
+# Checking node ALL_DATA  [OK: Not an attribute].
+# Checking node CPX  [OK: Not an attribute].
+# Checking node CODE_DOC  [OK: Not an attribute].
+# Checking node PRACTICES_ANA  [OK: Not an attribute].
+# Checking node QM_CHA  [OK: is an attribute]
+# Checking node PUBLIC_DATA  [OK: Not an attribute].
+# Checking node CPX  [OK: Not an attribute].
+# Checking node CODE_CLONE  [OK: Not an attribute].
+# Checking node PRACTICES_CHA  [OK: Not an attribute].
+# Checking node QM_REL  [OK: is an attribute]
+# Checking node PUBLIC_DATA  [OK: Not an attribute].
+# Checking node CPX  [OK: Not an attribute].
+# Checking node SCM_STABILITY  [OK: Not an attribute].
+# Checking node ITS_REL  [OK: Not an attribute].
+# Checking node PRACTICES_REL  [OK: Not an attribute].
+# Checking node QM_REU  [OK: is an attribute]
+# Checking node PUBLIC_DATA  [OK: Not an attribute].
+# Checking node TST_COV  [OK: Not an attribute].
+# Checking node CODE_DOC  [OK: Not an attribute].
+# Checking node PRACTICES_REU  [OK: Not an attribute].
+
+# Checks done.

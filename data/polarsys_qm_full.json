@@ -123,7 +123,7 @@
             "children": [
               {
                 "name": "Developer ML responsiveness",
-                "mnemo": "MLS_DEV_RESP_TIME",
+                "mnemo": "MLS_DEV_RESPONSIVENESS",
                 "type": "concept",
                 "value": "xxx",
                 "children": [
@@ -137,7 +137,7 @@
               },
               {
                 "name": "User ML responsiveness",
-                "mnemo": "MLS_USR_RESP_TIME",
+                "mnemo": "MLS_USR_RESPONSIVENESS",
                 "type": "concept",
                 "value": "xxx",
                 "children": [
@@ -185,7 +185,7 @@
                 "value": "xxx",
                 "children": [
                   {
-                    "name": "User ML response time",
+                    "name": "User ML response ratio",
                     "mnemo": "MLS_USR_RESP_RATIO_1M",
                     "type": "metric",
                     "value": "xxx"
@@ -193,6 +193,29 @@
                   {
                     "name": "User ML subjects",
                     "mnemo": "MLS_USR_SUBJ_1M",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Installed base",
+            "mnemo": "QM_INSTALL_BASE",
+            "description": ".",
+            "type": "attribute",
+            "active": "true",
+            "children": [
+              {
+                "name": "Installations",
+                "mnemo": "INSTALL",
+                "type": "concept",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Installation survey",
+                    "mnemo": "SURVEY_INSTALL",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -278,7 +301,7 @@
               },
               {
                 "name": "ITS usage",
-                "mnemo": "ITS_USAGE_1M",
+                "mnemo": "ITS_USAGE",
                 "type": "concept",
                 "active": "true",
                 "value": "xxx",
@@ -344,14 +367,14 @@
             "active": "false",
             "children": [
               {
-                "name": "On time",
-                "mnemo": "PLAN_ONTIME",
+                "name": "Plan on time",
+                "mnemo": "PLAN_ON_TIME",
                 "type": "concept",
                 "value": "xxx",
                 "children": [
                   {
                     "name": "On time for next milestone",
-                    "mnemo": "PLAN_ONTIME_MILESTONE",
+                    "mnemo": "PLAN_NEXT_MILESTONE",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -591,14 +614,14 @@
               },
               {
                 "name": "Code cloning",
-                "mnemo": "CODE_CLON",
+                "mnemo": "CODE_CLONE",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "Function cloning",
-                    "mnemo": "CODE_CLON",
+                    "mnemo": "FU_CLONE",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -628,7 +651,7 @@
           },
           {
             "name": "Reliability",
-            "mnemo": "CODE_REL_IDX",
+            "mnemo": "QM_REL",
             "description": "Degree to which a system, product or component performs specified functions under specified conditions for a specified period of time (ISO/IEC 25010).",
             "type": "attribute",
             "active": "true",
@@ -676,8 +699,8 @@
                 ]
               },
               {
-                "name": "SCM stability index",
-                "mnemo": "SCM_STABILITY_IDX",
+                "name": "SCM stability",
+                "mnemo": "SCM_STABILITY",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
@@ -691,8 +714,8 @@
                 ]
               },
               {
-                "name": "ITS reliability index",
-                "mnemo": "ITS_REL_IDX",
+                "name": "ITS reliability",
+                "mnemo": "ITS_REL",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",
@@ -769,7 +792,7 @@
               },
               {
                 "name": "Test coverage",
-                "mnemo": "CODE_REU_IDX",
+                "mnemo": "TST_COV",
                 "type": "concept",
                 "value": "xxx",
                 "active": "true",

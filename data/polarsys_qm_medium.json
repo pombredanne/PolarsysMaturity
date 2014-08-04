@@ -14,23 +14,18 @@
             "active": "true",
             "children": [
               {
-                "name": "Developer ML posts",
-                "mnemo": "MLS_DEV_VOL_1M",
+                "name": "Developer ML activity",
+                "mnemo": "MLS_DEV_ACTIVITY",
                 "value": "xxx"
               },
               {
-                "name": "User ML posts",
-                "mnemo": "MLS_USR_VOL_1M",
+                "name": "User ML activity",
+                "mnemo": "MLS_USR_ACTIVITY",
                 "value": "xxx"
               },
               {
-                "name": "SCM commits",
-                "mnemo": "SCM_COMMITS_1M",
-                "value": "xxx"
-              },
-              {
-                "name": "Files committed",
-                "mnemo": "SCM_COMMITTED_FILES_1M",
+                "name": "SCM activity",
+                "mnemo": "SCM_ACTIVITY",
                 "value": "xxx"
               }
             ]
@@ -41,18 +36,18 @@
             "active": "true",
             "children": [
               {
-                "name": "Developer ML authors",
-                "mnemo": "MLS_DEV_AUTH_1M",
+                "name": "Developer ML diversity",
+                "mnemo": "MLS_DEV_DIVERSITY",
                 "value": "xxx"
               },
               {
-                "name": "User ML authors",
-                "mnemo": "MLS_USR_AUTH_1M",
+                "name": "User ML diversity",
+                "mnemo": "MLS_USR_DIVERSITY",
                 "value": "xxx"
               },
               {
-                "name": "SCM committers",
-                "mnemo": "SCM_COMMITTERS_1M",
+                "name": "SCM diversity",
+                "mnemo": "SCM_DIVERSITY",
                 "value": "xxx"
               }
             ]
@@ -63,13 +58,13 @@
             "active": "true",
             "children": [
               {
-                "name": "Developer ML response time",
-                "mnemo": "MLS_DEV_RESP_TIME_MED_1M",
+                "name": "Developer ML responsiveness",
+                "mnemo": "MLS_DEV_RESPONSIVENESS",
                 "value": "xxx"
               },
               {
-                "name": "User ML response time",
-                "mnemo": "MLS_USR_RESP_TIME_MED_1M",
+                "name": "User ML responsiveness",
+                "mnemo": "MLS_USR_RESPONSIVENESS",
                 "value": "xxx"
               }
             ]
@@ -80,31 +75,28 @@
             "active": "true",
             "children": [
               {
-                "name": "Developer ML response ratio",
-                "mnemo": "MLS_DEV_RESP_RATIO_1M",
+                "name": "Developer ML support",
+                "mnemo": "MLS_DEV_SUPPORT",
                 "value": "xxx"
               },
               {
-                "name": "Developer ML subjects",
-                "mnemo": "MLS_DEV_SUBJ_1M",
-                "value": "xxx"
-              },
-              {
-                "name": "User ML response ratio",
-                "mnemo": "MLS_USR_RESP_RATIO_1M",
-                "value": "xxx"
-              },
-              {
-                "name": "User ML subjects",
-                "mnemo": "MLS_USR_SUBJ_1M",
+                "name": "Developer ML support",
+                "mnemo": "MLS_USR_SUPPORT",
                 "value": "xxx"
               }
             ]
           },
           {
             "name": "Installed base",
-            "mnemo": "QM_INST_BASE",
-            "active": "false"
+            "mnemo": "QM_INSTALL_BASE",
+            "active": "false",
+            "children": [
+              {
+                "name": "Installations",
+                "mnemo": "INSTALL",
+                "value": "xxx"
+              }
+            ]
           }
         ]
       },
@@ -119,12 +111,12 @@
             "children": [
               {
                 "name": "SCM information access",
-                "mnemo": "COM_SCM_INFO",
+                "mnemo": "PUB_SCM_INFO",
                 "value": "xxx"
               },
               {
                 "name": "SCM usage",
-                "mnemo": "SCM_USAGE_1M",
+                "mnemo": "SCM_USAGE",
                 "value": "xxx"
               }
             ]
@@ -135,12 +127,12 @@
             "children": [
               {
                 "name": "ITS information access",
-                "mnemo": "COM_ITS_INFO",
+                "mnemo": "PUB_ITS_INFO",
                 "value": "xxx"
               },
               {
                 "name": "ITS usage",
-                "mnemo": "ITS_USAGE_1M",
+                "mnemo": "ITS_USAGE",
                 "value": "xxx"
               }
             ]
@@ -151,7 +143,7 @@
             "children": [
               {
                 "name": "License identification",
-                "mnemo": "LIC_IDENT",
+                "mnemo": "LIC",
                 "value": "xxx"
               },
               {
@@ -166,18 +158,13 @@
             "active": "false",
             "children": [
               {
-                "name": "On time for next milestone",
-                "mnemo": "PLAN_NEXT_MILESTONE",
+                "name": "Plan on time",
+                "mnemo": "PLAN_ON_TIME",
                 "value": "xxx"
               },
               {
-                "name": "Number of milestones",
-                "mnemo": "PLAN_MILESTONES_VOL",
-                "value": "xxx"
-              },
-              {
-                "name": "Milestone success rate",
-                "mnemo": "PLAN_MILESTONES_SUCCESS",
+                "name": "Milestones",
+                "mnemo": "PLAN_MILESTONES",
                 "value": "xxx"
               }
             ]
@@ -188,7 +175,7 @@
             "children": [
               {
                 "name": "Test coverage",
-                "mnemo": "TEST_COV",
+                "mnemo": "TST_COV",
                 "value": "xxx"
               },
               {
@@ -215,22 +202,29 @@
             "active": "true",
             "children": [
               {
-                "name": "Code Analysability Index",
-                "mnemo": "",
-                "description": "",
+                "name": "Code size",
+                "mnemo": "CODE_SIZE",
                 "value": "xxx",
                 "active": "true"
               },
               {
-                "name": "Non Conformities Index for Analysability",
-                "mnemo": "NCC_ANA_IDX",
-                "description": "Number of non conformities to Analysability rules found in the artefact. ",
+                "name": "Access points",
+                "mnemo": "ALL_DATA",
                 "value": "xxx"
               },
               {
-                "name": "Adherence to Analysability Rules",
-                "mnemo": "ROKR_ANA",
-                "description": "Ratio of conform analysability practices on the number of checked analysability practices. ",
+                "name": "Code complexity",
+                "mnemo": "CPX",
+                "value": "xxx"
+              },
+              {
+                "name": "Code documentation",
+                "mnemo": "CODE_DOC",
+                "value": "xxx"
+              },
+              {
+                "name": "Analysability practices",
+                "mnemo": "PRACTICES_ANA",
                 "value": "xxx"
               }
             ]
@@ -240,19 +234,23 @@
             "active": "true",
             "children": [
               {
-                "name": "Code Changeability Index",
-                "mnemo": "",
-                "value": "xxx",
-                "active": "true"
-              },
-              {
-                "name": "Non Conformities Index for Changeability",
-                "mnemo": "NCC_CHA_IDX",
+                "name": "Public access points",
+                "mnemo": "PUBLIC_DATA",
                 "value": "xxx"
               },
               {
-                "name": "Adherence to Changeability Rules",
-                "mnemo": "ROKR_CHA",
+                "name": "Code complexity",
+                "mnemo": "CPX",
+                "value": "xxx"
+              },
+              {
+                "name": "Code cloning",
+                "mnemo": "CODE_CLONE",
+                "value": "xxx"
+              },
+              {
+                "name": "Changeability practices",
+                "mnemo": "PRACTICES_CHA",
                 "value": "xxx"
               }
             ]
@@ -262,31 +260,28 @@
             "active": "true",
             "children": [
               {
-                "name": "Code Reliability Index",
-                "mnemo": "",
-                "value": "xxx",
-                "active": "true"
-              },
-              {
-                "name": "SCM Stability Index",
-                "mnemo": "",
-                "value": "xxx",
-                "active": "true"
-              },
-              {
-                "name": "ITS Reliability Index",
-                "mnemo": "",
-                "value": "xxx",
-                "active": "true"
-              },
-              {
-                "name": "Non Conformities Index for Reliability",
-                "mnemo": "NCC_REL_IDX",
+                "name": "Public access points",
+                "mnemo": "PUBLIC_DATA",
                 "value": "xxx"
               },
               {
-                "name": "Adherence to Reliability Rules",
-                "mnemo": "ROKR_REL",
+                "name": "Code complexity",
+                "mnemo": "CPX",
+                "value": "xxx"
+              },
+              {
+                "name": "SCM stability",
+                "mnemo": "SCM_STABILITY",
+                "value": "xxx"
+              },
+              {
+                "name": "ITS reliability",
+                "mnemo": "ITS_REL",
+                "value": "xxx"
+              },
+              {
+                "name": "Reliability practices",
+                "mnemo": "PRACTICES_REL",
                 "value": "xxx"
               }
             ]
@@ -297,19 +292,23 @@
             "active": "true",
             "children": [
               {
-                "name": "Code Reusability Index",
-                "mnemo": "CODE_REU_IDX",
-                "value": "xxx",
-                "active": "true"
-              },
-              {
-                "name": "Non Conformities Index for Reusability",
-                "mnemo": "NCC_REU_IDX",
+                "name": "Public access points",
+                "mnemo": "PUBLIC_DATA",
                 "value": "xxx"
               },
               {
-                "name": "Adherence to Reusability Rules",
-                "mnemo": "ROKR_REU",
+                "name": "Test coverage",
+                "mnemo": "TST_COV",
+                "value": "xxx"
+              },
+              {
+                "name": "Code documentation",
+                "mnemo": "CODE_DOC",
+                "value": "xxx"
+              },
+              {
+                "name": "Reusability practices",
+                "mnemo": "PRACTICES_REU",
                 "value": "xxx"
               }
             ]

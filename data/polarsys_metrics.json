@@ -559,6 +559,14 @@
 	    "question": "How easy is it for a new comer to use the issue tracking system?",
             "active": "true",
             "datasource": "CPI"
+          },
+          {
+            "name": "Installation survey",
+            "mnemo": "SURVEY_INSTALL",
+	    "description": "A survey stating how much the software has been installed: number of users, geography (are the teams co-located or distributed?), etc.",
+	    "question": "How much the software is used?",
+            "active": "true",
+            "datasource": "SURVEY"
           }
         ]
       }

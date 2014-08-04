@@ -75,19 +75,19 @@ sub read_file($) {
 sub check_metric($) {
     my $mnemo = shift;
 
-    print "Checking metric $mnemo.\n";
+    print "# Checking metric $mnemo.\n";
 
     return -1 if (not exists $flat_metrics{$mnemo});
     my $metric = $flat_metrics{$mnemo};
 
     if ( not exists $metric->{"name"} ) {
-	print "[ERR] metric $mnemo has no question.\n";
+	print "[ERR] metric $mnemo has no name.\n";
     }
     if ( not exists $metric->{"description"} ) {
-	print "[ERR] metric $mnemo has no question.\n";
+	print "[ERR] metric $mnemo has no description.\n";
     }
     if ( not exists $metric->{"question"} ) {
-	print "[ERR] metric $mnemo has no question.\n";
+	print "[WARN] metric $mnemo has no question.\n";
     }
     if ( not exists $metric->{"datasource"} ) {
 	print "[ERR] metric $mnemo has no datasource.\n";
@@ -97,17 +97,20 @@ sub check_metric($) {
 	print "[ERR] metric $mnemo has a composition node.\n";
     }
     
-    my $metric_usage;
+    my $metric_usage = 0;
     foreach my $concept ( @{$concepts->{"children"}} ) {
-	my @tmp_metrics = split( " ",  $concept->{"composition"} );
-	foreach my $tmp_metric ( @tmp_metrics ) {
-	    if ( $tmp_metric eq $mnemo ) {
-		$metric_usage++; 
+#	print "DBG: concept ", $concept->{"name"}, ".\n";
+	if ( exists $concept->{"composition"} ) {
+	    my @tmp_metrics = split( " ",  $concept->{"composition"} );
+	    foreach my $tmp_metric ( @tmp_metrics ) {
+		if ( $tmp_metric eq $mnemo ) {
+		    $metric_usage++; 
+		}
 	    }
 	}
     }
     if ( $metric_usage > 0 ) {
-	print "Metric is used $metric_usage times in concepts.\n";
+	print "Metric is used $metric_usage times in concepts.\n" if ($debug);
     } else {
 	print "[WARN] metric is never used in concepts.\n";
     }
@@ -127,6 +130,7 @@ sub check_concept($) {
 	print "[ERR] concept has no mnemo.\n";
     } else { 
 	$mnemo = $concept->{"mnemo"};
+	print "# Checking concept $mnemo.\n";
     }
     if ( not exists $concept->{"name"} ) {
 	print "[ERR] concept $mnemo has no name.\n";
@@ -134,9 +138,9 @@ sub check_concept($) {
     if ( not exists $concept->{"description"} ) {
 	print "[ERR] concept $mnemo has no description.\n";
     }
-    if ( not exists $concept->{"question"} ) {
-	print "[ERR] concept $mnemo has no question.\n";
-    }
+    # if ( not exists $concept->{"question"} ) {
+    # 	print "[WARN] concept $mnemo has no question.\n";
+    # }
     if ( not exists $concept->{"composition"} ) {
 	print "[ERR] concept $mnemo has no composition.\n";
     } else {
@@ -167,11 +171,28 @@ sub check_qm($) {
 
     print "Checking type.\n" if ($debug);
     if ( exists $tree->{"type"} ) {
-	if ( $tree->{"type"} ne "attribute" ) {
+	if ( $tree->{"type"} eq "concept" ) {
             print " [OK: Not an attribute].\n";
+
+	    my $concept_found = 0;
+	    foreach my $concept ( @{$concepts->{"children"}} ) {
+		if ( $concept->{"mnemo"} eq $tree->{"mnemo"} ) {
+		    $concept_found = 1;
+		    last;
+		} 
+	    }
+	    
+	    if ( not $concept_found ) {
+		print "[ERR] Could not find ", $tree->{"mnemo"}, " in concepts.\n";
+	    }
 	    return;
-	} else {
-	    print " [OK]\n";
+	} elsif ( $tree->{"type"} eq "metric" ) {
+	    if ( exists $flat_metrics{$tree->{"mnemo"}} ) {
+	    } else {
+		    print "[ERR] Could not find ", $tree->{"mnemo"}, " in metrics.\n";		
+	    }
+	} elsif ( $tree->{"type"} eq "attribute" ) {
+	    print " [OK: is an attribute]\n";
 	}
     } else {
 	print "[ERR] No type on " . $tree->{"mnemo"} . ".\n";
@@ -250,4 +271,4 @@ print "Number of concepts: $compo_concepts_vol.\n\n";
 print "# Checking quality model definition...\n\n";
 &check_qm($qm);
 
-print # Checks done.\n";
+print "\n# Checks done.\n";
