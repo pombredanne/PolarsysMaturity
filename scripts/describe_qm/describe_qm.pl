@@ -221,8 +221,8 @@ foreach my $concept_tree ( @{$concepts->{"children"}} ) {
     my $concept_name = $concept_tree->{"name"};
     print "\nWorking on $concept_name.\n";
 
-    $full_text_concepts .= "<h2>Concept name</h2>\n";
-    $full_mw_concepts .= "== Concept: $concept_name =\n\n";
+    #$full_text_concepts .= "<h2>Concept name</h2>\n";
+    #$full_mw_concepts .= "== Concept: $concept_name ==\n\n";
 
     $full_text_concepts .= &describe_concept($concept_tree) or die "Cannot find concept '$concept_name'.";
 	    $compo_concepts_vol++;

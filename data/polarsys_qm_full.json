@@ -494,13 +494,13 @@
                   {
                     "name": "Number of attributes",
                     "mnemo": "ATTRS",
-                    "type": "concept",
+                    "type": "metric",
                     "value": "xxx"
                   },
                   {
                     "name": "Number of methods",
                     "mnemo": "METHS",
-                    "type": "concept",
+                    "type": "metric",
                     "value": "xxx"
                   }
                 ]

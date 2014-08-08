@@ -1,199 +1,156 @@
 <!DOCTYPE html><body>
 <link rel="stylesheet" type="text/css" href="styles.css"/>
 <h1>List of concepts for the PolarSys Maturity Assessment quality model</h1>
-<h2>Concept name</h2>
+<h4>Code complexity (CPX)</h4>
+<p class="desc">Description: The computational complexity of the code: control, data, inheritance.</p>
+<p class="desc">Concept is <b>active</b>.</p>
+<p>Composed of VG, MDIT.</p>
 <h4>Control flow complexity (CPX_CF)</h4>
 <p class="desc">Description: The computational complexity of the control flow structure in the code functions.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of VG.</p>
-<h2>Concept name</h2>
 <h4>Data flow complexity (CPX_DF)</h4>
 <p class="desc">Description: The complexity of the data flow structure in the code functions.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of DOPD, DOPT, TOPD, TOPT.</p>
-<h2>Concept name</h2>
 <h4>OO complexity (CPX_OO)</h4>
 <p class="desc">Description: The complexity of the object-oriented architecture and structure. Composed of MDIT (maximum depth of inheritance tree).</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of MDIT.</p>
-<h2>Concept name</h2>
 <h4>Code documentation (CODE_DOC)</h4>
 <p class="desc">Description: The amount of documentation in the code: comment rate, javadoc, etc.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of COMR.</p>
-<h2>Concept name</h2>
 <h4>Code size (CODE_SIZE)</h4>
 <p class="desc">Description: The overall size of the code.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of SLOC.</p>
-<h2>Concept name</h2>
 <h4>Access points (ALL_DATA)</h4>
 <p class="desc">Description: The amount of attributes and methods on the class, whatever their visibility is.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of ATTRS, METHS.</p>
-<h2>Concept name</h2>
 <h4>Public access points (PUBLIC_DATA)</h4>
 <p class="desc">Description: Total number of public classes, interfaces, methods, constructors, annotations and attributes.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of ATTRS_PUBLIC, METHS_PUBLIC.</p>
-<h2>Concept name</h2>
+<h4>Code cloning (CODE_CLONE)</h4>
+<p class="desc">Description: The amount of duplicated lines in the code.</p>
+<p class="desc">Concept is <b>active</b>.</p>
+<p>Composed of FU_CLONE.</p>
+<h4>Licensing (LIC)</h4>
+<p class="desc">Description: Are licensing issues considered?</p>
+<p class="desc">Concept is <b>active</b>.</p>
+<p>Composed of LIC_IDENT.</p>
 <h4>IP Log (IP_LOG)</h4>
 <p class="desc">Description: Is the intellectual property of contributions checked and enforced?</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of IP_LOG_COV.</p>
-<h2>Concept name</h2>
 <h4>SCM Documentation (SCM_DOCS)</h4>
 <p class="desc">Description: Is there some documentation about the SCM process, rules and conventions?</p>
-<p class="desc">Concept is <b>active</b>.</p>
-<h2>Concept name</h2>
+<p class="desc">Concept is <b>inactive</b> for now.</p>
+<p>Composed of .</p>
 <h4>ITS information access (PUB_ITS_INFO)</h4>
 <p class="desc">Description: Measures the availability of information regarding ITS usage, conventions, access.</p>
 <p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of ITS_ISSUES_OPEN_1M, ITS_ISSUES_OPENERS_1M.</p>
-<h2>Concept name</h2>
+<p>Composed of .</p>
 <h4>ITS usage (ITS_USAGE)</h4>
-<p class="desc">Description: How much the ITS system was used during last month.</p>
+<p class="desc">Description: How much the ITS system was used recently.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of ITS_UPDATES_1M, ITS_AUTH_1M.</p>
-<h2>Concept name</h2>
+<h4>Installations (INSTALL)</h4>
+<p class="desc">Description: The level of usage of the product.</p>
+<p class="desc">Concept is <b>inactive</b> for now.</p>
+<p>Composed of SURVEY_INSTALL.</p>
 <h4>SCM information access (PUB_SCM_INFO)</h4>
 <p class="desc">Description: Measures the availability of information regarding SCM usage, conventions, access.</p>
 <p class="desc">Concept is <b>active</b>.</p>
-<h2>Concept name</h2>
 <h4>SCM usage (SCM_USAGE)</h4>
 <p class="desc">Description: How much the SCM system was used during last month.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of SCM_COMMITS_1M, SCM_COMMITTERS_1M.</p>
-<h2>Concept name</h2>
-<h4>SCM Stability Index (SCM_STABILITY_IDX)</h4>
-<p class="desc">Description: How much the files were stable according to the SCM system.</p>
+<h4>SCM Stability (SCM_STABILITY)</h4>
+<p class="desc">Description: How much the files are stable according to the SCM system. 
+A file which has been heavily modified recently lacks experience, tests and feedback. </p>
 <p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of SCM_COMMITS_1M, FILES.</p>
-<h2>Concept name</h2>
-<h4>Code analysability index (CODE_ANA_IDX)</h4>
-<p class="desc">Description: A weighted index of code characteristics that impact analysability.</p>
+<p>Composed of SCM_STABILITY_1M.</p>
+<h4>Analysability practices (PRACTICES_ANA)</h4>
+<p class="desc">Description: What practices (rules checked) related to analysability are violated, and how often?</p>
 <p class="desc">Concept is <b>active</b>.</p>
-<h2>Concept name</h2>
-<h4>Non conformities index for analysability (RULES_ANA_IDX)</h4>
-<p class="desc">Description: Number of non conformities to analysability rules found in the artefact, divided by the number of files.</p>
+<p>Composed of NCC_ANA_IDX, ROKR_ANA.</p>
+<h4>Changeability practices (PRACTICES_CHA)</h4>
+<p class="desc">Description: What practices (rules checked) related to changeability are violated, and how often?</p>
 <p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of NCC_ANA_IDX.</p>
-<h2>Concept name</h2>
-<h4>Analysability practices acquired (RULES_ANA_OK)</h4>
-<p class="desc">Description: Ratio of conform (non-violated) analysability practices on the number of checked analysability practices. </p>
+<p>Composed of NCC_CHA_IDX, ROKR_CHA.</p>
+<h4>Reliability practices (PRACTICES_REL)</h4>
+<p class="desc">Description: What practices (rules checked) related to reliability are violated, and how often?</p>
 <p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of ROKR_ANA.</p>
-<h2>Concept name</h2>
-<h4>Code changeability index (CODE_CHA_IDX)</h4>
-<p class="desc">Description: A weighted index of code characteristics that impact changeability.</p>
+<p>Composed of NCC_REL_IDX, ROKR_REL.</p>
+<h4>Reusability practices (PRACTICES_REU)</h4>
+<p class="desc">Description: What practices (rules checked) related to reusability are violated, and how often?</p>
 <p class="desc">Concept is <b>active</b>.</p>
-<h2>Concept name</h2>
-<h4>Non conformities index for changeability (RULES_CHA_IDX)</h4>
-<p class="desc">Description: Number of non conformities to changeability rules found in the artefact, divided by the number of files.</p>
-<p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of NCC_CHA_IDX.</p>
-<h2>Concept name</h2>
-<h4>Changeability practices acquired (RULES_CHA_OK)</h4>
-<p class="desc">Description: Ratio of conform changeability practices on the number of checked analysability practices. </p>
-<p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of ROKR_CHA.</p>
-<h2>Concept name</h2>
-<h4>Code reliability index (CODE_REL_IDX)</h4>
-<p class="desc">Description: A weighted index of code characteristics that impact reliability.</p>
-<p class="desc">Concept is <b>active</b>.</p>
-<h2>Concept name</h2>
-<h4>Non conformities index for reliability (RULES_REL_IDX)</h4>
-<p class="desc">Description: Number of non conformities to reliability rules found in the artefact, divided by the number of files.</p>
-<p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of NCC_REL_IDX.</p>
-<h2>Concept name</h2>
-<h4>Reliability practices acquired (RULES_REL_OK)</h4>
-<p class="desc">Description: Ratio of conform reliability practices on the number of checked analysability practices. </p>
-<p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of ROKR_REL.</p>
-<h2>Concept name</h2>
-<h4>Code reusability index (CODE_REU_IDX)</h4>
-<p class="desc">Description: A weighted index of code characteristics that impact reusability.</p>
-<p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of PUBLIC_DATA, COMR, TST_COV.</p>
-<h2>Concept name</h2>
-<h4>Non conformities index for reusability (RULES_REU_IDX)</h4>
-<p class="desc">Description: Number of non conformities to reusability rules found in the artefact, divided by the number of files.</p>
-<p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of NCC_REU_IDX.</p>
-<h2>Concept name</h2>
-<h4>Reusability practices acquired (RULES_REU_OK)</h4>
-<p class="desc">Description: Ratio of conform reliability practices on the number of checked reusability practices. </p>
-<p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of ROKR_REU.</p>
-<h2>Concept name</h2>
-<h4>ITS Reliability Index (ITS_REL_IDX)</h4>
+<p>Composed of NCC_REU_IDX, ROKR_REU.</p>
+<h4>ITS Reliability (ITS_REL)</h4>
 <p class="desc">Description: The reliability assessment of the project regarding registered bugs.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of ITS_FIX_MED_1M, ITS_BUGS_OPEN, ITS_BUGS_DENSITY.</p>
-<h2>Concept name</h2>
 <h4>Test coverage (TST_COV)</h4>
 <p class="desc">Description: What percentage of the product has tests?</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of TST_COV_LINES.</p>
-<h2>Concept name</h2>
 <h4>Number of tests (TST_VOL)</h4>
 <p class="desc">Description: The overall amount of tests written for the project.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of TST_VOL_RATIO.</p>
-<h2>Concept name</h2>
 <h4>Test success rate (TST_SUCCESS)</h4>
 <p class="desc">Description: Are the available tests successful when executed?</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of TST_SUCCESS_1W.</p>
-<h2>Concept name</h2>
 <h4>Developer ML activity (MLS_DEV_ACTIVITY)</h4>
 <p class="desc">Description: Activity on the developer mailing list.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of MLS_DEV_VOL_1M.</p>
-<h2>Concept name</h2>
 <h4>User ML activity (MLS_USR_ACTIVITY)</h4>
 <p class="desc">Description: Activity on the user mailing list.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of MLS_USR_VOL_1M.</p>
-<h2>Concept name</h2>
 <h4>SCM activity (SCM_ACTIVITY)</h4>
 <p class="desc">Description: Activity on the software configuration management system.</p>
 <p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of SCM_COMMITS_1M.</p>
-<h2>Concept name</h2>
+<p>Composed of SCM_COMMITS_1M, SCM_COMMITTED_FILES_1M.</p>
 <h4>Developer ML diversity (MLS_DEV_DIVERSITY)</h4>
 <p class="desc">Description: Diversity of users on the developer mailing list.</p>
 <p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of MLS_USR_AUTH_1M.</p>
-<h2>Concept name</h2>
+<p>Composed of MLS_DEV_AUTH_1M.</p>
 <h4>User ML diversity (MLS_USR_DIVERSITY)</h4>
 <p class="desc">Description: Diversity of users on the user mailing list.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of MLS_USR_AUTH_1M.</p>
-<h2>Concept name</h2>
 <h4>SCM diversity (SCM_DIVERSITY)</h4>
 <p class="desc">Description: Diversity of users on the software configuration management system.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of SCM_COMMITTERS_1M.</p>
-<h2>Concept name</h2>
 <h4>Developer ML responsiveness (MLS_DEV_RESPONSIVENESS)</h4>
 <p class="desc">Description: The delay of answers on the developer mailing list.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of MLS_DEV_RESP_TIME_MED_1M.</p>
-<h2>Concept name</h2>
 <h4>User ML responsiveness (MLS_USR_RESPONSIVENESS)</h4>
 <p class="desc">Description: The delay of answers on the developer mailing list.</p>
 <p class="desc">Concept is <b>active</b>.</p>
 <p>Composed of MLS_USR_RESP_TIME_MED_1M.</p>
-<h2>Concept name</h2>
 <h4>Developer ML support (MLS_DEV_SUPPORT)</h4>
 <p class="desc">Description: The quantity of information gathered by questions on the developer mailing list.</p>
 <p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of MLS_DEV_RESP_RATIO_1M.</p>
-<h2>Concept name</h2>
+<p>Composed of MLS_DEV_RESP_RATIO_1M, MLS_DEV_SUBJ_1M.</p>
 <h4>User ML support (MLS_USR_SUPPORT)</h4>
 <p class="desc">Description: The quantity of information gathered by questions on the user mailing list.</p>
 <p class="desc">Concept is <b>active</b>.</p>
-<p>Composed of MLS_USR_RESP_RATIO_1M.</p>
+<p>Composed of MLS_USR_RESP_RATIO_1M, MLS_USR_SUBJ_1M.</p>
+<h4>Plan on time (PLAN_ON_TIME)</h4>
+<p class="desc">Description: Is the project on time according to its schedule?</p>
+<p class="desc">Concept is <b>active</b>.</p>
+<p>Composed of PLAN_NEXT_MILESTONE.</p>
+<h4>Milestones (PLAN_MILESTONES)</h4>
+<p class="desc">Description: Is the project having regular milestones, do they prove to be effective?</p>
+<p class="desc">Concept is <b>active</b>.</p>
+<p>Composed of PLAN_MILESTONES_VOL, PLAN_MILESTONES_SUCCESS.</p>
 </body></html>

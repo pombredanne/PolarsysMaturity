@@ -24,11 +24,11 @@
 * Depth of Inheritance Tree (MDIT)
 :Description: Maximum depth of inheritance tree in the artefact.
 
-* Code cloning (CODE_CLON)
-:Description: The amount of duplicated lines in the code.
-
 * Source Lines Of Code (SLOC)
 :Description: 
+
+* Function cloning (FU_CLONE)
+:Description: The amount of duplicated lines in the code.
 
 * Cyclomatic Complexity (VG)
 :Description: The number of execution paths found in the function.
@@ -205,4 +205,7 @@
 
 * ITS information (PUB_ITS_INFO_CPI)
 :Description: The number of documents published for the usage, access, and conventions of the issue tracking system.
+
+* Installation survey (SURVEY_INSTALL)
+:Description: A survey stating how much the software has been installed: number of users, geography (are the teams co-located or distributed?), etc.
 

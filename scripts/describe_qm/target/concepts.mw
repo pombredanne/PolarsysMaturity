@@ -1,275 +1,190 @@
-== Concept: Control flow complexity =
+* Code complexity (CPX)
+:Description: The computational complexity of the code: control, data, inheritance.
+:Concept is <b>active</b>.
+:Composed of VG, MDIT.
 
 * Control flow complexity (CPX_CF)
 :Description: The computational complexity of the control flow structure in the code functions.
 :Concept is <b>active</b>.
 :Composed of VG.
 
-== Concept: Data flow complexity =
-
 * Data flow complexity (CPX_DF)
 :Description: The complexity of the data flow structure in the code functions.
 :Concept is <b>active</b>.
 :Composed of DOPD, DOPT, TOPD, TOPT.
-
-== Concept: OO complexity =
 
 * OO complexity (CPX_OO)
 :Description: The complexity of the object-oriented architecture and structure. Composed of MDIT (maximum depth of inheritance tree).
 :Concept is <b>active</b>.
 :Composed of MDIT.
 
-== Concept: Code documentation =
-
 * Code documentation (CODE_DOC)
 :Description: The amount of documentation in the code: comment rate, javadoc, etc.
 :Concept is <b>active</b>.
 :Composed of COMR.
-
-== Concept: Code size =
 
 * Code size (CODE_SIZE)
 :Description: The overall size of the code.
 :Concept is <b>active</b>.
 :Composed of SLOC.
 
-== Concept: Access points =
-
 * Access points (ALL_DATA)
 :Description: The amount of attributes and methods on the class, whatever their visibility is.
 :Concept is <b>active</b>.
 :Composed of ATTRS, METHS.
-
-== Concept: Public access points =
 
 * Public access points (PUBLIC_DATA)
 :Description: Total number of public classes, interfaces, methods, constructors, annotations and attributes.
 :Concept is <b>active</b>.
 :Composed of ATTRS_PUBLIC, METHS_PUBLIC.
 
-== Concept: IP Log =
+* Code cloning (CODE_CLONE)
+:Description: The amount of duplicated lines in the code.
+:Concept is <b>active</b>.
+:Composed of FU_CLONE.
+
+* Licensing (LIC)
+:Description: Are licensing issues considered?
+:Concept is <b>active</b>.
+:Composed of LIC_IDENT.
 
 * IP Log (IP_LOG)
 :Description: Is the intellectual property of contributions checked and enforced?
 :Concept is <b>active</b>.
 :Composed of IP_LOG_COV.
 
-== Concept: SCM Documentation =
-
 * SCM Documentation (SCM_DOCS)
 :Description: Is there some documentation about the SCM process, rules and conventions?
-:Concept is <b>active</b>.
-
-== Concept: ITS information access =
+:Concept is <b>inactive</b> for now.
+:Composed of .
 
 * ITS information access (PUB_ITS_INFO)
 :Description: Measures the availability of information regarding ITS usage, conventions, access.
 :Concept is <b>active</b>.
-:Composed of ITS_ISSUES_OPEN_1M, ITS_ISSUES_OPENERS_1M.
-
-== Concept: ITS usage =
+:Composed of .
 
 * ITS usage (ITS_USAGE)
-:Description: How much the ITS system was used during last month.
+:Description: How much the ITS system was used recently.
 :Concept is <b>active</b>.
 :Composed of ITS_UPDATES_1M, ITS_AUTH_1M.
 
-== Concept: SCM information access =
+* Installations (INSTALL)
+:Description: The level of usage of the product.
+:Concept is <b>inactive</b> for now.
+:Composed of SURVEY_INSTALL.
 
 * SCM information access (PUB_SCM_INFO)
 :Description: Measures the availability of information regarding SCM usage, conventions, access.
 :Concept is <b>active</b>.
-
-== Concept: SCM usage =
 
 * SCM usage (SCM_USAGE)
 :Description: How much the SCM system was used during last month.
 :Concept is <b>active</b>.
 :Composed of SCM_COMMITS_1M, SCM_COMMITTERS_1M.
 
-== Concept: SCM Stability Index =
-
-* SCM Stability Index (SCM_STABILITY_IDX)
-:Description: How much the files were stable according to the SCM system.
+* SCM Stability (SCM_STABILITY)
+:Description: How much the files are stable according to the SCM system. 
+A file which has been heavily modified recently lacks experience, tests and feedback. 
 :Concept is <b>active</b>.
-:Composed of SCM_COMMITS_1M, FILES.
+:Composed of SCM_STABILITY_1M.
 
-== Concept: Code analysability index =
-
-* Code analysability index (CODE_ANA_IDX)
-:Description: A weighted index of code characteristics that impact analysability.
+* Analysability practices (PRACTICES_ANA)
+:Description: What practices (rules checked) related to analysability are violated, and how often?
 :Concept is <b>active</b>.
+:Composed of NCC_ANA_IDX, ROKR_ANA.
 
-== Concept: Non conformities index for analysability =
-
-* Non conformities index for analysability (RULES_ANA_IDX)
-:Description: Number of non conformities to analysability rules found in the artefact, divided by the number of files.
+* Changeability practices (PRACTICES_CHA)
+:Description: What practices (rules checked) related to changeability are violated, and how often?
 :Concept is <b>active</b>.
-:Composed of NCC_ANA_IDX.
+:Composed of NCC_CHA_IDX, ROKR_CHA.
 
-== Concept: Analysability practices acquired =
-
-* Analysability practices acquired (RULES_ANA_OK)
-:Description: Ratio of conform (non-violated) analysability practices on the number of checked analysability practices. 
+* Reliability practices (PRACTICES_REL)
+:Description: What practices (rules checked) related to reliability are violated, and how often?
 :Concept is <b>active</b>.
-:Composed of ROKR_ANA.
+:Composed of NCC_REL_IDX, ROKR_REL.
 
-== Concept: Code changeability index =
-
-* Code changeability index (CODE_CHA_IDX)
-:Description: A weighted index of code characteristics that impact changeability.
+* Reusability practices (PRACTICES_REU)
+:Description: What practices (rules checked) related to reusability are violated, and how often?
 :Concept is <b>active</b>.
+:Composed of NCC_REU_IDX, ROKR_REU.
 
-== Concept: Non conformities index for changeability =
-
-* Non conformities index for changeability (RULES_CHA_IDX)
-:Description: Number of non conformities to changeability rules found in the artefact, divided by the number of files.
-:Concept is <b>active</b>.
-:Composed of NCC_CHA_IDX.
-
-== Concept: Changeability practices acquired =
-
-* Changeability practices acquired (RULES_CHA_OK)
-:Description: Ratio of conform changeability practices on the number of checked analysability practices. 
-:Concept is <b>active</b>.
-:Composed of ROKR_CHA.
-
-== Concept: Code reliability index =
-
-* Code reliability index (CODE_REL_IDX)
-:Description: A weighted index of code characteristics that impact reliability.
-:Concept is <b>active</b>.
-
-== Concept: Non conformities index for reliability =
-
-* Non conformities index for reliability (RULES_REL_IDX)
-:Description: Number of non conformities to reliability rules found in the artefact, divided by the number of files.
-:Concept is <b>active</b>.
-:Composed of NCC_REL_IDX.
-
-== Concept: Reliability practices acquired =
-
-* Reliability practices acquired (RULES_REL_OK)
-:Description: Ratio of conform reliability practices on the number of checked analysability practices. 
-:Concept is <b>active</b>.
-:Composed of ROKR_REL.
-
-== Concept: Code reusability index =
-
-* Code reusability index (CODE_REU_IDX)
-:Description: A weighted index of code characteristics that impact reusability.
-:Concept is <b>active</b>.
-:Composed of PUBLIC_DATA, COMR, TST_COV.
-
-== Concept: Non conformities index for reusability =
-
-* Non conformities index for reusability (RULES_REU_IDX)
-:Description: Number of non conformities to reusability rules found in the artefact, divided by the number of files.
-:Concept is <b>active</b>.
-:Composed of NCC_REU_IDX.
-
-== Concept: Reusability practices acquired =
-
-* Reusability practices acquired (RULES_REU_OK)
-:Description: Ratio of conform reliability practices on the number of checked reusability practices. 
-:Concept is <b>active</b>.
-:Composed of ROKR_REU.
-
-== Concept: ITS Reliability Index =
-
-* ITS Reliability Index (ITS_REL_IDX)
+* ITS Reliability (ITS_REL)
 :Description: The reliability assessment of the project regarding registered bugs.
 :Concept is <b>active</b>.
 :Composed of ITS_FIX_MED_1M, ITS_BUGS_OPEN, ITS_BUGS_DENSITY.
-
-== Concept: Test coverage =
 
 * Test coverage (TST_COV)
 :Description: What percentage of the product has tests?
 :Concept is <b>active</b>.
 :Composed of TST_COV_LINES.
 
-== Concept: Number of tests =
-
 * Number of tests (TST_VOL)
 :Description: The overall amount of tests written for the project.
 :Concept is <b>active</b>.
 :Composed of TST_VOL_RATIO.
-
-== Concept: Test success rate =
 
 * Test success rate (TST_SUCCESS)
 :Description: Are the available tests successful when executed?
 :Concept is <b>active</b>.
 :Composed of TST_SUCCESS_1W.
 
-== Concept: Developer ML activity =
-
 * Developer ML activity (MLS_DEV_ACTIVITY)
 :Description: Activity on the developer mailing list.
 :Concept is <b>active</b>.
 :Composed of MLS_DEV_VOL_1M.
-
-== Concept: User ML activity =
 
 * User ML activity (MLS_USR_ACTIVITY)
 :Description: Activity on the user mailing list.
 :Concept is <b>active</b>.
 :Composed of MLS_USR_VOL_1M.
 
-== Concept: SCM activity =
-
 * SCM activity (SCM_ACTIVITY)
 :Description: Activity on the software configuration management system.
 :Concept is <b>active</b>.
-:Composed of SCM_COMMITS_1M.
-
-== Concept: Developer ML diversity =
+:Composed of SCM_COMMITS_1M, SCM_COMMITTED_FILES_1M.
 
 * Developer ML diversity (MLS_DEV_DIVERSITY)
 :Description: Diversity of users on the developer mailing list.
 :Concept is <b>active</b>.
-:Composed of MLS_USR_AUTH_1M.
-
-== Concept: User ML diversity =
+:Composed of MLS_DEV_AUTH_1M.
 
 * User ML diversity (MLS_USR_DIVERSITY)
 :Description: Diversity of users on the user mailing list.
 :Concept is <b>active</b>.
 :Composed of MLS_USR_AUTH_1M.
 
-== Concept: SCM diversity =
-
 * SCM diversity (SCM_DIVERSITY)
 :Description: Diversity of users on the software configuration management system.
 :Concept is <b>active</b>.
 :Composed of SCM_COMMITTERS_1M.
-
-== Concept: Developer ML responsiveness =
 
 * Developer ML responsiveness (MLS_DEV_RESPONSIVENESS)
 :Description: The delay of answers on the developer mailing list.
 :Concept is <b>active</b>.
 :Composed of MLS_DEV_RESP_TIME_MED_1M.
 
-== Concept: User ML responsiveness =
-
 * User ML responsiveness (MLS_USR_RESPONSIVENESS)
 :Description: The delay of answers on the developer mailing list.
 :Concept is <b>active</b>.
 :Composed of MLS_USR_RESP_TIME_MED_1M.
 
-== Concept: Developer ML support =
-
 * Developer ML support (MLS_DEV_SUPPORT)
 :Description: The quantity of information gathered by questions on the developer mailing list.
 :Concept is <b>active</b>.
-:Composed of MLS_DEV_RESP_RATIO_1M.
-
-== Concept: User ML support =
+:Composed of MLS_DEV_RESP_RATIO_1M, MLS_DEV_SUBJ_1M.
 
 * User ML support (MLS_USR_SUPPORT)
 :Description: The quantity of information gathered by questions on the user mailing list.
 :Concept is <b>active</b>.
-:Composed of MLS_USR_RESP_RATIO_1M.
+:Composed of MLS_USR_RESP_RATIO_1M, MLS_USR_SUBJ_1M.
+
+* Plan on time (PLAN_ON_TIME)
+:Description: Is the project on time according to its schedule?
+:Concept is <b>active</b>.
+:Composed of PLAN_NEXT_MILESTONE.
+
+* Milestones (PLAN_MILESTONES)
+:Description: Is the project having regular milestones, do they prove to be effective?
+:Concept is <b>active</b>.
+:Composed of PLAN_MILESTONES_VOL, PLAN_MILESTONES_SUCCESS.
 
