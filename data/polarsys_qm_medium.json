@@ -87,6 +87,26 @@
             ]
           },
           {
+            "name": "Visibility",
+            "mnemo": "QM_VISIBILITY",
+            "active": "false",
+            "children": [
+              {
+                "name": "Visibility in conferences",
+                "mnemo": "VISIBILITY_CONF",
+                "type": "concept",
+                "value": "xxx"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Usage",
+        "mnemo": "QM_USAGE",
+        "active": "true",
+        "children": [
+          {
             "name": "Installed base",
             "mnemo": "QM_INSTALL_BASE",
             "active": "false",
@@ -94,6 +114,23 @@
               {
                 "name": "Installations",
                 "mnemo": "INSTALL",
+                "value": "xxx"
+              },
+              {
+                "name": "Downloads",
+                "mnemo": "QM_DOWNLOADS",
+                "active": "false"
+              }
+            ]
+          },
+          {
+            "name": "User feedback",
+            "mnemo": "QM_FEEDBACK",
+            "active": "false",
+            "children": [
+              {
+                "name": "Marketplace feedback",
+                "mnemo": "FEEDBACK_MARKETPLACE",
                 "value": "xxx"
               }
             ]
