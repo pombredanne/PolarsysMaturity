@@ -31,9 +31,7 @@ my %rules;
 my %unknown_rules;
 my %metrics = (
     "RULES" => 0,
-    "RULES_ANA" => 0, 
-    "RKO_ANA" => 0, 
-    "ROK_ANA" => 0, "NCC_ANA" => 0, "ROKR_ANA" => 0,
+    "RULES_ANA" => 0, "RKO_ANA" => 0, "ROK_ANA" => 0, "NCC_ANA" => 0, "ROKR_ANA" => 0,
     "RULES_CHA" => 0, "RKO_CHA" => 0, "ROK_CHA" => 0, "NCC_CHA" => 0, "ROKR_CHA" => 0,
     "RULES_REU" => 0, "RKO_REU" => 0, "ROK_REU" => 0, "NCC_REU" => 0, "ROKR_REU" => 0,
     "RULES_REL" => 0, "RKO_REL" => 0, "ROK_REL" => 0, "NCC_REL" => 0, "ROKR_REL" => 0,
@@ -130,6 +128,8 @@ my $out_violations_name = $file_xml;
 $out_violations_name =~ s/.xml$/_violations.json/;
 $out_violations_name = basename( $out_violations_name );
 
+my $csv_out = "Mnemo,cats,vol\n";
+
 my $json_violations;
 $json_violations = "{\n";
 $json_violations .= "    \"name\": \"Project violations\",\n";
@@ -137,10 +137,15 @@ $json_violations .= "    \"children\": [\n";
 my $start = 1;
 foreach my $violation (keys %violations) {
     if ( exists( $rules{$violation} ) ) {
-	my @cats = split(' ', $rules{ "$violation" }->{ 'cat' });
+    my $categories = $rules{ "$violation" }->{ 'cat' };
+	my @cats = split(' ', $categories);
 	my $cat = $cats[0];
 	my $vol = $violations{$violation}->{'vol'};
 	print "Working on $violation: $vol.\n";
+
+    # Print the violation to the csv file.
+    $csv_out .= "$violation,$categories,$vol\n";
+
 	my $tmp_m = "        {\n";
 	$tmp_m   .= "            \"name\": \"$violation\",\n";
 	$tmp_m   .= "            \"cat\": \"$cat\",\n";
@@ -190,8 +195,9 @@ my $json_out;
 $json_out = "{\n";
 $json_out .= "    \"name\": \"Project metrics\",\n";
 $json_out .= "    \"children\": [\n";
+
 foreach my $metric (keys %metrics) {
-    print "WOrking on $metric: $metrics{$metric}.\n";
+    print "Working on $metric: $metrics{$metric}.\n";
     my $tmp_m = "        {\n";
     $tmp_m   .= "            \"name\": \"";
     $tmp_m   .= $metric;
@@ -207,5 +213,15 @@ $json_out .= "}\n";
 open( FHOUT, ">$out_name" ) or die "Could not open $out_name.\n";
 print FHOUT $json_out;
 close FHOUT;
+
+
+# Write to a csv file
+my $csv_name = $file_xml;
+$csv_name =~ s/.xml$/.csv/;
+$csv_name = basename( $csv_name );
+
+open( FHCSV, ">$csv_name" ) or die "Could not open $csv_name.\n";
+print FHCSV $csv_out;
+close FHCSV;
 
 print "\n\n";

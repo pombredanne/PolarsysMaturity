@@ -83,9 +83,13 @@ $metrics{"RULES"} = $vol_rules;
 my %vol_rules;
 foreach my $rule_mnemo (keys %rules) {
     my $rule = $rules{$rule_mnemo};
-    my @rule_cats = split( ' ', $rule->{"cat"});
-    foreach my $rule_cat (@rule_cats) {
-        $metrics{"RULES_" . $rule_cat}++;
+    if (exists($rule->{"cat"})) {
+        my @rule_cats = split( ' ', $rule->{"cat"});
+        foreach my $rule_cat (@rule_cats) {
+            $metrics{"RULES_" . $rule_cat}++;
+        }
+    } else {
+        print "Error: No category defined on $rule_mnemo.\n";
     }
 }
 
@@ -137,20 +141,24 @@ $json_violations .= "    \"children\": [\n";
 my $start = 1;
 foreach my $violation (keys %violations) {
     if ( exists( $rules{$violation} ) ) {
-	my @cats = split(' ', $rules{ "$violation" }->{ 'cat' });
-	my $cat = $cats[0];
-	my $vol = $violations{$violation}->{'vol'};
-	print "Working on $violation: $vol.\n";
-	my $tmp_m = "        {\n";
-	$tmp_m   .= "            \"name\": \"$violation\",\n";
-	$tmp_m   .= "            \"cat\": \"$cat\",\n";
-	$tmp_m   .= "            \"value\": \"$vol\"\n";
-	$tmp_m   .= "        }";
-	if ($start) {
-	    $json_violations = join( "\n", $json_violations, $tmp_m);
-	    $start = 0;
+	if (exists($rules{ "$violation" }->{ 'cat' })) {
+	    my @cats = split(' ', $rules{ "$violation" }->{ 'cat' });
+	    my $cat = $cats[0];
+	    my $vol = $violations{$violation}->{'vol'};
+	    print "Working on $violation: $vol.\n";
+	    my $tmp_m = "        {\n";
+	    $tmp_m   .= "            \"name\": \"$violation\",\n";
+	    $tmp_m   .= "            \"cat\": \"$cat\",\n";
+	    $tmp_m   .= "            \"value\": \"$vol\"\n";
+	    $tmp_m   .= "        }";
+	    if ($start) {
+		$json_violations = join( "\n", $json_violations, $tmp_m);
+		$start = 0;
+	    } else {
+		$json_violations = join( ", \n", $json_violations, $tmp_m);
+	    }
 	} else {
-	    $json_violations = join( ", \n", $json_violations, $tmp_m);
+	    print "Category not defined for $violation.\n";
 	}
     }
 }
@@ -186,12 +194,14 @@ my $out_name = $file_xml;
 $out_name =~ s/.xml$/.json/;
 $out_name = basename( $out_name );
 
+Dumper %metrics;
+
 my $json_out;
 $json_out = "{\n";
 $json_out .= "    \"name\": \"Project metrics\",\n";
 $json_out .= "    \"children\": [\n";
 foreach my $metric (keys %metrics) {
-    print "WOrking on $metric: $metrics{$metric}.\n";
+    print "Working on $metric: $metrics{$metric}.\n";
     my $tmp_m = "        {\n";
     $tmp_m   .= "            \"name\": \"";
     $tmp_m   .= $metric;
