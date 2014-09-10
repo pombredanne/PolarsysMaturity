@@ -479,7 +479,7 @@
 	    "description": "The number of updates to the issue tracking system during last month.",
 	    "question": "How many actions have been performed on the issue tracking system?",
             "active": "true",
-            "datasource": "CPI"
+            "datasource": "PMI"
           },
           {
             "name": "ITS authors",
@@ -487,7 +487,7 @@
 	    "description": "The number of different authors (according to their login) have contributed to the issue tracking system during last month.",
 	    "question": "How many different people performed actions on the issue tracking system during last month?",
             "active": "true",
-            "datasource": "CPI"
+            "datasource": "PMI"
           },
           {
             "name": "Defect density",
@@ -510,7 +510,7 @@
 	    "description": "Is there a list of the different licences used in the product?",
 	    "question": "",
             "active": "true",
-            "datasource": "CPI"
+            "datasource": "PMI"
           },
           {
             "name": "IP log code coverage",
@@ -518,7 +518,7 @@
 	    "description": "Total number of commits registered on the artefact during the last month.",
 	    "question": "",
             "active": "true",
-            "datasource": "CPI"
+            "datasource": "PMI"
           },
           {
             "name": "Project is on time for next milestone",
@@ -526,7 +526,7 @@
 	    "description": "Is the project on time for the next milestone?",
 	    "question": "",
             "active": "true",
-            "datasource": "CPI"
+            "datasource": "PMI"
           },
           {
             "name": "Number of milestones",
@@ -534,7 +534,7 @@
 	    "description": "The number of milestones since the last official release.",
 	    "question": "",
             "active": "true",
-            "datasource": "CPI"
+            "datasource": "PMI"
           },
           {
             "name": "Milestone success rate",
@@ -542,23 +542,23 @@
 	    "description": "What is the percentage of successful milestones over the past 10 milestones?",
 	    "question": "",
             "active": "true",
-            "datasource": "CPI"
+            "datasource": "PMI"
           },
           {
             "name": "SCM information",
-            "mnemo": "PUB_SCM_INFO_CPI",
+            "mnemo": "PUB_SCM_INFO_PMI",
 	    "description": "The number of documents published for the usage, access, and conventions of the software configuration management system.",
 	    "question": "How easy is it for a new comer to use the software configuration management system?",
             "active": "true",
-            "datasource": "CPI"
+            "datasource": "PMI"
           },
           {
             "name": "ITS information",
-            "mnemo": "PUB_ITS_INFO_CPI",
+            "mnemo": "PUB_ITS_INFO_PMI",
 	    "description": "The number of documents published for the usage, access, and conventions of the issue tracking system.",
 	    "question": "How easy is it for a new comer to use the issue tracking system?",
             "active": "true",
-            "datasource": "CPI"
+            "datasource": "PMI"
           },
           {
             "name": "Installation survey",

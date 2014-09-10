@@ -29,8 +29,25 @@
             "active": "true"
           },
           {
+            "name": "Visibility",
+            "mnemo": "QM_VISIBILITY",
+            "active": "true"
+          }
+        ]
+      },
+      {
+        "name": "Usage",
+        "mnemo": "QM_USAGE",
+        "active": "true",
+        "children": [
+          {
             "name": "Installed base",
-            "mnemo": "QM_INST_BASE",
+            "mnemo": "QM_INSTALL_BASE",
+            "active": "true"
+          },
+          {
+            "name": "User feedback",
+            "mnemo": "QM_FEEDBACK",
             "active": "true"
           }
         ]

@@ -201,12 +201,65 @@
             ]
           },
           {
+            "name": "Visibility",
+            "mnemo": "QM_VISIBILITY",
+            "description": "Do people talk about the software? Are there research articles, journal articles, and conference presentations?",
+            "type": "attribute",
+            "active": "true",
+            "children": [
+              {
+                "name": "Visibility in conferences",
+                "mnemo": "VISIBILITY_CONF",
+                "type": "concept",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Number of appearances in conferences",
+                    "mnemo": "VISIBILITY_CONF_VOL",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Usage",
+        "mnemo": "QM_USAGE",
+        "description": "The degree of usage of the project: is it widely used, by different people in different context?",
+        "active": "true",
+        "type": "attribute",
+        "children": [
+          {
             "name": "Installed base",
             "mnemo": "QM_INSTALL_BASE",
             "description": ".",
             "type": "attribute",
             "active": "true",
             "children": [
+              {
+                "name": "Downloads",
+                "mnemo": "Downloads",
+                "type": "concept",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Number of repo downloads",
+                    "mnemo": "DL_REPO",
+                    "type": "metric",
+                    "value": "xxx"
+                  },
+                  {
+                    "name": "Number of update site downloads",
+                    "mnemo": "DL_UPDATE_SITE",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+
+                ]
+              },
               {
                 "name": "Installations",
                 "mnemo": "INSTALL",
@@ -216,6 +269,29 @@
                   {
                     "name": "Installation survey",
                     "mnemo": "SURVEY_INSTALL",
+                    "type": "metric",
+                    "value": "xxx"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "User feedback",
+            "mnemo": "QM_FEEDBACK",
+            "description": ".",
+            "type": "attribute",
+            "active": "true",
+            "children": [
+              {
+                "name": "Marketplace feedback",
+                "mnemo": "FEEDBACK_MARKETPLACE",
+                "type": "concept",
+                "value": "xxx",
+                "children": [
+                  {
+                    "name": "Votes in marketplace",
+                    "mnemo": "VOTES_MARKETPLACE",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -248,7 +324,7 @@
                 "children": [
                   {
                     "name": "SCM access information",
-                    "mnemo": "PUB_SCM_INFO_CPI",
+                    "mnemo": "PUB_SCM_INFO",
                     "type": "metric",
                     "value": "xxx"
                   }
@@ -293,7 +369,7 @@
                 "children": [
                   {
                     "name": "ITS access information",
-                    "mnemo": "PUB_ITS_INFO_CPI",
+                    "mnemo": "PUB_ITS_INFO",
                     "type": "metric",
                     "value": "xxx"
                   }
