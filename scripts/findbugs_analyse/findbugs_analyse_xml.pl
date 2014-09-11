@@ -31,9 +31,7 @@ my %rules;
 my %unknown_rules;
 my %metrics = (
     "RULES" => 0,
-    "RULES_ANA" => 0, 
-    "RKO_ANA" => 0, 
-    "ROK_ANA" => 0, "NCC_ANA" => 0, "ROKR_ANA" => 0,
+    "RULES_ANA" => 0, "RKO_ANA" => 0, "ROK_ANA" => 0, "NCC_ANA" => 0, "ROKR_ANA" => 0,
     "RULES_CHA" => 0, "RKO_CHA" => 0, "ROK_CHA" => 0, "NCC_CHA" => 0, "ROKR_CHA" => 0,
     "RULES_REU" => 0, "RKO_REU" => 0, "ROK_REU" => 0, "NCC_REU" => 0, "ROKR_REU" => 0,
     "RULES_REL" => 0, "RKO_REL" => 0, "ROK_REL" => 0, "NCC_REL" => 0, "ROKR_REL" => 0,
