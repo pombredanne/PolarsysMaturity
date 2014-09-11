@@ -16,7 +16,7 @@
         {
 	    "name": "Excessive Imports",
 	    "mnemo": "ExcessiveImports",
-            "priority": "3",
+        "priority": "3",
 	    "cat": "REU",
 	    "desc": [
 	        "A high number of imports can indicate a high degree of coupling within an object. This rule counts the number of unique imports and reports a violation if the count is above the user-specified threshold. The default value is set to 30.",
@@ -27,7 +27,7 @@
         {
 	    "name": "Loose Coupling",
 	    "mnemo": "LooseCoupling",
-            "priority": "3",
+        "priority": "3",
 	    "cat": "REU",
 	    "desc": [
 	        "The use of implementation types as object references limits your ability to use alternate implementations in the future as requirements change. Whenever available, referencing objects by their interface types provides much more flexibility.",
@@ -37,7 +37,7 @@
         {
 	    "name": "Loose Package Coupling",
 	    "mnemo": "LoosePackageCoupling",
-            "priority": "3",
+        "priority": "3",
 	    "cat": "REU",
 	    "desc": [
 	        "Avoid using classes from the configured package hierarchy outside of the package hierarchy, except when using one of the configured allowed classes.",
@@ -53,7 +53,7 @@
             "cat": "REU",
 	    "refs": [
                 "http://pmd.sourceforge.net/snapshot/rules/java/coupling.html#LawOfDemeter",
-                "http://stackoverflow.com/questions/468615/how-to-solve-the-violations-of-the-law-of-demeter",
+                "http://stackoverflow.com/questions/468615/how-to-solve-the-violations-of-the-law-of-demeter"
             ],
 	    "desc": [
 	        "The Law of Demeter is a simple rule, that says 'only talk to friends'. It helps to reduce coupling between classes or objects. See also the references: Andrew Hunt, David Thomas, and Ward Cunningham. The Pragmatic Programmer. From Journeyman to Master. Addison-Wesley Longman, Amsterdam, October 1999.; K.J. Lieberherr and I.M. Holland. Assuring good style for object-oriented programs. Software, IEEE, 6(5):38–48, 1989.; http://www.ccs.neu.edu/home/lieber/LoD.html; http://en.wikipedia.org/wiki/Law_of_Demeter .",
