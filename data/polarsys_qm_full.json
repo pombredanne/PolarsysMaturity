@@ -241,13 +241,13 @@
             "children": [
               {
                 "name": "Downloads",
-                "mnemo": "Downloads",
+                "mnemo": "DOWNLOADS",
                 "type": "concept",
                 "value": "xxx",
                 "children": [
                   {
                     "name": "Number of repo downloads",
-                    "mnemo": "DL_REPO",
+                    "mnemo": "DL_REPO_1M",
                     "type": "metric",
                     "value": "xxx"
                   },
@@ -582,7 +582,7 @@
                 ]
               },
               {
-                "name": "Code complexity",
+                "name": "Code complexity index",
                 "mnemo": "CPX",
                 "type": "concept",
                 "value": "xxx",
