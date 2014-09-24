@@ -55,6 +55,7 @@ foreach my $file_rules (@json_files) {
         local $/;
         open my $fh, "<", $file_rules;
         $json_rules = <$fh>;
+        close $fg;
     };
     
     # Decode the entire JSON
