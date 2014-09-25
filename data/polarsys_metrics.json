@@ -134,7 +134,7 @@
             "description": "The number of violations to rules that impact changeability in the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of violated rules for changeability",
@@ -142,7 +142,7 @@
             "description": "The number of changeability rules that have at least one violation on the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of rules for changeability",
@@ -150,14 +150,14 @@
             "description": "The total number of rules checked for changeability.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Non conformities index for changeability",
             "mnemo": "NCC_CHA_IDX",
             "description": "The total number of violations to rules that impact changeability in the artefact, divided by the number of files.",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Adherence to changeability rules",
@@ -165,7 +165,7 @@
             "description": "Ratio of conform changeability practices on the number of checked changeability practices.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of non-conformities for analysability",
@@ -173,7 +173,7 @@
             "description": "The number of violations to rules that impact analysability in the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of violated rules for analysability",
@@ -181,7 +181,7 @@
             "description": "The number of analysability rules that have at least one violation on the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of rules for analysability",
@@ -189,14 +189,14 @@
             "description": "The total number of rules checked for analysability.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Non conformities index for analysability",
             "mnemo": "NCC_ANA_IDX",
             "description": "The total number of violations to rules that impact analysability in the artefact, divided by the number of files.",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Adherence to analysability rules",
@@ -204,7 +204,7 @@
             "description": "Ratio of conform analysability practices on the number of checked analysability practices.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of non-conformities for reliability",
@@ -212,7 +212,7 @@
             "description": "The number of violations to rules that impact reliability in the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of violated rules for reliability",
@@ -220,7 +220,7 @@
             "description": "The number of reliability rules that have at least one violation on the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of rules for reliability",
@@ -228,14 +228,14 @@
             "description": "The total number of rules checked for reliability.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Non conformities index for reliability",
             "mnemo": "NCC_REL_IDX",
             "description": "The total number of violations to rules that impact reliability in the artefact, divided by the number of files.",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Adherence to reliability rules",
@@ -243,7 +243,7 @@
             "description": "Ratio of conform reliability practices on the number of checked reliability practices.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of non-conformities for reusability",
@@ -251,7 +251,7 @@
             "description": "The number of violations to rules that impact reusability in the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of violated rules for reusability",
@@ -259,7 +259,7 @@
             "description": "The number of reusability rules that have at least one violation on the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of rules for reusability",
@@ -267,14 +267,14 @@
             "description": "The total number of rules checked for reusability.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Non conformities index for reusability",
             "mnemo": "NCC_REU_IDX",
             "description": "The total number of violations to rules that impact reusability in the artefact, divided by the number of files.",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Adherence to reusability rules",
@@ -282,7 +282,7 @@
             "description": "Ratio of conform reusability practices on the number of checked reusability practices.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Percentage of lines of code covered by tests",
