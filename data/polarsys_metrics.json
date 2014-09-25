@@ -547,7 +547,7 @@
           {
             "name": "SCM information",
             "mnemo": "PUB_SCM_INFO_PMI",
-            "description": "The number of documents published for the usage, access, and conventions of the software configuration management system.",
+            "description": "Is the source_repo info correctly filled in the PMI? OLD: The number of documents published for the usage, access, and conventions of the software configuration management system.",
             "question": "How easy is it for a new comer to use the software configuration management system?",
             "active": "true",
             "datasource": "PMI"
@@ -555,7 +555,7 @@
           {
             "name": "ITS information",
             "mnemo": "PUB_ITS_INFO_PMI",
-            "description": "The number of documents published for the usage, access, and conventions of the issue tracking system.",
+            "description": "Is the bugzilla info correctly filled in the PMI? OLD: The number of documents published for the usage, access, and conventions of the issue tracking system. ",
             "question": "How easy is it for a new comer to use the issue tracking system?",
             "active": "true",
             "datasource": "PMI"
@@ -569,8 +569,24 @@
             "datasource": "SURVEY"
           },
           {
-            "name": "Number of votes on the Eclipse Marketplace",
-            "mnemo": "VOTES_MARKETPLACE",
+            "name": "Number of favourites on the Marketplace",
+            "mnemo": "MKT_FAV",
+            "description": "The number of votes",
+            "question": "How much the software is liked by users?",
+            "active": "true",
+            "datasource": "UNKOWN"
+          },
+          {
+            "name": "Number of successfull installs on the Marketplace",
+            "mnemo": "MKT_INSTALL_SUCCESS_1M",
+            "description": "The number of votes",
+            "question": "How much the software is liked by users?",
+            "active": "true",
+            "datasource": "UNKOWN"
+          },
+          {
+            "name": "Number of failed install on the Marketplace",
+            "mnemo": "MKT_INSTALL_FAILED_1M",
             "description": "The number of votes",
             "question": "How much the software is liked by users?",
             "active": "true",
@@ -578,8 +594,8 @@
           },
           {
             "name": "Number of downloads on update site",
-            "mnemo": "DL_UPDATE_SITE",
-            "description": "The number of downloads on the update site of the project during last month.",
+            "mnemo": "DL_UPDATE_SITE_1M",
+            "description": "The number of downloads on the update site of the project during last month. Is computed using successful and failed installs from marketplace.",
             "question": "How much the software is downloaded?",
             "active": "true",
             "datasource": "UNKOWN"

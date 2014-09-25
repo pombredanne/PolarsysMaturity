@@ -106,7 +106,7 @@
         "name": "Installations",
         "mnemo": "INSTALL",
         "description": "The level of usage of the product.",
-        "composition": "SURVEY_INSTALL",
+        "composition": "SURVEY_INSTALL MKT_INSTALL_SUCCESS",
         "active": "false"
       },
       {
@@ -270,27 +270,27 @@
         "mnemo": "PLAN_ON_TIME",
         "description": "Is the project on time according to its schedule?",
         "composition": "PLAN_NEXT_MILESTONE",
-        "active": "true"
+        "active": "false"
       },
       {
         "name": "Milestones",
         "mnemo": "PLAN_MILESTONES",
         "description": "Is the project having regular milestones, do they prove to be effective?",
-        "composition": "PLAN_MILESTONES_VOL PLAN_MILESTONES_SUCCESS",
+        "composition": "PLAN_MILESTONES_VOL PLAN_REVIEWS_SUCCESS_RATE",
         "active": "true"
       },
       {
         "name": "Downloads",
         "mnemo": "DOWNLOADS",
         "description": "What is the amount of downloads?",
-        "composition": "DL_REPO DL_UPDATE_SITE",
+        "composition": "DL_REPO_1M DL_UPDATE_SITE_1M",
         "active": "true"
       },
       {
         "name": "Marketplace feedback",
-        "mnemo": "FEEDBACK_MARKETPLACE",
+        "mnemo": "MKT_FEEDBACK",
         "description": "What is the feedback of users of the Eclipse Marketplace on the product?",
-        "composition": "VOTES_MARKETPLACE",
+        "composition": "MKT_FAV",
         "active": "true"
       },
       {

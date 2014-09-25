@@ -256,6 +256,22 @@
         {
             "name": "PLAN_REVIEWS_SUCCESS_RATE",
             "value": "40"
+        }, 
+        {
+            "name": "MKT_FAV",
+            "value": "7"
+        }, 
+        {
+            "name": "MKT_INSTALL_SUCCESS_1M",
+            "value": "3058"
+        }, 
+        {
+            "name": "MKT_INSTALL_FAILED_1M",
+            "value": "301"
+        }, 
+        {
+            "name": "DL_UPDATE_SITE_1M",
+            "value": "3359"
         }
     ]
 }

@@ -259,7 +259,7 @@
                   },
                   {
                     "name": "Number of update site downloads",
-                    "mnemo": "DL_UPDATE_SITE",
+                    "mnemo": "DL_UPDATE_SITE_1M",
                     "type": "metric",
                     "active": "false"
                   }
@@ -270,13 +270,19 @@
                 "name": "Installations",
                 "mnemo": "INSTALL",
                 "type": "concept",
-                "active": "false",
+                "active": "true",
                 "children": [
                   {
                     "name": "Installation survey",
                     "mnemo": "SURVEY_INSTALL",
                     "type": "metric",
                     "active": "false"
+                  },
+                  {
+                    "name": "Marketplace install metrics",
+                    "mnemo": "MKT_INSTALL_SUCCESS_1M",
+                    "type": "metric",
+                    "active": "true"
                   }
                 ]
               }
@@ -291,15 +297,15 @@
             "children": [
               {
                 "name": "Marketplace feedback",
-                "mnemo": "FEEDBACK_MARKETPLACE",
+                "mnemo": "MKT_FEEDBACK",
                 "type": "concept",
-                "active": "false",
+                "active": "true",
                 "children": [
                   {
-                    "name": "Votes in marketplace",
-                    "mnemo": "VOTES_MARKETPLACE",
+                    "name": "Number of favourites on the Marketplace",
+                    "mnemo": "MKT_FAV",
                     "type": "metric",
-                    "active": "false"
+                    "active": "true"
                   }
                 ]
               }
