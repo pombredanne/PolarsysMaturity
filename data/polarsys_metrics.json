@@ -134,7 +134,7 @@
             "description": "The number of violations to rules that impact changeability in the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of violated rules for changeability",
@@ -142,7 +142,7 @@
             "description": "The number of changeability rules that have at least one violation on the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of rules for changeability",
@@ -150,14 +150,14 @@
             "description": "The total number of rules checked for changeability.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Non conformities index for changeability",
             "mnemo": "NCC_CHA_IDX",
             "description": "The total number of violations to rules that impact changeability in the artefact, divided by the number of files.",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Adherence to changeability rules",
@@ -165,7 +165,7 @@
             "description": "Ratio of conform changeability practices on the number of checked changeability practices.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of non-conformities for analysability",
@@ -173,7 +173,7 @@
             "description": "The number of violations to rules that impact analysability in the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of violated rules for analysability",
@@ -181,7 +181,7 @@
             "description": "The number of analysability rules that have at least one violation on the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of rules for analysability",
@@ -189,14 +189,14 @@
             "description": "The total number of rules checked for analysability.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Non conformities index for analysability",
             "mnemo": "NCC_ANA_IDX",
             "description": "The total number of violations to rules that impact analysability in the artefact, divided by the number of files.",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Adherence to analysability rules",
@@ -204,7 +204,7 @@
             "description": "Ratio of conform analysability practices on the number of checked analysability practices.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of non-conformities for reliability",
@@ -212,7 +212,7 @@
             "description": "The number of violations to rules that impact reliability in the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of violated rules for reliability",
@@ -220,7 +220,7 @@
             "description": "The number of reliability rules that have at least one violation on the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of rules for reliability",
@@ -228,14 +228,14 @@
             "description": "The total number of rules checked for reliability.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Non conformities index for reliability",
             "mnemo": "NCC_REL_IDX",
             "description": "The total number of violations to rules that impact reliability in the artefact, divided by the number of files.",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Adherence to reliability rules",
@@ -243,7 +243,7 @@
             "description": "Ratio of conform reliability practices on the number of checked reliability practices.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of non-conformities for reusability",
@@ -251,7 +251,7 @@
             "description": "The number of violations to rules that impact reusability in the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of violated rules for reusability",
@@ -259,7 +259,7 @@
             "description": "The number of reusability rules that have at least one violation on the artefact.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Number of rules for reusability",
@@ -267,14 +267,14 @@
             "description": "The total number of rules checked for reusability.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Non conformities index for reusability",
             "mnemo": "NCC_REU_IDX",
             "description": "The total number of violations to rules that impact reusability in the artefact, divided by the number of files.",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Adherence to reusability rules",
@@ -282,7 +282,7 @@
             "description": "Ratio of conform reusability practices on the number of checked reusability practices.",
             "question": "",
             "active": "true",
-            "datasource": "SonarQube"
+            "datasource": "RuleCheckingScript"
           },
           {
             "name": "Percentage of lines of code covered by tests",
@@ -538,24 +538,24 @@
           },
           {
             "name": "Milestone success rate",
-            "mnemo": "PLAN_MILESTONES_SUCCESS",
-            "description": "What is the percentage of successful milestones over the past 10 milestones?",
+            "mnemo": "PLAN_REVIEWS_SUCCESS_RATE",
+            "description": "What is the percentage of successful reviews over the past 10 releases?",
             "question": "",
             "active": "true",
             "datasource": "PMI"
           },
           {
             "name": "SCM information",
-            "mnemo": "PUB_SCM_INFO",
-            "description": "The number of documents published for the usage, access, and conventions of the software configuration management system.",
+            "mnemo": "PUB_SCM_INFO_PMI",
+            "description": "Is the source_repo info correctly filled in the PMI? OLD: The number of documents published for the usage, access, and conventions of the software configuration management system.",
             "question": "How easy is it for a new comer to use the software configuration management system?",
             "active": "true",
             "datasource": "PMI"
           },
           {
             "name": "ITS information",
-            "mnemo": "PUB_ITS_INFO",
-            "description": "The number of documents published for the usage, access, and conventions of the issue tracking system.",
+            "mnemo": "PUB_ITS_INFO_PMI",
+            "description": "Is the bugzilla info correctly filled in the PMI? OLD: The number of documents published for the usage, access, and conventions of the issue tracking system. ",
             "question": "How easy is it for a new comer to use the issue tracking system?",
             "active": "true",
             "datasource": "PMI"
@@ -569,8 +569,24 @@
             "datasource": "SURVEY"
           },
           {
-            "name": "Number of votes on the Eclipse Marketplace",
-            "mnemo": "VOTES_MARKETPLACE",
+            "name": "Number of favourites on the Marketplace",
+            "mnemo": "MKT_FAV",
+            "description": "The number of votes",
+            "question": "How much the software is liked by users?",
+            "active": "true",
+            "datasource": "UNKOWN"
+          },
+          {
+            "name": "Number of successfull installs on the Marketplace",
+            "mnemo": "MKT_INSTALL_SUCCESS_1M",
+            "description": "The number of votes",
+            "question": "How much the software is liked by users?",
+            "active": "true",
+            "datasource": "UNKOWN"
+          },
+          {
+            "name": "Number of failed install on the Marketplace",
+            "mnemo": "MKT_INSTALL_FAILED_1M",
             "description": "The number of votes",
             "question": "How much the software is liked by users?",
             "active": "true",
@@ -578,8 +594,8 @@
           },
           {
             "name": "Number of downloads on update site",
-            "mnemo": "DL_UPDATE_SITE",
-            "description": "The number of downloads on the update site of the project during last month.",
+            "mnemo": "DL_UPDATE_SITE_1M",
+            "description": "The number of downloads on the update site of the project during last month. Is computed using successful and failed installs from marketplace.",
             "question": "How much the software is downloaded?",
             "active": "true",
             "datasource": "UNKOWN"
