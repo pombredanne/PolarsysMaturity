@@ -99,11 +99,13 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var mymetrics;
+var myconcepts;
+var myvalues = new Object();
 
 // Load file for concepts.
 d3.json("/PolarsysMaturity/data/polarsys_concepts.json", function(error, concepts) {
   if (error) return console.warn(error);
-  
+
   myconcepts = concepts;
 });
 
@@ -112,6 +114,16 @@ d3.json("/PolarsysMaturity/data/polarsys_metrics.json", function(error, metrics)
   if (error) return console.warn(error);
   
   mymetrics = metrics;
+});
+
+// Load file for values.
+d3.json("/PolarsysMaturity/data/project_values.json", function(error, values) {
+  if (error) return console.warn(error);
+  
+  //Build a hash with the metrics' values
+  for ( i = 0 ; i < values.children.length ; i++) {
+      myvalues[values.children[i].name] = Math.round(values.children[i].value);
+  }
 });
 
 d3.json("/PolarsysMaturity/data/polarsys_qm_full.json", function(error, qm) {
@@ -175,9 +187,8 @@ function update(source) {
       .attr("dy", function(d) { return d.children || d._children ? "-0.5em" : ".35em" })
       .attr("text-anchor", function(d) { return d.children || d.children ? "end" : "start"; })
       .attr("fill", function(d) { return d.active == "true" ? "black" : "gray";})
-      .text(function(d) { return d.name; })
+      .text(function(d) { return d.value ? d.name + " (" + myvalues[d.mnemo] + ")" : d.name; })
       .style("fill-opacity", 1e-6);
-      //.text(function(d) { return d.name + " (" + d.value + ")"; })
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
@@ -191,15 +202,15 @@ function update(source) {
   nodeUpdate.select("text")
       .style("fill-opacity", 1);
 
-  nodeUpdate.select("text")
-      .style("color", function(d) { 
-        var isActive = 0;
-        if ( d.active == "true" ) {
-          return "black";
-        } else {
-          return "red";
-        }
-      });
+  //nodeUpdate.select("text")
+  //    .style("color", function(d) { 
+  //      var isActive = 0;
+  //      if ( d.active == "true" ) {
+  //        return "black";
+  //      } else {
+  //        return "red";
+  //      }
+  //    });
 
   // Transition exiting nodes to the parent's new position.
   var nodeExit = node.exit().transition()

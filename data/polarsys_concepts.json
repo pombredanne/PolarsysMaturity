@@ -278,6 +278,27 @@
         "description": "Is the project having regular milestones, do they prove to be effective?",
         "composition": "PLAN_MILESTONES_VOL PLAN_MILESTONES_SUCCESS",
         "active": "true"
-      }
+      },
+      {
+        "name": "Downloads",
+        "mnemo": "DOWNLOADS",
+        "description": "What is the amount of downloads?",
+        "composition": "DL_REPO DL_UPDATE_SITE",
+        "active": "true"
+      },
+      {
+        "name": "Marketplace feedback",
+        "mnemo": "FEEDBACK_MARKETPLACE",
+        "description": "What is the feedback of users of the Eclipse Marketplace on the product?",
+        "composition": "VOTES_MARKETPLACE",
+        "active": "true"
+      },
+      {
+        "name": "Visibility in research",
+        "mnemo": "VISIBILITY_CONF",
+        "description": "How well-known is the software project in the academic field?",
+        "composition": "VISIBILITY_CONF_VOL",
+        "active": "true"
+      } 
     ]
   }
