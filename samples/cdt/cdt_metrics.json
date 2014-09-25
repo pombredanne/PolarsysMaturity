@@ -240,6 +240,14 @@
         {
             "name": "RULES_THR",
             "value": "8"
+        }, 
+        {
+            "name": "PUB_ITS_INFO",
+            "value": "5"
+        }, 
+        {
+            "name": "PUB_SCM_INFO",
+            "value": "5"
         }
     ]
 }
