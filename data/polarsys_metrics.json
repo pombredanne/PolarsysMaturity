@@ -538,15 +538,15 @@
           },
           {
             "name": "Milestone success rate",
-            "mnemo": "PLAN_MILESTONES_SUCCESS",
-            "description": "What is the percentage of successful milestones over the past 10 milestones?",
+            "mnemo": "PLAN_REVIEWS_SUCCESS_RATE",
+            "description": "What is the percentage of successful reviews over the past 10 releases?",
             "question": "",
             "active": "true",
             "datasource": "PMI"
           },
           {
             "name": "SCM information",
-            "mnemo": "PUB_SCM_INFO",
+            "mnemo": "PUB_SCM_INFO_PMI",
             "description": "The number of documents published for the usage, access, and conventions of the software configuration management system.",
             "question": "How easy is it for a new comer to use the software configuration management system?",
             "active": "true",
@@ -554,7 +554,7 @@
           },
           {
             "name": "ITS information",
-            "mnemo": "PUB_ITS_INFO",
+            "mnemo": "PUB_ITS_INFO_PMI",
             "description": "The number of documents published for the usage, access, and conventions of the issue tracking system.",
             "question": "How easy is it for a new comer to use the issue tracking system?",
             "active": "true",

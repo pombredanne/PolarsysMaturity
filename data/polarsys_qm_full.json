@@ -29,8 +29,7 @@
                     "name": "Developer ML posts",
                     "mnemo": "MLS_DEV_VOL_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -44,8 +43,7 @@
                     "name": "Developer ML posts",
                     "mnemo": "MLS_USR_VOL_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -59,15 +57,13 @@
                     "name": "SCM commits",
                     "mnemo": "SCM_COMMITS_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "SCM committed files",
                     "mnemo": "SCM_COMMITTED_FILES_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }
@@ -90,8 +86,7 @@
                     "name": "Developer ML authors",
                     "mnemo": "MLS_DEV_AUTH_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -105,8 +100,7 @@
                     "name": "User ML authors",
                     "mnemo": "MLS_USR_AUTH_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -120,8 +114,7 @@
                     "name": "SCM Authors",
                     "mnemo": "SCM_COMMITTERS_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }
@@ -139,14 +132,12 @@
                 "mnemo": "MLS_DEV_RESPONSIVENESS",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Developer ML response time",
                     "mnemo": "MLS_DEV_RESP_TIME_MED_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -155,14 +146,12 @@
                 "mnemo": "MLS_USR_RESPONSIVENESS",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "User ML response time",
                     "mnemo": "MLS_USR_RESP_TIME_MED_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }
@@ -180,21 +169,18 @@
                 "mnemo": "MLS_DEV_SUPPORT",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Developer ML response ratio",
                     "mnemo": "MLS_DEV_RESP_RATIO_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "Developer ML subjects",
                     "mnemo": "MLS_DEV_SUBJ_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -203,21 +189,18 @@
                 "mnemo": "MLS_USR_SUPPORT",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "User ML response ratio",
                     "mnemo": "MLS_USR_RESP_RATIO_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "User ML subjects",
                     "mnemo": "MLS_USR_SUBJ_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }
@@ -235,14 +218,12 @@
                 "mnemo": "VISIBILITY_CONF",
                 "type": "concept",
                 "active": "false",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Number of appearances in conferences",
                     "mnemo": "VISIBILITY_CONF_VOL",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               }
@@ -269,21 +250,18 @@
                 "mnemo": "DOWNLOADS",
                 "type": "concept",
                 "active": "false",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Number of repo downloads",
                     "mnemo": "DL_REPO_1M",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   },
                   {
                     "name": "Number of update site downloads",
                     "mnemo": "DL_UPDATE_SITE",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
 
                 ]
@@ -293,14 +271,12 @@
                 "mnemo": "INSTALL",
                 "type": "concept",
                 "active": "false",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Installation survey",
                     "mnemo": "SURVEY_INSTALL",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               }
@@ -318,14 +294,12 @@
                 "mnemo": "FEEDBACK_MARKETPLACE",
                 "type": "concept",
                 "active": "false",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Votes in marketplace",
                     "mnemo": "VOTES_MARKETPLACE",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               }
@@ -352,14 +326,12 @@
                 "mnemo": "PUB_SCM_INFO",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "SCM access information",
-                    "mnemo": "PUB_SCM_INFO",
+                    "mnemo": "PUB_SCM_INFO_PMI",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -368,21 +340,18 @@
                 "mnemo": "SCM_USAGE",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "SCM Commits",
                     "mnemo": "SCM_COMMITS_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "SCM Committers",
                     "mnemo": "SCM_COMMITTERS_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }
@@ -400,14 +369,12 @@
                 "mnemo": "PUB_ITS_INFO",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "ITS access information",
-                    "mnemo": "PUB_ITS_INFO",
+                    "mnemo": "PUB_ITS_INFO_PMI",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -416,21 +383,18 @@
                 "mnemo": "ITS_USAGE",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "ITS updates",
                     "mnemo": "ITS_UPDATES_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "ITS authors",
                     "mnemo": "ITS_AUTH_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }
@@ -448,14 +412,12 @@
                 "mnemo": "LIC",
                 "type": "concept",
                 "active": "false",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Licenses identification",
                     "mnemo": "LIC_IDENT",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               },
@@ -464,14 +426,12 @@
                 "mnemo": "IP_LOG",
                 "type": "concept",
                 "active": "false",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "IP Log code coverage",
                     "mnemo": "IP_LOG_COV",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               }
@@ -489,37 +449,32 @@
                 "mnemo": "PLAN_ON_TIME",
                 "type": "concept",
                 "active": "false",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "On time for next milestone",
                     "mnemo": "PLAN_NEXT_MILESTONE",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               },
               {
-                "name": "Milestones",
-                "mnemo": "PLAN_MILESTONES",
+                "name": "Releases",
+                "mnemo": "PLAN_RELEASES",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
-                    "name": "Number of milestones",
+                    "name": "Number of milestones in current release",
                     "mnemo": "PLAN_MILESTONES_VOL",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
-                    "name": "Milestones success",
-                    "mnemo": "PLAN_MILESTONES_SUCCESS",
+                    "name": "Reviews success rate",
+                    "mnemo": "PLAN_REVIEWS_SUCCESS_RATE",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }
@@ -537,14 +492,12 @@
                 "mnemo": "TST_COV",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Tests line coverage",
                     "mnemo": "TST_COV_LINES",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -553,14 +506,12 @@
                 "mnemo": "TST_VOL",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Ratio of tests on code",
                     "mnemo": "TST_VOL_RATIO",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -569,14 +520,12 @@
                 "mnemo": "TST_SUCCESS",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Test success rate",
                     "mnemo": "TST_SUCCESS_1W",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }
@@ -602,15 +551,13 @@
                 "name": "Code Size",
                 "mnemo": "CODE_SIZE",
                 "type": "concept",
-                "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "Source Lines Of Code",
                     "mnemo": "SLOC",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -618,22 +565,19 @@
                 "name": "Access points",
                 "mnemo": "ALL_DATA",
                 "type": "concept",
-                "value": "xxx",
                 "active": "false",
                 "children": [
                   {
                     "name": "Number of attributes",
                     "mnemo": "ATTRS",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   },
                   {
                     "name": "Number of methods",
                     "mnemo": "METHS",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               },
@@ -641,22 +585,19 @@
                 "name": "Code complexity index",
                 "mnemo": "CPX",
                 "type": "concept",
-                "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "Cyclomatic complexity",
                     "mnemo": "VG",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "Depth of Inheritance Tree",
                     "mnemo": "MDIT",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               },
@@ -664,15 +605,13 @@
                 "name": "Code documentation",
                 "mnemo": "CODE_DOC",
                 "type": "concept",
-                "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "Comment rate",
                     "mnemo": "COMR",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -681,21 +620,18 @@
                 "mnemo": "PRACTICES_ANA",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Non conformities index for analysability",
                     "mnemo": "NCC_ANA_IDX",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "Analysability practices acquired",
                     "mnemo": "ROKR_ANA",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }
@@ -712,22 +648,19 @@
                 "name": "Public access points",
                 "mnemo": "PUBLIC_DATA",
                 "type": "concept",
-                "value": "xxx",
                 "active": "false",
                 "children": [
                   {
                     "name": "Number of public attributes",
                     "mnemo": "ATTRS_PUBLIC",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }, 
                   {
                     "name": "Number of public methods",
                     "mnemo": "METHS_PUBLIC",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               },
@@ -735,22 +668,19 @@
                 "name": "Code complexity index",
                 "mnemo": "CPX",
                 "type": "concept",
-                "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "Cyclomatic complexity",
                     "mnemo": "VG",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "Depth of Inheritance Tree",
                     "mnemo": "MDIT",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               },
@@ -758,15 +688,13 @@
                 "name": "Code cloning",
                 "mnemo": "CODE_CLONE",
                 "type": "concept",
-                "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "Function cloning",
                     "mnemo": "FU_CLONE",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -775,21 +703,18 @@
                 "mnemo": "PRACTICES_CHA",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Non conformities index for changeability",
                     "mnemo": "NCC_CHA_IDX",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "Changeability practices acquired",
                     "mnemo": "ROKR_CHA",
                     "active": "true",
-                    "type": "metric",
-                    "value": "xxx"
+                    "type": "metric"
                   }
                 ]
               }
@@ -806,22 +731,19 @@
                 "name": "Public access points",
                 "mnemo": "PUBLIC_DATA",
                 "type": "concept",
-                "value": "xxx",
                 "active": "false",
                 "children": [
                   {
                     "name": "Number of public attributes",
                     "mnemo": "ATTRS_PUBLIC",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }, 
                   {
                     "name": "Number of public methods",
                     "mnemo": "METHS_PUBLIC",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               },
@@ -829,22 +751,19 @@
                 "name": "Code complexity index",
                 "mnemo": "CPX",
                 "type": "concept",
-                "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "Cyclomatic complexity",
                     "mnemo": "VG",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "Depth of Inheritance Tree",
                     "mnemo": "MDIT",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               },
@@ -852,15 +771,13 @@
                 "name": "SCM stability",
                 "mnemo": "SCM_STABILITY",
                 "type": "concept",
-                "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "File stability index",
                     "mnemo": "SCM_STABILITY_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -868,29 +785,25 @@
                 "name": "ITS reliability",
                 "mnemo": "ITS_REL",
                 "type": "concept",
-                "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "Median time to fix bug",
                     "mnemo": "ITS_FIX_MED_1M",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "Number of open bugs",
                     "mnemo": "ITS_BUGS_OPEN",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "Defect density",
                     "mnemo": "ITS_BUGS_DENSITY",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -899,21 +812,18 @@
                 "mnemo": "PRACTICES_REL",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Non conformities index for reliability",
                     "mnemo": "NCC_REL_IDX",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "Reliability practices acquired",
                     "mnemo": "ROKR_REL",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }
@@ -930,22 +840,19 @@
                 "name": "Public access points",
                 "mnemo": "PUBLIC_DATA",
                 "type": "concept",
-                "value": "xxx",
                 "active": "false",
                 "children": [
                   {
                     "name": "Number of public attributes",
                     "mnemo": "ATTRS_PUBLIC",
                     "type": "metric",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }, 
                   {
                     "name": "Number of public methods",
                     "mnemo": "METHS_PUBLIC",
                     "type": "false",
-                    "active": "false",
-                    "value": "xxx"
+                    "active": "false"
                   }
                 ]
               },
@@ -953,15 +860,13 @@
                 "name": "Test coverage",
                 "mnemo": "TST_COV",
                 "type": "concept",
-                "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "Percentage of lines of code covered by tests",
                     "mnemo": "TST_COV_LINES",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -969,15 +874,13 @@
                 "name": "Code documentation",
                 "mnemo": "CODE_DOC",
                 "type": "concept",
-                "value": "xxx",
                 "active": "true",
                 "children": [
                   {
                     "name": "Comment rate",
                     "mnemo": "COMR",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               },
@@ -986,21 +889,18 @@
                 "mnemo": "PRACTICES_REU",
                 "type": "concept",
                 "active": "true",
-                "value": "xxx",
                 "children": [
                   {
                     "name": "Non conformities index for reusability",
                     "mnemo": "NCC_REU_IDX",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   },
                   {
                     "name": "Reusability practices acquired",
                     "mnemo": "ROKR_REU",
                     "type": "metric",
-                    "active": "true",
-                    "value": "xxx"
+                    "active": "true"
                   }
                 ]
               }

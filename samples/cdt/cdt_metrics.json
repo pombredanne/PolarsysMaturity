@@ -242,12 +242,20 @@
             "value": "8"
         }, 
         {
-            "name": "PUB_ITS_INFO",
+            "name": "PUB_ITS_INFO_PMI",
             "value": "5"
         }, 
         {
-            "name": "PUB_SCM_INFO",
+            "name": "PUB_SCM_INFO_PMI",
             "value": "5"
+        }, 
+        {
+            "name": "PLAN_MILESTONES_VOL",
+            "value": "0"
+        }, 
+        {
+            "name": "PLAN_REVIEWS_SUCCESS_RATE",
+            "value": "40"
         }
     ]
 }

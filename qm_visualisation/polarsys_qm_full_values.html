@@ -117,7 +117,7 @@ d3.json("/PolarsysMaturity/data/polarsys_metrics.json", function(error, metrics)
 });
 
 // Load file for values.
-d3.json("/PolarsysMaturity/data/project_values.json", function(error, values) {
+d3.json("/PolarsysMaturity/samples/cdt/cdt_metrics.json", function(error, values) {
   if (error) return console.warn(error);
   
   //Build a hash with the metrics' values
@@ -187,7 +187,7 @@ function update(source) {
       .attr("dy", function(d) { return d.children || d._children ? "-0.5em" : ".35em" })
       .attr("text-anchor", function(d) { return d.children || d.children ? "end" : "start"; })
       .attr("fill", function(d) { return d.active == "true" ? "black" : "gray";})
-      .text(function(d) { return d.value ? d.name + " (" + myvalues[d.mnemo] + ")" : d.name; })
+      .text(function(d) { return myvalues[d.mnemo] ? d.name + " (" + myvalues[d.mnemo] + ")" : d.name; })
       .style("fill-opacity", 1e-6);
 
   // Transition nodes to their new position.
