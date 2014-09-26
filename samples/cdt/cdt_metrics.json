@@ -272,6 +272,51 @@
         {
             "name": "DL_UPDATE_SITE_1M",
             "value": "3359"
+        },
+        {
+            "name": "DL_REPO_1M",
+            "value": "572801"
+        },
+        {
+            "name": "ITS_AUTH_1M",
+            "value": "55"
+        },
+        {
+            "name": "ITS_BUGS_DENSITY",
+            "value": "0.08530612869851283"
+        },
+        {
+            "name": "SCM_COMMITS_1M",
+            "value": "112"
+        },
+        {
+            "name": "MLS_DEV_SUBJ_1M",
+            "value": "32"
+        },
+        {
+            "name": "MLS_DEV_VOL_1M",
+            "value": "119"
+        },
+        {
+            "name": "ITS_UPDATES_1M",
+            "value": "237"
+        },
+        {
+            "name": "ITS_FIX_MED_1M",
+            "value": "14.95"
+        },
+        {
+            "name": "SCM_COMMITTERS_1M",
+            "value": "18"
+        },
+        {
+            "name": "MLS_DEV_RESP_RATIO_1M",
+            "value": "2.71875"
+        },
+        {
+            "name": "SCM_COMMITTED_FILES_1M",
+            "value": "301"
         }
+        
     ]
 }
