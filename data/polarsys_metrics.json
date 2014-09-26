@@ -571,7 +571,7 @@
           {
             "name": "Number of favourites on the Marketplace",
             "mnemo": "MKT_FAV",
-            "description": "The number of votes",
+            "description": "The number of favourites on the Eclipse Marketplace.",
             "question": "How much the software is liked by users?",
             "active": "true",
             "datasource": "UNKOWN"
@@ -579,7 +579,7 @@
           {
             "name": "Number of successfull installs on the Marketplace",
             "mnemo": "MKT_INSTALL_SUCCESS_1M",
-            "description": "The number of votes",
+            "description": "The number of successful installs as reported on the http://marketplace.eclipse.org/content/eclipse-cdt-cc-development-tooling page, metrics tab.",
             "question": "How much the software is liked by users?",
             "active": "true",
             "datasource": "UNKOWN"
@@ -587,7 +587,7 @@
           {
             "name": "Number of failed install on the Marketplace",
             "mnemo": "MKT_INSTALL_FAILED_1M",
-            "description": "The number of votes",
+            "description": "The number of failed installs as reported on the http://marketplace.eclipse.org/unsuccessful/installs/1373403/error_report.csv page, errors tab.",
             "question": "How much the software is liked by users?",
             "active": "true",
             "datasource": "UNKOWN"
@@ -603,7 +603,7 @@
           {
             "name": "Number of downloads on the web site",
             "mnemo": "DL_REPO_1M",
-            "description": "The number of downloads on the web site of the project (download page) during last month.",
+            "description": "The number of downloads on the web site of the project (download page) during last month. Example of download page (for CDT) : http://www.eclipse.org/downloads/ .",
             "question": "How much the software is downloaded?",
             "active": "true",
             "datasource": "UNKOWN"

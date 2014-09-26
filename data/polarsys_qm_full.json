@@ -40,7 +40,7 @@
                 "active": "true",
                 "children": [
                   {
-                    "name": "Developer ML posts",
+                    "name": "User ML posts",
                     "mnemo": "MLS_USR_VOL_1M",
                     "type": "metric",
                     "active": "true"

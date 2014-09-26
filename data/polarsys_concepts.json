@@ -274,7 +274,7 @@
       },
       {
         "name": "Milestones",
-        "mnemo": "PLAN_MILESTONES",
+        "mnemo": "PLAN_RELEASES",
         "description": "Is the project having regular milestones, do they prove to be effective?",
         "composition": "PLAN_MILESTONES_VOL PLAN_REVIEWS_SUCCESS_RATE",
         "active": "true"

@@ -117,7 +117,7 @@ d3.json("/PolarsysMaturity/data/polarsys_metrics.json", function(error, metrics)
 });
 
 // Load file for values.
-d3.json("/PolarsysMaturity/samples/cdt/cdt_metrics.json", function(error, values) {
+d3.json("/PolarsysMaturity/data/project_values.json", function(error, values) {
   if (error) return console.warn(error);
   
   //Build a hash with the metrics' values
