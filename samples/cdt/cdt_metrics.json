@@ -6,12 +6,24 @@
             "value": "28410"
         }, 
         {
+            "name": "NCC_ANA_IDX",
+            "value": "31.07"
+        }, 
+        {
             "name": "NCC_CHA",
             "value": "5153"
         }, 
         {
+            "name": "NCC_CHA_IDX",
+            "value": "5.63"
+        }, 
+        {
             "name": "NCC_COR",
             "value": "209"
+        }, 
+        {
+            "name": "NCC_COR_IDX",
+            "value": "0.22"
         }, 
         {
             "name": "NCC_EFF",
@@ -30,12 +42,20 @@
             "value": "7183"
         }, 
         {
+            "name": "NCC_REL_IDX",
+            "value": "7.86"
+        }, 
+        {
             "name": "NCC_RES",
             "value": "0"
         }, 
         {
             "name": "NCC_REU",
             "value": "139754"
+        }, 
+        {
+            "name": "NCC_REU_IDX",
+            "value": "152.84"
         }, 
         {
             "name": "NCC_SEC",
@@ -294,6 +314,10 @@
             "value": "32"
         },
         {
+            "name": "MLS_DEV_AUTH_1M",
+            "value": "32"
+        },
+        {
             "name": "MLS_DEV_VOL_1M",
             "value": "119"
         },
@@ -316,6 +340,26 @@
         {
             "name": "SCM_COMMITTED_FILES_1M",
             "value": "301"
+        },
+        {
+            "name": "VG",
+            "value": "225705"
+        },
+        {
+            "name": "COMR",
+            "value": "16.4"
+        },
+        {
+            "name": "FU_CLONE",
+            "value": "115314"
+        },
+        {
+            "name": "TST_COV_LINES",
+            "value": "63.18"
+        },
+        {
+            "name": "SLOC",
+            "value": "914354"
         }
         
     ]
