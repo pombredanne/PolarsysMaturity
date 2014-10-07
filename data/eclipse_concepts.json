@@ -1,0 +1,283 @@
+  {
+    "name": "PolarSys Concepts",
+    "mnemo": "POLARSYS_CONCEPTS",
+    "active": "true",
+    "children": [
+      {
+        "name": "Code complexity",
+        "mnemo": "CPX",
+        "description": "The computational complexity of the code: control, data, inheritance.",
+        "composition": "VG MDIT",
+        "active": "true"
+      },
+      {
+        "name": "Control flow complexity",
+        "mnemo": "CPX_CF",
+        "description": "The computational complexity of the control flow structure in the code functions.",
+        "composition": "VG",
+        "active": "true"
+      },
+      {
+        "name": "Data flow complexity",
+        "mnemo": "CPX_DF",
+        "description": "The complexity of the data flow structure in the code functions.",
+        "composition": "DOPD DOPT TOPD TOPT",
+        "active": "true"
+      },
+      {
+        "name": "OO complexity",
+        "mnemo": "CPX_OO",
+        "description": "The complexity of the object-oriented architecture and structure. Composed of MDIT (maximum depth of inheritance tree).",
+        "composition": "MDIT",
+        "active": "true"
+      },
+      {
+        "name": "Code documentation",
+        "mnemo": "CODE_DOC",
+        "description": "The amount of documentation in the code: comment rate, javadoc, etc.",
+        "composition": "COMR",
+        "active": "true"
+      },
+      {
+        "name": "Code size",
+        "mnemo": "CODE_SIZE",
+        "description": "The overall size of the code.",
+        "composition": "SLOC",
+        "active": "true"
+      },
+      {
+        "name": "Access points",
+        "mnemo": "ALL_DATA",
+        "description": "The amount of attributes and methods on the class, whatever their visibility is.",
+        "composition": "ATTRS METHS",
+        "active": "true"
+      },
+      {
+        "name": "Public access points",
+        "mnemo": "PUBLIC_DATA",
+        "description": "Total number of public classes, interfaces, methods, constructors, annotations and attributes.",
+        "composition": "ATTRS_PUBLIC METHS_PUBLIC",
+        "active": "true"
+      },
+      {
+        "name": "Code cloning",
+        "mnemo": "CODE_CLONE",
+        "description": "The amount of duplicated lines in the code.",
+        "composition": "FU_CLONE",
+        "active": "true",
+        "datasource": "SonarQube"
+      },
+      {
+        "name": "Licensing",
+        "mnemo": "LIC",
+        "description": "Are licensing issues considered?",
+        "composition": "LIC_IDENT",
+        "active": "true"
+      },
+      {
+        "name": "IP Log",
+        "mnemo": "IP_LOG",
+        "description": "Is the intellectual property of contributions checked and enforced?",
+        "composition": "IP_LOG_COV",
+        "active": "true"
+      },
+      {
+        "name": "SCM Documentation",
+        "mnemo": "SCM_DOCS",
+        "description": "Is there some documentation about the SCM process, rules and conventions?",
+        "composition": "",
+        "active": "false"
+      },
+      {
+        "name": "ITS information access",
+        "mnemo": "PUB_ITS_INFO",
+        "description": "Measures the availability of information regarding ITS usage, conventions, access.",
+        "composition": "",
+        "active": "true"
+      },
+      {
+        "name": "ITS usage",
+        "mnemo": "ITS_USAGE",
+        "description": "How much the ITS system was used recently.",
+        "composition": "ITS_UPDATES_1M ITS_AUTH_1M",
+        "active": "true"
+      },
+      {
+        "name": "Installations",
+        "mnemo": "INSTALL",
+        "description": "The level of usage of the product.",
+        "composition": "SURVEY_INSTALL",
+        "active": "false"
+      },
+      {
+        "name": "SCM information access",
+        "mnemo": "PUB_SCM_INFO",
+        "description": "Measures the availability of information regarding SCM usage, conventions, access.",
+        "active": "true"
+      },
+      {
+        "name": "SCM usage",
+        "mnemo": "SCM_USAGE",
+        "description": "How much the SCM system was used during last month.",
+        "composition": "SCM_COMMITS_1M SCM_COMMITTERS_1M",
+        "active": "true"
+      },
+      {
+        "name": "SCM Stability",
+        "mnemo": "SCM_STABILITY",
+        "description": "How much the files are stable according to the SCM system. \nA file which has been heavily modified recently lacks experience, tests and feedback. ",
+        "composition": "SCM_STABILITY_1M",
+        "active": "true"
+      },
+      {
+        "name": "Analysability practices",
+        "mnemo": "PRACTICES_ANA",
+        "description": "What practices (rules checked) related to analysability are violated, and how often?",
+        "composition": "NCC_ANA_IDX ROKR_ANA",
+        "active": "true"
+      },
+      {
+        "name": "Changeability practices",
+        "mnemo": "PRACTICES_CHA",
+        "description": "What practices (rules checked) related to changeability are violated, and how often?",
+        "composition": "NCC_CHA_IDX ROKR_CHA",
+        "active": "true"
+      },
+      {
+        "name": "Reliability practices",
+        "mnemo": "PRACTICES_REL",
+        "description": "What practices (rules checked) related to reliability are violated, and how often?",
+        "composition": "NCC_REL_IDX ROKR_REL",
+        "active": "true"
+      },
+      {
+        "name": "Reusability practices",
+        "mnemo": "PRACTICES_REU",
+        "description": "What practices (rules checked) related to reusability are violated, and how often?",
+        "composition": "NCC_REU_IDX ROKR_REU",
+        "active": "true"
+      },
+      {
+        "name": "ITS Reliability",
+        "mnemo": "ITS_REL",
+        "description": "The reliability assessment of the project regarding registered bugs.",
+        "composition": "ITS_FIX_MED_1M ITS_BUGS_OPEN ITS_BUGS_DENSITY",
+        "active": "true"
+      },
+      {
+        "name": "Test coverage",
+        "mnemo": "TST_COV",
+        "description": "What percentage of the product has tests?",
+        "composition": "TST_COV_LINES",
+        "active": "true"
+      },
+      {
+        "name": "Number of tests",
+        "mnemo": "TST_VOL",
+        "description": "The overall amount of tests written for the project.",
+        "composition": "TST_VOL_RATIO",
+        "active": "true"
+      },
+      {
+        "name": "Test success rate",
+        "mnemo": "TST_SUCCESS",
+        "description": "Are the available tests successful when executed?",
+        "composition": "TST_SUCCESS_1W",
+        "active": "true"
+      },
+      {
+        "name": "Developer ML activity",
+        "mnemo": "MLS_DEV_ACTIVITY",
+        "description": "Activity on the developer mailing list.",
+        "question": "How active is the developer mailing list?",
+        "composition": "MLS_DEV_VOL_1M",
+        "active": "true"
+      },
+      {
+        "name": "User ML activity",
+        "mnemo": "MLS_USR_ACTIVITY",
+        "description": "Activity on the user mailing list.",
+        "question": "How active is the user mailing list?",
+        "composition": "MLS_USR_VOL_1M",
+        "active": "true"
+      },
+      {
+        "name": "SCM activity",
+        "mnemo": "SCM_ACTIVITY",
+        "description": "Activity on the software configuration management system.",
+        "question": "How active is the developer mailing list?",
+        "composition": "SCM_COMMITS_1M SCM_COMMITTED_FILES_1M",
+        "active": "true"
+      },
+      {
+        "name": "Developer ML diversity",
+        "mnemo": "MLS_DEV_DIVERSITY",
+        "description": "Diversity of users on the developer mailing list.",
+        "question": "How many users have contributed to the developer mailing list?",
+        "composition": "MLS_DEV_AUTH_1M",
+        "active": "true"
+      },
+      {
+        "name": "User ML diversity",
+        "mnemo": "MLS_USR_DIVERSITY",
+        "description": "Diversity of users on the user mailing list.",
+        "question": "How many users have contributed to the user mailing list?",
+        "composition": "MLS_USR_AUTH_1M",
+        "active": "true"
+      },
+      {
+        "name": "SCM diversity",
+        "mnemo": "SCM_DIVERSITY",
+        "description": "Diversity of users on the software configuration management system.",
+        "question": "How many users have contributed to the software configuration management system?",
+        "composition": "SCM_COMMITTERS_1M",
+        "active": "true"
+      },
+      {
+        "name": "Developer ML responsiveness",
+        "mnemo": "MLS_DEV_RESPONSIVENESS",
+        "description": "The delay of answers on the developer mailing list.",
+        "question": "How long have questions on the developer mailing list to wait before being answered?",
+        "composition": "MLS_DEV_RESP_TIME_MED_1M",
+        "active": "true"
+      },
+      {
+        "name": "User ML responsiveness",
+        "mnemo": "MLS_USR_RESPONSIVENESS",
+        "description": "The delay of answers on the developer mailing list.",
+        "question": "How long have questions on the user mailing list to wait before being answered?",
+        "composition": "MLS_USR_RESP_TIME_MED_1M",
+        "active": "true"
+      },
+      {
+        "name": "Developer ML support",
+        "mnemo": "MLS_DEV_SUPPORT",
+        "description": "The quantity of information gathered by questions on the developer mailing list.",
+        "question": "What amount of resources can be gathered from the developer mailing list?",
+        "composition": "MLS_DEV_RESP_RATIO_1M MLS_DEV_SUBJ_1M",
+        "active": "true"
+      },
+      {
+        "name": "User ML support",
+        "mnemo": "MLS_USR_SUPPORT",
+        "description": "The quantity of information gathered by questions on the user mailing list.",
+        "question": "What amount of resources can be gathered from the user mailing list?",
+        "composition": "MLS_USR_RESP_RATIO_1M MLS_USR_SUBJ_1M",
+        "active": "true"
+      },
+      {
+        "name": "Plan on time",
+        "mnemo": "PLAN_ON_TIME",
+        "description": "Is the project on time according to its schedule?",
+        "composition": "PLAN_NEXT_MILESTONE",
+        "active": "true"
+      },
+      {
+        "name": "Milestones",
+        "mnemo": "PLAN_MILESTONES",
+        "description": "Is the project having regular milestones, do they prove to be effective?",
+        "composition": "PLAN_MILESTONES_VOL PLAN_MILESTONES_SUCCESS",
+        "active": "true"
+      }
+    ]
+  }
