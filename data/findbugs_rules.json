@@ -489,22 +489,31 @@
       { 
         "name": "RV: Negating the result of compareTo()/compare()", 
         "mnemo": "RV_NEGATING_RESULT_OF_COMPARETO",
+        "cat": "COR",
+        "priority": "3",
         "desc": [
-            "This code negatives the return value of a compareTo or compare method. This is a questionable or bad programming practice, since if the return value is Integer.MIN_VALUE, negating the return value won't negate the sign of the result. You can achieve the same intended result by reversing the order of the operands rather than by negating the results. "
+            "This code negatives the return value of a compareTo or compare method. This is a questionable or bad programming practice, since if the return value is Integer.MIN_VALUE, negating the return value won't negate the sign of the result. You can achieve the same intended result by reversing the order of the operands rather than by negating the results. ",
+            "This rule impacts correctness, since it may produce unpredictable behavirour in some cases."
         ]
       },
       { 
         "name": "RV: Method ignores exceptional return value ", 
         "mnemo": "RV_RETURN_VALUE_IGNORED_BAD_PRACTICE",
+        "cat": "MAT",
+        "priority": "3",
         "desc": [
-            "This method returns a value that is not checked. The return value should be checked since it can indicate an unusual or unexpected function execution. For example, the <code>File.delete()</code> method returns false if the file could not be successfully deleted (rather than throwing an Exception). If you don't check the result, you won't notice if the method invocation signals unexpected behavior by returning an atypical return value. "
+            "This method returns a value that is not checked. The return value should be checked since it can indicate an unusual or unexpected function execution. For example, the <code>File.delete()</code> method returns false if the file could not be successfully deleted (rather than throwing an Exception). If you don't check the result, you won't notice if the method invocation signals unexpected behavior by returning an atypical return value. ",
+            "This rule impacts maturity, since it implies better control on the program execution."
         ]
       },
       { 
         "name": "SI: Static initializer creates instance before all static final fields assigned ", 
         "mnemo": "SI_INSTANCE_BEFORE_FINALS_ASSIGNED",
+        "cat": "COR",
+        "priority": "3",
         "desc": [
-            "The class's static initializer creates an instance of the class before all of the static final fields are assigned."
+            "The class's static initializer creates an instance of the class before all of the static final fields are assigned.",
+            "This rule impacts correctness, since unexpected behaviour may result from using unassigned fields."
         ]
       },
       { 
