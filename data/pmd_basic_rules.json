@@ -25,7 +25,7 @@
         {
 	    "name": "Override Both Equals And Hash code",
 	    "mnemo": "OverrideBothEqualsAndHashcode",
-            "priority": "3",
+        "priority": "3",
 	    "cat": "CHA REU",
 	    "desc": [
 		"Override both public boolean Object.equals(Object other), and public int Object.hashCode(), or override neither. Even if you are inheriting a hashCode() from a parent class, consider implementing hashCode and explicitly delegating to your superclass. ",
