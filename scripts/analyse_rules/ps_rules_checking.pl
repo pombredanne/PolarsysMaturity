@@ -236,7 +236,7 @@ foreach my $violation (@violations_nodes) {
 # Read violations from PMD XML file
 #
 
-print "Reading PMD XML file [$opt_fb_file]..\n\n";
+print "Reading PMD XML file [$opt_pmd_file]..\n\n";
 
 $doc = $parser->parse_file($opt_pmd_file);
 
@@ -342,7 +342,7 @@ print "Writing metrics to file [$opt_output]...\n";
 my $json_out;
 $json_out = "{\n";
 $json_out .= "    \"name\": \"Project metrics\",\n";
-$json_out .= "    \"children\": [\n";
+$json_out .= "    \"children\": {\n";
 my @full_json_out;
 foreach my $metric (sort keys %metrics) {
     print "Working on $metric: $metrics{$metric}.\n" if (defined($opt_verbose));
@@ -353,7 +353,7 @@ foreach my $metric (sort keys %metrics) {
     push( @full_json_out, $tmp_m );
 }
 $json_out .= join( ", \n", @full_json_out);
-$json_out .= "\n    ]\n";
+$json_out .= "\n    }\n";
 $json_out .= "}\n";
 
 
